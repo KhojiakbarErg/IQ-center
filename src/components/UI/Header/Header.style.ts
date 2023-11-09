@@ -121,4 +121,35 @@ export const ThemeHeaderTop = styled.div`
   }
 `;
 
-export const ThemeHeaderBottom = styled.div``;
+export const ThemeHeaderBottom = styled.div`
+  background-color: #2f353b;
+  width: 100%;
+  position: absolute;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  right: 0;
+  left: 0;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #f5f5f5;
+  span {
+    font-size: 20px;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.5s;
+    }
+  }
+  div {
+    width: 1.5px;
+    height: 24px;
+    opacity: 0.2;
+    background-color: #fff;
+  }
+  svg {
+    opacity: 0.5;
+    margin-right: 7px;
+  }
+`;
