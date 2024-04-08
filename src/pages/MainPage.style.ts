@@ -9,6 +9,5 @@ export const ThemeMainPage = styled.div`
   right: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 0 100px;
-  padding-top: 200px;
+  padding: 200px 0;
 `;

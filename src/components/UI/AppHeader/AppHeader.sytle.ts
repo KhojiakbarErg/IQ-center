@@ -1,5 +1,5 @@
 import styled from "styled-components";
-//TODO:поставить шрифты
+
 export const ThemeAppHeader = styled.div`
   margin: 0;
   padding: 0;
@@ -9,18 +9,19 @@ export const ThemeAppHeader = styled.div`
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
   span {
-    font-family: Actay;
+    font-family: "Actay";
     font-size: 30px;
     line-height: 30px;
     padding: 0 20px;
     color: #ffffff;
   }
   a {
-    font-family: Actay;
+    font-family: "Actay";
     font-size: 30px;
     line-height: 30px;
     color: #ffffff;
-    top: -8px;
+    position: relative;
+    top: -5px;
     right: -8px;
     text-decoration: none;
     &:hover {
@@ -30,6 +31,8 @@ export const ThemeAppHeader = styled.div`
       width: 33px;
       height: 33px;
       position: relative;
+      top: 9px;
+      right: 10px;
     }
   }
 
