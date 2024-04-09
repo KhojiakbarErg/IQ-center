@@ -4,6 +4,10 @@ export const ThemeAppButton = styled.button`
   width: 300px;
   height: 89px;
   padding: 0;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+  font-family: "Actay";
   display: flex;
   justify-content: center;
   align-items: center;

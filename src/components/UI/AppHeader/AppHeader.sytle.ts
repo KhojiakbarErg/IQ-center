@@ -42,7 +42,7 @@ export const ThemeAppHeader = styled.div`
   }
   display: flex;
   flex-direction: row;
-  padding: 15px 30px;
+  padding: 15px 110px;
 
   justify-content: space-between;
   align-items: center;

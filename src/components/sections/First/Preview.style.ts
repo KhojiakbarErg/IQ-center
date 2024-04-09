@@ -99,7 +99,7 @@ export const ThemePreview = styled.div`
     justify-content: flex-end;
     flex-wrap: wrap;
 
-    padding-right: 210px;
+    padding-right: 270px;
 
     .rate {
       //TODO: :жирный шрифт
@@ -123,5 +123,6 @@ export const ThemePreview = styled.div`
       margin: 0;
       display: block;
     }
+    margin-bottom: 150px;
   }
 `;

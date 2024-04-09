@@ -2,12 +2,9 @@ import styled from "styled-components";
 
 export const ThemeMainPage = styled.div`
   background-color: #00000c;
+  background-position: 100%;
   color: #ffffff;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  box-sizing: border-box;
   padding: 200px 0;
+  height: 100%;
+  width: 100%;
 `;
