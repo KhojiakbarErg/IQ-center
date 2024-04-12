@@ -12,7 +12,7 @@ export const ThemeAppHeader = styled.div`
     font-family: "Actay";
     font-size: 30px;
     line-height: 30px;
-    padding: 0 20px;
+    padding: 0 32.5px;
     color: #ffffff;
   }
   a {
@@ -51,6 +51,5 @@ export const ThemeAppHeader = styled.div`
   top: 0;
   right: 0;
   left: 0;
-  backface-visibility: 0.7;
-  background-color: #00000b;
+  background-color: rgba(0, 0, 12, 0.8);
 `;

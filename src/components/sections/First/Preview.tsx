@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemePreview } from "./Preview.style";
-import { AppButton } from "../../UI/AppButton/AppButton";
+import { AppButton, MoreInfBtn } from "../../UI/AppButton/AppButton";
+import { Acceptense } from "../../UI/Acceptense/Acceptense";
 
 export const Preview = () => {
   return (
@@ -17,14 +18,14 @@ export const Preview = () => {
             которое стремится к качественной подготовке и развитию каждого
             студента.
           </p>
-          <AppButton value="" className="enter">
-            <p>Записаться</p>
-          </AppButton>
+          <div className="enter">
+            <AppButton value="Записаться"></AppButton>
+            <MoreInfBtn value="Подробнее" />
+          </div>
         </div>
       </div>
       <div className="rating">
-        <p className="rate">100%</p>
-        <p className="p">Поступаемости</p>
+        <Acceptense />
       </div>
     </ThemePreview>
   );

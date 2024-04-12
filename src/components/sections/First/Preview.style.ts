@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 //TODO:сделать жирный Actay куда надо
 export const ThemePreview = styled.div`
   .preview {
@@ -27,9 +28,9 @@ export const ThemePreview = styled.div`
     .informa {
       display: grid;
       grid-template-areas:
-        "inf"
-        "inf"
-        "enter";
+        "inf inf"
+        "inf inf"
+        "enter enter";
     }
     .study {
       grid-area: study;
@@ -41,6 +42,9 @@ export const ThemePreview = styled.div`
       grid-area: way;
       display: flex;
       flex-direction: row-reverse;
+      position: relative;
+      left: -7px;
+      top: 5px;
     }
     .text {
       grid-area: inf;
@@ -51,25 +55,21 @@ export const ThemePreview = styled.div`
       font-size: 28px;
       color: rgba(255, 255, 255, 0.92);
       position: relative;
-      top: -25px;
+      top: -10px;
     }
     .enter {
       grid-area: enter;
-      p {
-        //TODO: :жирный шрифт
-
-        font-weight: 700;
-        font-size: 32px;
-        color: #000;
-        font-family: "Actay";
-      }
+      width: 700px;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
     }
 
     h2 {
       //TODO: :жирный шрифт
       font-family: "Actay";
-      font-size: 96px;
-      font-weight: 700;
+      font-size: 116px;
+      font-weight: 1000;
       color: #ffffff;
       margin: 0;
       padding: 0;
@@ -80,7 +80,7 @@ export const ThemePreview = styled.div`
       //TODO: :жирный шрифт
 
       font-family: "Actay";
-      font-size: 160px;
+      font-size: 195px;
       font-weight: 700;
       background: linear-gradient(73deg, #dd0eff 0%, #3c64f1 89.97%);
       background-clip: text;

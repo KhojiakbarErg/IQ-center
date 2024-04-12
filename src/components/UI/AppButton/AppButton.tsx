@@ -1,5 +1,6 @@
 import React from "react";
 import { ThemeAppButton } from "./AppButton.style";
+import { ThemeMoreInfBtn } from "./AppButton.style";
 
 interface AppButtonProps {
   value: string;
@@ -17,5 +18,24 @@ export const AppButton = ({
     <ThemeAppButton className={className} {...props}>
       {value} {children}
     </ThemeAppButton>
+  );
+};
+
+interface MoreInfBtnProps {
+  value: string;
+  className?: string;
+  children?: React.ReactNode;
+}
+
+export const MoreInfBtn = ({
+  className,
+  children,
+  value,
+  ...props
+}: MoreInfBtnProps) => {
+  return (
+    <ThemeMoreInfBtn className={className} {...props}>
+      {value} {children}
+    </ThemeMoreInfBtn>
   );
 };
