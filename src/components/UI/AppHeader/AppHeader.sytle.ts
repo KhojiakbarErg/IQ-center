@@ -52,4 +52,5 @@ export const ThemeAppHeader = styled.div`
   right: 0;
   left: 0;
   background-color: rgba(0, 0, 12, 0.8);
+  z-index: 100;
 `;

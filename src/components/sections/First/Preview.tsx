@@ -27,6 +27,13 @@ export const Preview = () => {
       <div className="rating">
         <Acceptense />
       </div>
+      <div className="FirstGradient">
+        <img src="Blackback.png" alt="" className="Blackback" />
+        <img src="Gradient1.png" alt="" className="Gradient1" />
+      </div>
+      <div className="SecondGradient">
+        <img src="Gradient2.png" alt="" className="Gradient2" />
+      </div>
     </ThemePreview>
   );
 };

@@ -1,33 +1,52 @@
 import styled from "styled-components";
 
 export const ThemeAboutUs = styled.div`
-  padding: 0 220px;
+  padding: 200px 296px;
+  background-image: url("banner.png");
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  height: 679px;
+  background-position: center;
+  border-radius: 40px;
+  z-index: 10;
 
   h1 {
     font-family: "Actay";
     font-weight: 700;
     font-size: 96px;
     color: #fff;
+    z-index: 10;
   }
   p {
     font-family: "Actay";
     font-size: 30px;
     color: rgba(255, 255, 255, 0.9);
-    width: 687px;
-    height: 407px;
-  }
-  img {
-    width: 716px;
-    height: 537px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    margin: 0;
+    width: 903px;
+    height: 333px;
+    z-index: 10;
   }
   .enter {
+    display: flex;
+    flex-direction: column-reverse;
     position: relative;
-    top: -20px;
+    top: -40px;
+    right: -20px;
+    z-index: 10;
   }
   .AboutUsInf {
     display: flex;
-    gap: 50px;
+    gap: 120px;
+    z-index: 10;
+  }
+
+  .ThirdGradient {
+    .Gradient3 {
+      position: absolute;
+      width: 694px;
+      height: 694px;
+      right: 50px;
+      top: 1489px;
+      z-index: 1;
+    }
   }
 `;

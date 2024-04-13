@@ -1,5 +1,5 @@
 import React from "react";
-import { AppButton } from "../../UI/AppButton/AppButton";
+import { AppButton, AppButtonTwo } from "../../UI/AppButton/AppButton";
 import { ThemeAboutUs } from "./AboutUs.style";
 
 export const AboutUs = () => {
@@ -16,9 +16,10 @@ export const AboutUs = () => {
             развивают навыки самостоятельной работы, критического мышления и
             творческого подхода к решению задач.
           </p>
-          <AppButton value="Записаться" className="enter" />
         </div>
-        <img src="banner.png" alt="banner" />
+        <div className="enter">
+          <AppButtonTwo value="Записаться" className="enter" />
+        </div>
       </div>
     </ThemeAboutUs>
   );

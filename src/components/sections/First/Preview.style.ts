@@ -123,6 +123,42 @@ export const ThemePreview = styled.div`
       margin: 0;
       display: block;
     }
-    margin-bottom: 150px;
+    margin-bottom: 200px;
+  }
+
+  .FirstGradient {
+    padding: 0;
+    margin: 0;
+    .Blackback {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      width: 368.17px;
+      height: 272.96px;
+      top: -67px;
+      right: 0;
+      z-index: 3;
+    }
+
+    .Gradient1 {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      width: 506.16px;
+      height: 506.16px;
+      top: -70px;
+      right: 0;
+      z-index: 2;
+    }
+  }
+  .SecondGradient {
+    .Gradient2 {
+      position: absolute;
+      width: 448.74px;
+      height: 448.74px;
+      left: -90px;
+      top: 680.49px;
+      transform: rotate(-15.43deg);
+    }
   }
 `;
