@@ -23,53 +23,37 @@ export const ThemeWayChoose = styled.div`
       rgb(61, 100, 241) 100%
     );
     opacity: 0.6;
-
-    position: relative;
-    top: -50px;
+    margin: 40px 0;
   }
 
   .FirstWay {
     #imgbox {
       width: 500px;
-      position: relative;
-      top: -170px;
-
-      h4 {
-        margin-top: 54px;
-        position: relative;
-        right: -250px;
-      }
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   }
 
   .SecondWay {
     #imgbox {
-      width: 500px;
-      position: relative;
-      left: -130px;
-
-      h4 {
-        position: relative;
-        top: -50px;
-        right: -150px;
+      width: 550px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 380px;
+        height: 380px;
       }
-      margin-bottom: 90px;
     }
   }
 
   .ThirdWay {
     #imgbox {
       width: 500px;
-      position: relative;
-      right: -300px;
-      top: -50px;
-
-      h4 {
-        margin-top: 54px;
-        position: relative;
-        top: -100px;
-        right: -100px;
-      }
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   }
 `;

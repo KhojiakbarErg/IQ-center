@@ -32,7 +32,7 @@ export const ThemeInfToChoose = styled.div`
 
   #boxOfWay {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
   }
 
   h4 {
