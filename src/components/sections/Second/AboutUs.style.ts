@@ -9,6 +9,7 @@ export const ThemeAboutUs = styled.div`
   background-position: center;
   border-radius: 40px;
   z-index: 10;
+  margin-bottom: 75px;
 
   h1 {
     font-family: "Actay";

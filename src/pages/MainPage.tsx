@@ -3,6 +3,8 @@ import { Preview } from "../components/sections/First/Preview";
 import { AppHeader } from "../components/UI/AppHeader/AppHeader";
 import { ThemeMainPage } from "./MainPage.style";
 import { AboutUs } from "../components/sections/Second/AboutUs";
+import { SpecialQualities } from "../components/sections/Third/SpecialQualities";
+import { WayChoose } from "../components/sections/Fourth/WayChoose";
 
 export const MainPage = () => {
   return (
@@ -10,6 +12,8 @@ export const MainPage = () => {
       <AppHeader />
       <Preview />
       <AboutUs />
+      <SpecialQualities />
+      <WayChoose />
     </ThemeMainPage>
   );
 };

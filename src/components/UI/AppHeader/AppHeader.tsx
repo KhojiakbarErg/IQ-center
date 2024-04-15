@@ -13,7 +13,7 @@ export const AppHeader = () => {
         <span>Контакты</span>
       </div>
       <a href="" className="call">
-        Связатся <img className="call" src="right-arrow.png" alt="." />
+        Связаться <img className="call" src="right-arrow.png" alt="." />
       </a>
     </ThemeAppHeader>
   );

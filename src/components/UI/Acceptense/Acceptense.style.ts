@@ -39,14 +39,14 @@ export const ThemeAcceptense = styled.div`
   margin: 0;
 
   img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     position: absolute;
   }
 
   .shape1 {
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    height: 430px;
     position: absolute;
     animation: 20s linear infinite rotate;
     @keyframes rotate {
@@ -61,8 +61,8 @@ export const ThemeAcceptense = styled.div`
   }
 
   .shape2 {
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
     opacity: 0.6;
     position: absolute;
     animation: 20s linear infinite rotatesec;
