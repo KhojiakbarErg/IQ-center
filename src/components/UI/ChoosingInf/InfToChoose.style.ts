@@ -42,8 +42,4 @@ export const ThemeInfToChoose = styled.div`
     font-weight: 700;
     margin: 0;
   }
-
-  img {
-    opacity: 0.6;
-  }
 `;

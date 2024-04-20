@@ -3,6 +3,14 @@ import styled from "styled-components";
 export const ThemeWayChoose = styled.div`
   padding: 0 220px;
 
+  b {
+    background: linear-gradient(73.64deg, rgb(221, 14, 255), rgb(60, 100, 241));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "Actay";
+  }
+
   h1 {
     font-family: "Actay";
     font-size: 96px;
