@@ -8,15 +8,14 @@ export const ThemeAboutUs = styled.div`
   height: 679px;
   background-position: center;
   border-radius: 40px;
-  z-index: 10;
   margin-bottom: 75px;
+  position: absolute;
 
   h1 {
     font-family: "Actay";
     font-weight: 700;
     font-size: 96px;
     color: #fff;
-    z-index: 10;
   }
   p {
     font-family: "Actay";
@@ -24,7 +23,6 @@ export const ThemeAboutUs = styled.div`
     color: rgba(255, 255, 255, 0.9);
     width: 903px;
     height: 333px;
-    z-index: 10;
   }
   .enter {
     display: flex;
@@ -32,22 +30,22 @@ export const ThemeAboutUs = styled.div`
     position: relative;
     top: -40px;
     right: -20px;
-    z-index: 10;
   }
   .AboutUsInf {
     display: flex;
     gap: 120px;
-    z-index: 10;
   }
+  z-index: 1;
+`;
 
-  .ThirdGradient {
-    .Gradient3 {
-      position: absolute;
-      width: 694px;
-      height: 694px;
-      right: 50px;
-      top: 1489px;
-      z-index: 1;
-    }
-  }
+export const ThemeGradient3 = styled.img`
+  position: absolute;
+  right: 0;
+  top: 450px;
+  z-index: 0;
+`;
+
+export const ThemeContainer2 = styled.div`
+  position: relative;
+  height: 1080px;
 `;

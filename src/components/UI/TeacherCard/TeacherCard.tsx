@@ -1,13 +1,29 @@
 import React from "react";
-import { ThemeTeacherCard } from "./TeacherCard.style";
+import { ThemeBoxTeachers, ThemeTeacherCard } from "./TeacherCard.style";
 
-export const TeacherCard = () => {
+interface TeachercardProps {
+  teacher: string;
+  name: string;
+  subject: string;
+  inf: string;
+}
+
+export const TeacherCard = ({
+  teacher,
+  name,
+  subject,
+  inf,
+}: TeachercardProps) => {
   return (
-    <ThemeTeacherCard>
-      <img src="" alt="" />
-      <h3></h3>
-      <p></p>
-      <p></p>
-    </ThemeTeacherCard>
+    <ThemeBoxTeachers>
+      <img src="border.png" id="border"></img>
+      <ThemeTeacherCard>
+        <img src={teacher} id="Teacher" alt="" />
+        <img src="TeacherPlace.png" alt="" id="TeacherPlace" />
+        <h3>{name}</h3>
+        <p className="subject">{subject}</p>
+        <p className="informationteach">{inf}</p>
+      </ThemeTeacherCard>
+    </ThemeBoxTeachers>
   );
 };

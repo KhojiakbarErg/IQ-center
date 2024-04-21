@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ThemeSpecialQualities = styled.div`
   padding: 0 110px;
   margin-bottom: 325px;
+  position: relative;
 
   h1 {
     color: rgb(255, 255, 255);
@@ -14,5 +15,11 @@ export const ThemeSpecialQualities = styled.div`
   #box {
     display: flex;
     justify-content: space-between;
+  }
+
+  .Gradient4 {
+    position: absolute;
+    right: 0;
+    top: 210px;
   }
 `;

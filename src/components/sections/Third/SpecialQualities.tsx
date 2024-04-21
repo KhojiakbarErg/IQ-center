@@ -28,6 +28,7 @@ export const SpecialQualities = () => {
           label="Гибкий график"
         />
       </div>
+      <img src="Gradient4.png" alt="" className="Gradient4" />
     </ThemeSpecialQualities>
   );
 };

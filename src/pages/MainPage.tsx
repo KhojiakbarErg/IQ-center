@@ -5,6 +5,7 @@ import { ThemeMainPage } from "./MainPage.style";
 import { AboutUs } from "../components/sections/Second/AboutUs";
 import { SpecialQualities } from "../components/sections/Third/SpecialQualities";
 import { WayChoose } from "../components/sections/Fourth/WayChoose";
+import { OurTeachers } from "../components/sections/Fifth/OurTeachers";
 
 export const MainPage = () => {
   return (
@@ -14,6 +15,7 @@ export const MainPage = () => {
       <AboutUs />
       <SpecialQualities />
       <WayChoose />
+      <OurTeachers />
     </ThemeMainPage>
   );
 };

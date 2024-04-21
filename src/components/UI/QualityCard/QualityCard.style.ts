@@ -9,6 +9,7 @@ export const ThemeQualityCard = styled.div`
 
   padding: 30px 23px;
   position: relative;
+  z-index: 2;
 
   .line {
     width: 380px;
