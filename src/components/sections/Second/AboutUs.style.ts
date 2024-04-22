@@ -4,7 +4,7 @@ export const ThemeAboutUs = styled.div`
   padding: 200px 296px;
   background-image: url("banner.png");
   background-repeat: no-repeat;
-  background-size: 1600px;
+  background-size: 1700px;
   height: 679px;
   background-position: center;
   border-radius: 40px;

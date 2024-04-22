@@ -6,6 +6,7 @@ interface TeachercardProps {
   name: string;
   subject: string;
   inf: string;
+  bold?: string;
 }
 
 export const TeacherCard = ({
@@ -13,6 +14,7 @@ export const TeacherCard = ({
   name,
   subject,
   inf,
+  bold,
 }: TeachercardProps) => {
   return (
     <ThemeBoxTeachers>
@@ -22,7 +24,10 @@ export const TeacherCard = ({
         <img src="TeacherPlace.png" alt="" id="TeacherPlace" />
         <h3>{name}</h3>
         <p className="subject">{subject}</p>
-        <p className="informationteach">{inf}</p>
+        <p className="informationteach">
+          <b>{bold}</b>
+          {inf}
+        </p>
       </ThemeTeacherCard>
     </ThemeBoxTeachers>
   );

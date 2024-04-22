@@ -5,6 +5,7 @@ export const ThemeMainPage = styled.div`
   background-position: 100%;
   color: #ffffff;
   padding: 260px 0;
+  padding-bottom: 0;
   height: 100%;
   width: 100%;
 `;

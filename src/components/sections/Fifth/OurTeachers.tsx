@@ -7,15 +7,31 @@ export const OurTeachers = () => {
     <ThemeOurTeacher>
       <div>
         <h1>Наши учителя</h1>
-        <div>
+        <div id="scrollplace">
           <TeacherCard
             teacher=""
             name="Сергей"
             subject="Математика"
-            inf="10+ лет опыта. 100% постумаемости. Несколько высших образований. И просто качок."
+            inf="    100% постумаемости. Несколько высших образований. И просто качок)"
+            bold="10+ лет опыта. "
+          />
+          <TeacherCard
+            teacher=""
+            name="Улугбек"
+            subject="Математика"
+            inf="  подготовленых студентов. Перспективный учитель. 100% постумаемости."
+            bold="200"
+          />
+          <TeacherCard
+            teacher=""
+            name="Бахриддин"
+            subject="Английский"
+            inf=" Продуктивный метод обучения.  Настоящий полиглот(знание 5 языков)"
+            bold="IELTS 8,5."
           />
         </div>
       </div>
+      <img src="Gradient5.png" alt="" id="Gradient5" />
     </ThemeOurTeacher>
   );
 };

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ThemeTeacherCard = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 445px;
+  height: 667px;
   background: rgb(0, 0, 12);
   border-radius: 35px;
   z-index: 1;
@@ -10,6 +10,13 @@ export const ThemeTeacherCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-snap-align: start;
+
+  b {
+    font-family: monospace, sans-serif;
+    font-size: 30px;
+    font-weight: 1000;
+  }
 
   h3 {
     font-family: "Actay";
@@ -56,7 +63,7 @@ export const ThemeBoxTeachers = styled.div`
   position: relative;
   width: 445px;
   height: 667px;
-  padding: 100px 55px 55px 55px;
+  padding: 100px 40px 0 10px;
 
   #border {
     width: 447px;
