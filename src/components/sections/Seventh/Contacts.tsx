@@ -1,14 +1,13 @@
-import React from "react";
-import { ThemeLocation } from "./Location.style";
+import { ThemeLocation } from "./Contacts.style";
 
 export const Location = () => {
   return (
-    <ThemeLocation>
+    <ThemeLocation id="contacts">
       <h1>
         Свяжитесь с <b> нами</b>
       </h1>
       <div className="mainlocation">
-        <div className=" inf">
+        <div className="inf">
           <div className="extrainf">
             <h5 id="number">Номер Телефона:</h5>
             <a href="tel:+998908052935">+998 (90) 805-29-35</a>
@@ -39,6 +38,7 @@ export const Location = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             id="map"
+            title="map"
           ></iframe>
         </div>
       </div>

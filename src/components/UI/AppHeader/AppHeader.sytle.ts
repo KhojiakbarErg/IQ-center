@@ -8,14 +8,15 @@ export const ThemeAppHeader = styled.div`
     height: 76px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
-  span {
+  #option {
     font-family: "Actay";
     font-size: 30px;
     line-height: 30px;
     padding: 0 32.5px;
     color: #ffffff;
+    text-decoration: none;
   }
-  a {
+  .call {
     font-family: "Actay";
     font-size: 30px;
     line-height: 30px;

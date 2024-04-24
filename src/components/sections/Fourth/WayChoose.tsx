@@ -4,8 +4,10 @@ import { InfToChoose, InfToChooseSec } from "../../UI/ChoosingInf/InfToChoose";
 
 export const WayChoose = () => {
   return (
-    <ThemeWayChoose>
-      <h1>Выбери свой <b>путь</b></h1>
+    <ThemeWayChoose id="waychoose">
+      <h1>
+        Выбери свой <b>путь</b>
+      </h1>
       <div>
         <InfToChoose
           name="Групповые занятия"

@@ -7,7 +7,7 @@ import { SpecialQualities } from "../components/sections/Third/SpecialQualities"
 import { WayChoose } from "../components/sections/Fourth/WayChoose";
 import { OurTeachers } from "../components/sections/Fifth/OurTeachers";
 import { Comments } from "../components/sections/Sixth/Comments";
-import { Location } from "../components/sections/Seventh/Location";
+import { Location } from "../components/sections/Seventh/Contacts";
 
 export const MainPage = () => {
   return (

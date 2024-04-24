@@ -4,7 +4,7 @@ import { TeacherCard } from "../../UI/TeacherCard/TeacherCard";
 
 export const OurTeachers = () => {
   return (
-    <ThemeOurTeacher>
+    <ThemeOurTeacher id="ourteachers">
       <div>
         <h1>Наши учителя</h1>
         <div id="scrollplace">

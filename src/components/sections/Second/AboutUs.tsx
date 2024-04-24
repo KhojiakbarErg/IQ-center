@@ -4,7 +4,7 @@ import { ThemeAboutUs, ThemeContainer2, ThemeGradient3 } from "./AboutUs.style";
 
 export const AboutUs = () => {
   return (
-    <ThemeContainer2>
+    <ThemeContainer2 id="aboutus">
       <ThemeAboutUs>
         <h1>О нас</h1>
         <div className="AboutUsInf">

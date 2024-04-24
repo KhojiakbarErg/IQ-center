@@ -4,7 +4,7 @@ import { CommentCard } from "../../UI/CommentCard/CommentCard";
 
 export const Comments = () => {
   return (
-    <ThemeComments>
+    <ThemeComments id="comments">
       <h1>Отзывы</h1>
       <div className="container">
         <CommentCard
