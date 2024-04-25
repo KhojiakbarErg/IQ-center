@@ -3,7 +3,7 @@ import styled from "styled-components";
 //TODO:сделать жирный Actay куда надо
 export const ThemePreview = styled.div`
   .preview {
-    padding: 0 270px;
+    padding: 0 calc(22.9vw - 169.3px);
     display: grid;
     grid-template-areas:
       "preview"
@@ -49,17 +49,17 @@ export const ThemePreview = styled.div`
     .text {
       grid-area: inf;
       width: 500px;
-      height: 175px;
+      height: calc(6.1vw + 57.1px);
       font-family: "Actay", sans-serif, bold;
       font-weight: 400;
-      font-size: 28px;
+      font-size: calc(0.45vw + 19.4px);
       color: rgba(255, 255, 255, 0.92);
       position: relative;
       top: -10px;
     }
     .enter {
       grid-area: enter;
-      width: 700px;
+      width: calc(22.3vw + 271.4px);
       display: flex;
       flex-direction: row;
       gap: 40px;
@@ -68,7 +68,7 @@ export const ThemePreview = styled.div`
     h2 {
       //TODO: :жирный шрифт
       font-family: "Actay";
-      font-size: 116px;
+      font-size: calc(5.8vw + 4.5px);
       font-weight: 1000;
       color: #ffffff;
       margin: 0;
@@ -80,7 +80,7 @@ export const ThemePreview = styled.div`
       //TODO: :жирный шрифт
 
       font-family: "Actay";
-      font-size: 195px;
+      font-size: calc(10.4vw - 4.3px);
       font-weight: 700;
       background: linear-gradient(73deg, #dd0eff 0%, #3c64f1 89.97%);
       background-clip: text;

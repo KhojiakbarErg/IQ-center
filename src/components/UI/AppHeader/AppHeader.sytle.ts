@@ -4,22 +4,24 @@ export const ThemeAppHeader = styled.div`
   margin: 0;
   padding: 0;
   #logo {
-    width: 78px;
-    height: 76px;
+    width: calc(3.1vw + 18px);
+    height: calc(3.1vw + 16px);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
   #option {
     font-family: "Actay";
-    font-size: 30px;
-    line-height: 30px;
-    padding: 0 32.5px;
+    font-size: calc(1.1vw + 8.6px);
+    padding: 0 calc(0.8vw + 11.5px);
     color: #ffffff;
     text-decoration: none;
+
+    &:hover {
+      color: #c521ff;
+    }
   }
   .call {
     font-family: "Actay";
-    font-size: 30px;
-    line-height: 30px;
+    font-size: calc(1.1vw + 8.6px);
     color: #ffffff;
     position: relative;
     top: -5px;
@@ -29,8 +31,8 @@ export const ThemeAppHeader = styled.div`
       color: lightgray;
     }
     img {
-      width: 33px;
-      height: 33px;
+      width: calc(0.9vw + 15.8px);
+      height: calc(0.9vw + 15.8px);
       position: relative;
       top: 9px;
       right: 10px;
@@ -43,7 +45,8 @@ export const ThemeAppHeader = styled.div`
   }
   display: flex;
   flex-direction: row;
-  padding: 15px 110px;
+  padding: 30px calc(5.6vw + 2.9px);
+  padding-bottom: 15px;
 
   justify-content: space-between;
   align-items: center;
