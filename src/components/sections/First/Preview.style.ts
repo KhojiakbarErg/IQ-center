@@ -69,7 +69,6 @@ export const ThemePreview = styled.div`
       //TODO: :жирный шрифт
       font-family: "Actay";
       font-size: calc(5.8vw + 4.5px);
-      font-weight: 1000;
       color: #ffffff;
       margin: 0;
       padding: 0;

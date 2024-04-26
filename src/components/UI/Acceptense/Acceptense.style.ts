@@ -8,14 +8,14 @@ export const ThemeAcceptense = styled.div`
   margin-right: 40px;
 
   img {
-    width: 200px;
-    height: 200px;
+    width: calc(7.4vw + 58px);
+    height: calc(7.4vw + 58px);
     position: absolute;
   }
 
   .shape1 {
-    width: 430px;
-    height: 430px;
+    width: calc(20.2vw + 42px);
+    height: calc(20.2vw + 42px);
     position: absolute;
     animation: 20s linear infinite rotate;
     @keyframes rotate {
@@ -30,8 +30,8 @@ export const ThemeAcceptense = styled.div`
   }
 
   .shape2 {
-    width: 330px;
-    height: 330px;
+    width: calc(15vw + 41px);
+    height: calc(15vw + 41px);
     opacity: 0.6;
     position: absolute;
     animation: 20s linear infinite rotatesec;

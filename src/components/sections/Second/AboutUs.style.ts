@@ -1,15 +1,20 @@
 import styled from "styled-components";
 
 export const ThemeAboutUs = styled.div`
-  padding: 200px 296px;
+  padding: calc(16.7vw - 121px) calc(22.9vw - 144px);
   background-image: url("banner.png");
   background-repeat: no-repeat;
   background-size: 1700px;
-  height: 679px;
+  height: calc(21.3vw + 270px);
   background-position: center;
   border-radius: 40px;
   margin-bottom: 75px;
   position: absolute;
+
+  @media (max-width: 1850px) {
+    background-size: 100%;
+    border-radius: none;
+  }
 
   h1 {
     font-family: "Actay";
@@ -17,20 +22,20 @@ export const ThemeAboutUs = styled.div`
     font-size: 96px;
     color: #fff;
   }
+
   p {
     font-family: "Actay";
-    font-size: 30px;
+    font-size: calc(1.1vw + 9px);
     color: rgba(255, 255, 255, 0.9);
-    width: 903px;
-    height: 333px;
+    width: calc(35.5vw + 222px);
+    height: calc(0.15vw + 48px);
   }
-  .enter {
+
+  .register {
     display: flex;
     flex-direction: column-reverse;
-    position: relative;
-    top: -40px;
-    right: -20px;
   }
+
   .AboutUsInf {
     display: flex;
     gap: 120px;

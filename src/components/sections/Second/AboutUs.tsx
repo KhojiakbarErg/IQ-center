@@ -18,8 +18,8 @@ export const AboutUs = () => {
               творческого подхода к решению задач.
             </p>
           </div>
-          <div className="enter">
-            <AppButtonTwo value="Записаться" className="enter" />
+          <div className="register">
+            <AppButtonTwo value="Записаться" />
           </div>
         </div>
       </ThemeAboutUs>
