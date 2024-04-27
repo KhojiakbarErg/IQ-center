@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const ThemeLocation = styled.div`
-  padding: calc(10vw + 22px) calc(16.2vw - 136px);
+  padding: 0 calc(16.2vw - 136px);
+  padding-bottom: calc(10vw + 22px);
 
   .mainlocation {
     display: flex;
@@ -81,7 +82,7 @@ export const ThemeLocation = styled.div`
     display: flex;
     gap: 30px;
 
-    padding-top: 60px;
+    padding-top: 20px;
   }
 
   #map {

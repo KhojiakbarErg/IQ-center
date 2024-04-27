@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const ThemeTeacherCard = styled.div`
-  width: calc(10.35vw + 246px);
-  height: calc(76.25vh + 8.5px);
+  width: 440px;
+  height: 660px;
   background: rgb(0, 0, 12);
   border-radius: 35px;
   z-index: 1;
   color: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   scroll-snap-align: start;
 
@@ -53,19 +54,34 @@ export const ThemeTeacherCard = styled.div`
     width: calc(7.44vw + 187px);
     height: calc(5vw + 125px);
   }
+
+  @media (max-height: 720px) {
+    width: calc(10.35vw + 226px);
+    height: calc(82.25vh + 8.5px);
+  }
 `;
 
 export const ThemeBoxTeachers = styled.div`
   position: relative;
-  width: calc(10.35vw + 246px);
-  height: calc(76.25vh + 8.5px);
+  width: 440px;
+  height: 660px;
   padding: 50px 40px 0 10px;
 
   #border {
-    width: calc(10.35vw + 248px);
-    height: calc(78.25vh + 10.5px);
+    width: 440px;
+    height: 660px;
     position: absolute;
     top: 0;
     z-index: 0;
+  }
+
+  @media (max-height: 720px) {
+    width: calc(10.35vw + 226px);
+    height: calc(82.25vh + 8.5px);
+
+    #border {
+      width: calc(10.35vw + 228px);
+      height: calc(82.25vh + 10.5px);
+    }
   }
 `;

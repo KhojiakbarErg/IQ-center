@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ThemeSpecialQualities = styled.div`
   padding: 0 calc(2vw + 51px);
-  margin-bottom: calc(14vw + 57px);
+  margin-bottom: calc(10vw + 57px);
   position: relative;
 
   h1 {

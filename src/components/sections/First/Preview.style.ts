@@ -67,7 +67,7 @@ export const ThemePreview = styled.div`
     h2 {
       //TODO: :жирный шрифт
       font-family: "Actay";
-      font-size: calc(6.8vw + 4.5px);
+      font-size: calc(7vw + 4.5px);
       color: #ffffff;
       margin: 0;
       padding: 0;
@@ -143,8 +143,8 @@ export const ThemePreview = styled.div`
       padding: 0;
       margin: 0;
       position: absolute;
-      width: 506.16px;
-      height: 506.16px;
+      width: calc(15.5vw + 208px);
+      height: calc(52.1vh + 51px);
       top: -70px;
       right: 0;
       z-index: 2;
@@ -153,10 +153,10 @@ export const ThemePreview = styled.div`
   .SecondGradient {
     .Gradient2 {
       position: absolute;
-      width: 448.74px;
-      height: 448.74px;
+      width: calc(15.5vw + 208px);
+      height: calc(52.1vh + 51px);
       left: -90px;
-      top: 680.49px;
+      top: calc(90.7vh - 53px);
       transform: rotate(-15.43deg);
     }
   }

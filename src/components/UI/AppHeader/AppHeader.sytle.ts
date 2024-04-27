@@ -46,7 +46,7 @@ export const ThemeAppHeader = styled.div`
   }
   display: flex;
   flex-direction: row;
-  padding: 30px calc(5.6vw + 2.9px);
+  padding: 15px calc(5.6vw + 2.9px);
   padding-bottom: 15px;
 
   justify-content: space-between;

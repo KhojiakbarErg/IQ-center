@@ -8,6 +8,8 @@ export const ThemeComments = styled.div`
     margin-top: 0;
   }
 
+  margin-bottom: calc(5vw + 22px);
+
   padding: 0 calc(14.5vw - 79px);
 
   .container {

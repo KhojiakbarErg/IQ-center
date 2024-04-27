@@ -8,7 +8,6 @@ export const ThemeWayChoose = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-family: "Actay";
   }
 
   h1 {
@@ -37,7 +36,8 @@ export const ThemeWayChoose = styled.div`
       rgb(61, 100, 241) 100%
     );
     opacity: 0.6;
-    margin: calc(2.8vw + 32px) 0;
+    margin: calc(2.8vw + 22px) 0;
+    margin-top: 0;
   }
 
   .FirstWay {

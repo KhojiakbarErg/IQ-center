@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const ThemeOurTeacher = styled.div`
-  padding: calc(5.6vw + 93px) calc(14.5vw - 79px);
+  padding: 0 calc(14.5vw - 79px);
+  padding-bottom: calc(5.6vw + 93px);
   position: relative;
 
   #scrollplace {
