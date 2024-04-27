@@ -43,7 +43,7 @@ export const ThemePreview = styled.div`
       display: flex;
       flex-direction: row-reverse;
       position: relative;
-      margin-right: 220px;
+      margin-right: 13rem;
       top: calc(2.2vw - 18px);
     }
     .text {
