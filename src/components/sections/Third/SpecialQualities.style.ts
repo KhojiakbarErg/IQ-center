@@ -1,20 +1,22 @@
 import styled from "styled-components";
 
 export const ThemeSpecialQualities = styled.div`
-  padding: 0 110px;
-  margin-bottom: 325px;
+  padding: 0 calc(2vw + 51px);
+  margin-bottom: calc(14vw + 57px);
   position: relative;
 
   h1 {
     color: rgb(255, 255, 255);
     font-family: "Actay";
-    font-size: 102px;
+    font-size: calc(3.6vw + 27px);
     letter-spacing: 1px;
     display: block;
   }
   #box {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: calc(-3vw + 109px);
   }
 
   .Gradient4 {

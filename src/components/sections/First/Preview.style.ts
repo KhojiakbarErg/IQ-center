@@ -3,7 +3,8 @@ import styled from "styled-components";
 //TODO:сделать жирный Actay куда надо
 export const ThemePreview = styled.div`
   .preview {
-    padding: 0 calc(22.9vw - 169.3px);
+    padding: 0 calc(22.9vw - 199.3px);
+    padding-right: 0;
     display: grid;
     grid-template-areas:
       "preview"
@@ -22,7 +23,6 @@ export const ThemePreview = styled.div`
         "inovation"
         "way"
         "way";
-      width: 1130px;
     }
 
     .informa {
@@ -43,15 +43,14 @@ export const ThemePreview = styled.div`
       display: flex;
       flex-direction: row-reverse;
       position: relative;
-      left: -7px;
-      top: 5px;
+      margin-right: 220px;
+      top: calc(2.2vw - 18px);
     }
     .text {
       grid-area: inf;
       width: 500px;
       height: calc(6.1vw + 57.1px);
       font-family: "Actay", sans-serif, bold;
-      font-weight: 400;
       font-size: calc(0.45vw + 19.4px);
       color: rgba(255, 255, 255, 0.92);
       position: relative;
@@ -68,7 +67,7 @@ export const ThemePreview = styled.div`
     h2 {
       //TODO: :жирный шрифт
       font-family: "Actay";
-      font-size: calc(5.8vw + 4.5px);
+      font-size: calc(6.8vw + 4.5px);
       color: #ffffff;
       margin: 0;
       padding: 0;
@@ -79,7 +78,7 @@ export const ThemePreview = styled.div`
       //TODO: :жирный шрифт
 
       font-family: "Actay";
-      font-size: calc(10.4vw - 4.3px);
+      font-size: calc(11vw - 4px);
       font-weight: 700;
       background: linear-gradient(73deg, #dd0eff 0%, #3c64f1 89.97%);
       background-clip: text;
@@ -88,7 +87,8 @@ export const ThemePreview = styled.div`
       text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
       margin: 0;
       padding: 0;
-      height: 202px;
+      height: calc(8vw + 48px);
+      width: calc(59.9vw + 307px);
     }
   }
 
@@ -98,7 +98,7 @@ export const ThemePreview = styled.div`
     justify-content: flex-end;
     flex-wrap: wrap;
 
-    padding-right: 270px;
+    padding-right: calc(23.3vw - 99px);
 
     .rate {
       //TODO: :жирный шрифт

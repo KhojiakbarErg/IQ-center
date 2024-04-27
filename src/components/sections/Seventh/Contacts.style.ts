@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ThemeLocation = styled.div`
-  padding: 220px 210px;
+  padding: calc(10vw + 22px) calc(16.2vw - 136px);
 
   .mainlocation {
     display: flex;
@@ -12,7 +12,7 @@ export const ThemeLocation = styled.div`
 
   h1 {
     font-family: "Actay";
-    font-size: 96px;
+    font-size: calc(3.6vw + 17px);
     b {
       background: linear-gradient(73deg, #dd0eff 0%, #3c64f1 89.97%);
       background-clip: text;
@@ -32,6 +32,7 @@ export const ThemeLocation = styled.div`
     margin: 0;
     color: #fff;
     margin-bottom: 50px;
+    width: 680px;
 
     a:-webkit-any-link {
       color: #fff;
@@ -39,18 +40,18 @@ export const ThemeLocation = styled.div`
 
     a {
       font-family: "Actay";
-      font-size: 36px;
+      font-size: calc(0.45vw + 27px);
     }
 
     p {
       font-family: "Actay";
-      font-size: 36px;
+      font-size: calc(0.45vw + 27px);
       margin: 0;
     }
 
     h5 {
       font-family: "Actay";
-      font-size: 36px;
+      font-size: calc(0.45vw + 27px);
       margin: 0;
     }
 
@@ -59,7 +60,6 @@ export const ThemeLocation = styled.div`
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      width: 320px;
     }
 
     #location {
@@ -67,7 +67,6 @@ export const ThemeLocation = styled.div`
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      width: 130px;
     }
 
     #place {
@@ -75,7 +74,6 @@ export const ThemeLocation = styled.div`
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      width: 200px;
     }
   }
 
@@ -88,5 +86,36 @@ export const ThemeLocation = styled.div`
 
   #map {
     border-radius: 25px;
+    width: calc(38.2vw - 73px);
+    height: calc(27.3vw - 55px);
+  }
+
+  @media (max-width: 1200px) {
+    padding: calc(10vw + 22px) calc(16.2vw - 76px);
+
+    .mainlocation {
+      flex-direction: column;
+    }
+
+    #mapmain {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    #map {
+      width: 700px;
+      height: 470px;
+    }
+
+    #socialmedias {
+      display: flex;
+      position: absolute;
+      bottom: -100px;
+    }
+
+    .extrainf {
+      width: 750px;
+    }
   }
 `;

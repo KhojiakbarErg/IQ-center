@@ -19,7 +19,9 @@ export const WayChoose = () => {
           duration="9 месяцев"
           className="FirstWay"
         />
-        <div id="br"></div>
+        <div id="brmain">
+          <div id="br"></div>
+        </div>
 
         <InfToChooseSec
           name="Индивидуальные занятия"
@@ -30,7 +32,9 @@ export const WayChoose = () => {
           duration="6 месяцев"
           className="SecondWay"
         />
-        <div id="br"></div>
+        <div id="brmain">
+          <div id="br"></div>
+        </div>
 
         <InfToChoose
           name="IQ Kids"

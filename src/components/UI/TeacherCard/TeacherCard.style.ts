@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ThemeTeacherCard = styled.div`
-  width: 445px;
-  height: 667px;
+  width: calc(10.35vw + 246px);
+  height: calc(76.25vh + 8.5px);
   background: rgb(0, 0, 12);
   border-radius: 35px;
   z-index: 1;
@@ -14,20 +14,20 @@ export const ThemeTeacherCard = styled.div`
 
   b {
     font-family: monospace, sans-serif;
-    font-size: 30px;
+    font-size: calc(0.5vw + 16px);
     font-weight: 1000;
   }
 
   h3 {
     font-family: "Actay";
-    font-size: 48px;
+    font-size: calc(1.33vw + 22px);
     margin: 0;
-    margin: 60px 0 5px 0px;
+    margin: calc(2.6vw + 10px) 0 5px 0px;
   }
 
   p {
     margin: 0;
-    font-size: 24px;
+    font-size: calc(0.5vw + 14px);
     font-family: "Actay";
   }
 
@@ -41,33 +41,29 @@ export const ThemeTeacherCard = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    margin-bottom: 25px;
+    margin-bottom: calc(0.77vw + 10px);
   }
 
   .informationteach {
-    width: 381px;
+    width: calc(6.5vw + 255px);
     text-align: center;
   }
 
   #TeacherPlace {
-    width: 329px;
-    height: 222px;
-  }
-
-  #Teacher {
-    width: 200px;
+    width: calc(7.44vw + 187px);
+    height: calc(5vw + 125px);
   }
 `;
 
 export const ThemeBoxTeachers = styled.div`
   position: relative;
-  width: 445px;
-  height: 667px;
-  padding: 100px 40px 0 10px;
+  width: calc(10.35vw + 246px);
+  height: calc(76.25vh + 8.5px);
+  padding: 50px 40px 0 10px;
 
   #border {
-    width: 447px;
-    height: 669px;
+    width: calc(10.35vw + 248px);
+    height: calc(78.25vh + 10.5px);
     position: absolute;
     top: 0;
     z-index: 0;

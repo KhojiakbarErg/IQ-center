@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const ThemeComments = styled.div`
   h1 {
     font-family: "Actay";
-    font-size: 96px;
-    margin-bottom: 120px;
+    font-size: calc(3.6vw + 27px);
+    margin-bottom: calc(8.4vw - 8px);
     margin-top: 0;
   }
 
-  padding: 0 200px;
+  padding: 0 calc(14.5vw - 79px);
 
   .container {
     display: flex;

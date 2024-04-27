@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ThemeWayChoose = styled.div`
-  padding: 0 220px;
+  padding: 0 calc(16.7vw - 101px);
 
   b {
     background: linear-gradient(73.64deg, rgb(221, 14, 255), rgb(60, 100, 241));
@@ -13,55 +13,67 @@ export const ThemeWayChoose = styled.div`
 
   h1 {
     font-family: "Actay";
-    font-size: 96px;
+    font-size: calc(3.6vw + 27px);
     font-weight: 700;
-    line-height: 121px;
     letter-spacing: 2px;
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: calc(3.3vw + 36px);
+  }
+
+  #brmain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   #br {
-    width: 1480px;
-    height: 5px;
+    width: calc(103vw - 308px);
+    height: 4px;
     border-radius: 4px;
+
     background: linear-gradient(
       90deg,
       rgb(197, 33, 255),
       rgb(61, 100, 241) 100%
     );
     opacity: 0.6;
-    margin: 40px 0;
+    margin: calc(2.8vw + 32px) 0;
   }
 
   .FirstWay {
     #imgbox {
-      width: 500px;
+      width: calc(35.7vw - 84.7px);
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      img {
+        height: calc(21.8vw + 72px);
+      }
     }
   }
 
   .SecondWay {
     #imgbox {
-      width: 550px;
+      width: calc(35.7vw - 84.7px);
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       img {
-        width: 380px;
-        height: 380px;
+        width: calc(17.3vw + 48px);
+        height: calc(17.3vw + 48px);
       }
     }
   }
 
   .ThirdWay {
     #imgbox {
-      width: 500px;
+      width: calc(35.7vw - 84.7px);
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      img {
+        height: calc(21.8vw + 72px);
+      }
     }
   }
 `;

@@ -14,6 +14,7 @@ export const ThemeAppHeader = styled.div`
     padding: 0 calc(0.8vw + 11.5px);
     color: #ffffff;
     text-decoration: none;
+    transition: 550ms;
 
     &:hover {
       color: #c521ff;
