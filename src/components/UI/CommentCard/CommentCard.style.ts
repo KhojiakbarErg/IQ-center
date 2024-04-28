@@ -42,4 +42,35 @@ export const ThemeCommentCard = styled.div`
   img {
     position: absolute;
   }
+
+  @media (max-width: 955px) {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    padding: 20px;
+
+    h4 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: calc(1.38vw + 9.8px);
+      width: calc(56.24vw + 84px);
+    }
+
+    #FirstImgComm {
+      width: calc(14.79vw + 35px);
+      height: calc(14.79vw + 35px);
+    }
+
+    .containerimg {
+      width: calc(14.79vw + 37px);
+      height: calc(14.79vw + 35px);
+    }
+
+    #borderComm {
+      width: calc(14.79vw + 37px);
+      height: calc(14.79vw + 35px);
+    }
+  }
 `;

@@ -56,8 +56,27 @@ export const ThemeTeacherCard = styled.div`
   }
 
   @media (max-height: 720px) {
-    width: calc(10.35vw + 226px);
-    height: calc(72.25vh + 8.5px);
+    width: 285px;
+    height: 429px;
+
+    #TeacherPlace {
+      width: 215px;
+      height: 144px;
+    }
+
+    .informationteach {
+      width: 280px;
+      height: 60px;
+      font-size: 16px;
+    }
+
+    .subject {
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
   }
 `;
 
@@ -82,6 +101,17 @@ export const ThemeBoxTeachers = styled.div`
     #border {
       width: calc(10.35vw + 228px);
       height: calc(85.25vh + 30.5px);
+    }
+  }
+
+  @media (max-width: 975px) {
+    padding: 0 36px;
+    width: 285px;
+    height: 459px;
+
+    #border {
+      width: 287px;
+      height: 431px;
     }
   }
 `;

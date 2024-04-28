@@ -83,4 +83,7 @@ export const ThemeAppButtonTwo = styled.button`
     background-color: rgba(256, 256, 256, 0.85);
     color: #000;
   }
+  @media (max-width: 955px) {
+    width: 80%;
+  }
 `;

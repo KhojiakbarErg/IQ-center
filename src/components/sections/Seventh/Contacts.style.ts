@@ -119,4 +119,36 @@ export const ThemeLocation = styled.div`
       width: 750px;
     }
   }
+
+  @media (max-width: 955px) {
+    padding: 30px;
+    padding-bottom: 140px;
+    h1 {
+      font-size: calc(4.93vw + 14px);
+    }
+    .extrainf {
+      a {
+        font-size: calc(2.6vw + 5px);
+      }
+
+      p {
+        font-size: calc(2.6vw + 5px);
+      }
+
+      h5 {
+        font-size: calc(2.6vw + 5px);
+      }
+    }
+
+    #map {
+      width: calc(47.45vw + 140px);
+      height: calc(33.12vw + 99px);
+    }
+  }
+
+  @media (max-width: 780px) {
+    .extrainf {
+      width: calc(63.17vw + 63px);
+    }
+  }
 `;

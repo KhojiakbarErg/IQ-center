@@ -38,4 +38,28 @@ export const ThemeQualityCard = styled.div`
     font-family: "Actay";
     font-size: 16px;
   }
+
+  @media (max-width: 555px) {
+    width: 224px;
+    height: 224px;
+    padding: 20px 15px;
+
+    .line {
+      width: 254px;
+      height: 10px;
+    }
+
+    img {
+      width: 41px;
+      height: 41px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
 `;

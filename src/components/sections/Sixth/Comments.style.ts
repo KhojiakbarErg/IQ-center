@@ -34,4 +34,15 @@ export const ThemeComments = styled.div`
     );
     border-radius: 10px;
   }
+
+  @media (max-width: 955px) {
+    h1 {
+      font-size: calc(6.47vw - 1px);
+    }
+    padding: 20px;
+
+    .container {
+      gap: 50px;
+    }
+  }
 `;

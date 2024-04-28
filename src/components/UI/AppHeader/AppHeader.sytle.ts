@@ -76,17 +76,17 @@ export const ThemeAppHeader = styled.div`
 
     #options {
       display: none;
-      position: absolute;
+      width: 0;
     }
 
     #option {
       display: none;
-      position: absolute;
+      width: 0;
     }
 
     .call {
       display: none;
-      position: absolute;
+      width: 0;
     }
 
     #navigation {
@@ -107,5 +107,10 @@ export const ThemeAppHeader = styled.div`
       grid-column-start: 10;
       grid-row-start: 5;
     }
+  }
+
+  @media (max-width: 755px) {
+    display: flex;
+    justify-content: space-between;
   }
 `;

@@ -45,4 +45,25 @@ export const ThemeInfToChoose = styled.div`
     font-weight: 700;
     margin: 0;
   }
+
+  @media (max-width: 955px) {
+    position: relative;
+
+    h2 {
+      font-size: calc(5.39vw - 0.25px);
+      width: calc(74.73vw - 3.25px);
+    }
+    ul {
+      li {
+        font-size: calc(2.46vw + 6px);
+        margin: calc(3.85vw + 1px) 0;
+        width: calc(50vw + 87px);
+        img {
+          width: calc(2.9vw + 4px);
+          height: auto;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 `;

@@ -13,6 +13,7 @@ export const ThemeOurTeacher = styled.div`
 
   #Gradient5 {
     position: absolute;
+    width: calc(43.76vw + 38px);
     top: 770px;
     left: 0;
     z-index: 0;
@@ -35,5 +36,13 @@ export const ThemeOurTeacher = styled.div`
       rgb(87, 94, 242) 81.348%
     );
     border-radius: 10px;
+  }
+
+  @media (max-width: 955px) {
+    padding: 30px;
+    margin-bottom: 100px;
+    h1 {
+      font-size: calc(6.47vw - 1px);
+    }
   }
 `;

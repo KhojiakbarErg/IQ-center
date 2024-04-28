@@ -21,7 +21,6 @@ export const ThemeAboutUs = styled.div`
     font-weight: 700;
     font-size: calc(3.6vw + 27px);
     color: #fff;
-    margin: 0;
   }
 
   p {
@@ -49,8 +48,50 @@ export const ThemeAboutUs = styled.div`
   z-index: 1;
 
   @media (max-width: 955px) {
+    display: flex;
+    height: 390px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url("bluraboutus.png");
+    padding: calc(16.7vw - 121px) 25px;
+    padding-right: 25px;
+    border-radius: 0px;
+    margin-bottom: 100px;
+
+    .register {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .AboutUsInf {
+      flex-direction: column;
+      width: 100%;
+
+      gap: 0;
+    }
+
     h1 {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-size: calc(6.97vw - 1px);
+    }
+    p {
       margin: 0;
+      font-size: 0;
+      font-size: calc(1.23vw + 6px);
+    }
+  }
+
+  @media (max-width: 555px) {
+    height: 320px;
+  }
+
+  @media (max-width: 400px) {
+    p {
+      width: 300px;
     }
   }
 `;
@@ -73,10 +114,5 @@ export const ThemeContainer2 = styled.div`
   @media (max-width: 1850px) {
     background-size: 100%;
     border-radius: none;
-  }
-  @media (max-width: 955px) {
-    h1 {
-      margin: 0;
-    }
   }
 `;

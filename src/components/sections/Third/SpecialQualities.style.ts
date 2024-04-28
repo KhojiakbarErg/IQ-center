@@ -24,4 +24,16 @@ export const ThemeSpecialQualities = styled.div`
     right: 0;
     top: 210px;
   }
+
+  @media (max-width: 955px) {
+    padding: 30px;
+    #box {
+      gap: 30px;
+    }
+    h1 {
+      font-size: calc(6.47vw - 3px);
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
 `;

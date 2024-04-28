@@ -66,6 +66,7 @@ export const ThemeWayChoose = styled.div`
   }
 
   .ThirdWay {
+    margin-bottom: 100px;
     #imgbox {
       width: calc(35.7vw - 84.7px);
       display: flex;
@@ -73,6 +74,64 @@ export const ThemeWayChoose = styled.div`
       flex-wrap: wrap;
       img {
         height: calc(21.8vw + 72px);
+      }
+    }
+  }
+
+  @media (max-width: 955px) {
+    position: relative;
+    padding: 30px;
+
+    #br {
+      margin-top: 65px;
+      width: calc(64.85vw + 13px);
+    }
+
+    #imgbox {
+      width: 0;
+      height: 0;
+      display: none;
+
+      img {
+        position: relative;
+        left: -5vw;
+        width: calc(25.42vw + 19px);
+        height: 200px;
+      }
+      h4 {
+        position: absolute;
+        width: 100%;
+        bottom: -30px;
+        left: 10px;
+        font-size: calc(3vw + 8.4px);
+      }
+    }
+
+    .FirstWay {
+      #imgbox {
+        img {
+          height: calc(21.8vw + 32px);
+        }
+      }
+    }
+
+    .ThirdWay {
+      #imgbox {
+        img {
+          height: calc(21.8vw + 32px);
+        }
+      }
+    }
+
+    h1 {
+      font-size: calc(6.47vw - 1px);
+    }
+  }
+
+  @media (max-width: 720px) {
+    #imgbox {
+      img {
+        left: -13vw;
       }
     }
   }
