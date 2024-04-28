@@ -89,7 +89,8 @@ export const ThemeWayChoose = styled.div`
 
     #imgbox {
       width: 0;
-      height: 0;
+      padding: 0;
+      margin: 0;
       display: none;
 
       img {
@@ -109,14 +110,33 @@ export const ThemeWayChoose = styled.div`
 
     .FirstWay {
       #imgbox {
+        width: 0;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+
         img {
           height: calc(21.8vw + 32px);
         }
       }
     }
 
+    .SecondWay {
+      #imgbox {
+        width: 0;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+      }
+    }
+
     .ThirdWay {
       #imgbox {
+        width: 0;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+
         img {
           height: calc(21.8vw + 32px);
         }
@@ -130,6 +150,10 @@ export const ThemeWayChoose = styled.div`
 
   @media (max-width: 720px) {
     #imgbox {
+      width: 0;
+      padding: 0;
+      margin: 0;
+      position: absolute;
       img {
         left: -13vw;
       }
