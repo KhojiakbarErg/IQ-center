@@ -56,6 +56,11 @@ export const ThemeTeacherCard = styled.div`
   }
 
   @media (max-height: 720px) {
+    width: calc(10.35vw + 226px);
+    height: calc(85.25vh + 28.5px);
+  }
+
+  @media (max-width: 955px) {
     width: 285px;
     height: 429px;
 
@@ -105,7 +110,7 @@ export const ThemeBoxTeachers = styled.div`
   }
 
   @media (max-width: 975px) {
-    padding: 0 36px;
+    padding: 0 35px;
     width: 285px;
     height: 459px;
 

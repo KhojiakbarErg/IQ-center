@@ -110,7 +110,12 @@ export const ThemeAppHeader = styled.div`
   }
 
   @media (max-width: 755px) {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 10px 0;
+    #logo {
+      margin: 0 72px;
+    }
   }
 `;

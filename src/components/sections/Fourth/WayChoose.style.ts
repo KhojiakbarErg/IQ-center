@@ -88,7 +88,6 @@ export const ThemeWayChoose = styled.div`
     }
 
     #imgbox {
-      width: 0;
       padding: 0;
       margin: 0;
       display: none;
@@ -110,10 +109,8 @@ export const ThemeWayChoose = styled.div`
 
     .FirstWay {
       #imgbox {
-        width: 0;
         padding: 0;
         margin: 0;
-        position: absolute;
 
         img {
           height: calc(21.8vw + 32px);
@@ -123,19 +120,15 @@ export const ThemeWayChoose = styled.div`
 
     .SecondWay {
       #imgbox {
-        width: 0;
         padding: 0;
         margin: 0;
-        position: absolute;
       }
     }
 
     .ThirdWay {
       #imgbox {
-        width: 0;
         padding: 0;
         margin: 0;
-        position: absolute;
 
         img {
           height: calc(21.8vw + 32px);

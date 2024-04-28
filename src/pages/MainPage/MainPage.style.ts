@@ -7,7 +7,11 @@ export const ThemeMainPage = styled.div`
   padding: calc(8.9vw + 38px) 0;
   padding-bottom: 0;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   position: relative;
   font-family: "Actay Wide";
+
+  @media (max-width: 750px) {
+    padding-top: 270px;
+  }
 `;
