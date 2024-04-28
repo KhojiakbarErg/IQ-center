@@ -57,7 +57,7 @@ export const ThemeTeacherCard = styled.div`
 
   @media (max-height: 720px) {
     width: calc(10.35vw + 226px);
-    height: calc(82.25vh + 8.5px);
+    height: calc(72.25vh + 8.5px);
   }
 `;
 
@@ -77,11 +77,11 @@ export const ThemeBoxTeachers = styled.div`
 
   @media (max-height: 720px) {
     width: calc(10.35vw + 226px);
-    height: calc(82.25vh + 28.5px);
+    height: calc(85.25vh + 28.5px);
 
     #border {
       width: calc(10.35vw + 228px);
-      height: calc(82.25vh + 30.5px);
+      height: calc(85.25vh + 30.5px);
     }
   }
 `;

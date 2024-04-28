@@ -18,12 +18,20 @@ export const ThemeAppButton = styled.button`
     rgb(87, 94, 242) 101.304%
   );
 
+  #registertext {
+    width: calc(2vw + 130px);
+  }
+
   border: 0;
   overflow: hidden;
   transition: 1s;
 
   &:hover {
     filter: hue-rotate(15deg);
+  }
+
+  @media (max-width: 955px) {
+    width: calc(6vw + 158px);
   }
 `;
 
@@ -47,6 +55,9 @@ export const ThemeMoreInfBtn = styled.button`
   &:hover {
     background-color: rgba(256, 256, 256, 0.85);
     color: #000;
+  }
+  @media (max-width: 955px) {
+    display: none;
   }
 `;
 

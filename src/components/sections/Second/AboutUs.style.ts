@@ -21,6 +21,7 @@ export const ThemeAboutUs = styled.div`
     font-weight: 700;
     font-size: calc(3.6vw + 27px);
     color: #fff;
+    margin: 0;
   }
 
   p {
@@ -28,13 +29,15 @@ export const ThemeAboutUs = styled.div`
     font-size: calc(1.1vw + 9px);
     color: rgba(255, 255, 255, 0.9);
     width: calc(35.5vw + 222px);
-    height: calc(0.15vw + 48px);
+    /* height: calc(0.15vw + 48px); */
   }
 
   .register {
     display: flex;
     flex-direction: column-reverse;
     margin-top: calc(11.2vw + 10px);
+    position: relative;
+    left: -10px;
     height: 100%;
   }
 
@@ -44,6 +47,12 @@ export const ThemeAboutUs = styled.div`
     z-index: 1;
   }
   z-index: 1;
+
+  @media (max-width: 955px) {
+    h1 {
+      margin: 0;
+    }
+  }
 `;
 
 export const ThemeGradient3 = styled.img`
@@ -64,5 +73,10 @@ export const ThemeContainer2 = styled.div`
   @media (max-width: 1850px) {
     background-size: 100%;
     border-radius: none;
+  }
+  @media (max-width: 955px) {
+    h1 {
+      margin: 0;
+    }
   }
 `;

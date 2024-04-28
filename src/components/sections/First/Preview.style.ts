@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 //TODO:сделать жирный Actay куда надо
 export const ThemePreview = styled.div`
+  .labelImg {
+    display: none;
+  }
+
   .preview {
     padding: 0 calc(22.9vw - 199.3px);
     padding-right: 0;
@@ -98,10 +102,9 @@ export const ThemePreview = styled.div`
     justify-content: flex-end;
     flex-wrap: wrap;
 
-    padding-right: calc(23.3vw - 99px);
+    padding-right: calc(23.3vw - 89px);
 
     .rate {
-      //TODO: :жирный шрифт
       font-family: "Actay";
       font-weight: bold;
       font-size: 48px;
@@ -158,6 +161,55 @@ export const ThemePreview = styled.div`
       left: -90px;
       top: calc(90.7vh - 53px);
       transform: rotate(-15.43deg);
+    }
+  }
+
+  @media (max-width: 955px) {
+    .preview {
+      padding: calc(6.3vw + 3px);
+    }
+
+    h1,
+    h2 {
+      display: none;
+      width: 0;
+      font-size: 0;
+      position: absolute;
+      opacity: 0;
+    }
+
+    .labelImg {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows: 20% 60% 20%;
+      justify-content: end;
+    }
+
+    #study {
+      width: calc(16.2vw + 74px);
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+
+    #interactive {
+      width: calc(87vw - 1.5px);
+      grid-row-start: 2;
+      grid-column-start: 1;
+    }
+
+    #way {
+      width: calc(16.2vw + 74px);
+      grid-column-start: 1;
+
+      justify-self: end;
+
+      grid-row-start: 3;
+    }
+
+    .text {
+      margin-top: 0;
+      width: calc(42.83vw + 61px);
+      font-size: calc(1.7vw + 6px);
     }
   }
 `;

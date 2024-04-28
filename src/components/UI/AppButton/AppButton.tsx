@@ -16,6 +16,7 @@ export const AppButton = ({
 }: AppButtonProps) => {
   return (
     <ThemeAppButton className={className} {...props}>
+      <img src="registertext.png" alt="" id="registertext" />
       {value} {children}
     </ThemeAppButton>
   );

@@ -59,7 +59,11 @@ export const AppHeader = () => {
 
   return (
     <ThemeAppHeader>
+      <img src="infbtn.png" alt="nav" id="navigation" />
       <img src="logo.png" alt="logo" id="logo" className="logotype" />
+      <a href="tel:+998908052935" id="callbtn">
+        <img src="CallBtn.png" alt="Call" id="callbtn" />
+      </a>
       <div className="options">
         <a href="#aboutus" id="option">
           О нас

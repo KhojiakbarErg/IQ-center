@@ -8,8 +8,8 @@ export const ThemeAcceptense = styled.div`
   margin-right: 40px;
 
   img {
-    width: calc(7.4vw + 58px);
-    height: calc(7.4vw + 58px);
+    width: calc(7.4vw + 50px);
+    height: calc(7.4vw + 50px);
     position: absolute;
   }
 

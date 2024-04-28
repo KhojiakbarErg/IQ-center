@@ -8,6 +8,15 @@ export const ThemeAppHeader = styled.div`
     height: calc(3.1vw + 16px);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
+
+  #navigation {
+    display: none;
+  }
+
+  #callbtn {
+    display: none;
+  }
+
   #option {
     font-family: "Actay";
     font-size: calc(1.1vw + 8.6px);
@@ -46,8 +55,8 @@ export const ThemeAppHeader = styled.div`
   }
   display: flex;
   flex-direction: row;
-  padding: 15px calc(5.6vw + 2.9px);
-  padding-bottom: 15px;
+  padding: 0px calc(5.6vw + 2.9px);
+  height: 100px;
 
   justify-content: space-between;
   align-items: center;
@@ -58,4 +67,45 @@ export const ThemeAppHeader = styled.div`
   left: 0;
   background-color: rgba(0, 0, 12, 0.8);
   z-index: 100;
+
+  @media (max-width: 955px) {
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    align-items: center;
+
+    #options {
+      display: none;
+      position: absolute;
+    }
+
+    #option {
+      display: none;
+      position: absolute;
+    }
+
+    .call {
+      display: none;
+      position: absolute;
+    }
+
+    #navigation {
+      display: flex;
+      grid-column-start: 1;
+      grid-row-start: 5;
+    }
+
+    #callbtn {
+      display: flex;
+      grid-column-start: 20;
+      grid-row-start: 5;
+    }
+
+    #logo {
+      width: 55px;
+      height: 55px;
+      grid-column-start: 10;
+      grid-row-start: 5;
+    }
+  }
 `;
