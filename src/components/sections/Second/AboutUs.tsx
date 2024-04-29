@@ -19,9 +19,7 @@ export const AboutUs = () => {
             </p>
           </div>
           <div className="register">
-            <Link to="/welcome" className="register">
-              <AppButtonTwo value="Записаться"></AppButtonTwo>
-            </Link>
+            <AppButtonTwo value="Записаться" to="welcome"></AppButtonTwo>
           </div>
         </div>
       </ThemeAboutUs>

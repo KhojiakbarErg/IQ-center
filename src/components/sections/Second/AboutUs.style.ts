@@ -33,10 +33,10 @@ export const ThemeAboutUs = styled.div`
   .register {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: calc(5.2vw + 10px);
+    margin-top: calc(10.2vw + 10px);
     position: relative;
     left: -10px;
-    height: 90%;
+    height: 80%;
   }
 
   .AboutUsInf {
@@ -47,8 +47,6 @@ export const ThemeAboutUs = styled.div`
   z-index: 1;
 
   @media (max-width: 955px) {
-    margin-top: 300px;
-
     display: flex;
     height: 390px;
     flex-direction: column;
@@ -60,16 +58,22 @@ export const ThemeAboutUs = styled.div`
     margin-bottom: 100px;
 
     .register {
+      button {
+        position: absolute;
+        right: 25%;
+        left: 25%;
+      }
       display: flex;
       flex-direction: row;
       justify-content: center;
+      margin: 0;
       margin-top: 30px;
       width: 100%;
     }
 
     .AboutUsInf {
       flex-direction: column;
-      width: 100%;
+      width: 80%;
 
       gap: 0;
     }
@@ -84,6 +88,7 @@ export const ThemeAboutUs = styled.div`
       font-size: 0;
       font-size: calc(1.23vw + 6px);
     }
+    margin-top: 300px;
   }
 
   @media (max-width: 555px) {

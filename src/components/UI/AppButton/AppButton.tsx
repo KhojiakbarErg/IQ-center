@@ -50,7 +50,7 @@ export const MoreInfBtn = ({
 interface AppButtonTwoProps {
   value: string;
   className?: string;
-  to?: string;
+  to?: any;
   children?: React.ReactNode;
 }
 
@@ -62,8 +62,10 @@ export const AppButtonTwo = ({
   ...props
 }: AppButtonTwoProps) => {
   return (
-    <ThemeAppButtonTwo className={className} {...props}>
-      {value} {children}
-    </ThemeAppButtonTwo>
+    <Link to={to}>
+      <ThemeAppButtonTwo className={className} {...props}>
+        {value} {children}
+      </ThemeAppButtonTwo>
+    </Link>
   );
 };
