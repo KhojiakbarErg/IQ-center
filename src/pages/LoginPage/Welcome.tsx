@@ -15,11 +15,9 @@ export const WelcomePage = () => {
         </div>
         <div className="btnsgroup">
           <Link to="/">
-            <MoreInfBtn value="Назад" to="/login2"></MoreInfBtn>
+            <MoreInfBtn value="Назад"></MoreInfBtn>
           </Link>
-          <Link to="/login2">
-            <AppButton value="Дальше" to="/"></AppButton>
-          </Link>
+          <AppButton value="Дальше" to="/login2"></AppButton>
         </div>
       </form>
     </ThemeLogin>

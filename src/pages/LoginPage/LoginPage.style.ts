@@ -7,7 +7,6 @@ export const ThemeLogin = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -22,7 +21,7 @@ export const ThemeLogin = styled.div`
   .btnsgroup {
     display: flex;
     gap: 100px;
-    margin-top: 240px;
+    margin-top: 140px;
     justify-content: center;
   }
 
@@ -32,6 +31,7 @@ export const ThemeLogin = styled.div`
     text-align: center;
     font-family: "Actay";
     color: #fff;
+    margin: 0;
   }
 `;
 

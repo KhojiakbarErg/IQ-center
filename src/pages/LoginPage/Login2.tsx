@@ -17,9 +17,7 @@ export const Login2 = () => {
           <Link to="/welcome">
             <MoreInfBtn value="Назад"></MoreInfBtn>
           </Link>
-          <Link to="/congratulations">
-            <AppButton value="Дальше"></AppButton>
-          </Link>
+          <AppButton value="Дальше" to="/congratulations"></AppButton>
         </div>
       </form>
     </ThemeLogin>
