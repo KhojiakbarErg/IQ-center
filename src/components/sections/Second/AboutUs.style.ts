@@ -47,6 +47,8 @@ export const ThemeAboutUs = styled.div`
   z-index: 1;
 
   @media (max-width: 955px) {
+    margin-top: 300px;
+
     display: flex;
     height: 390px;
     flex-direction: column;

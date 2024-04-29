@@ -32,9 +32,6 @@ export const AppHeader = () => {
           onClick={() => {}}
         />
         <div id="list_menu">
-          <div id="backimg">
-            <img src="backmenu.svg" alt="backmenu" />
-          </div>
           <ul>
             <li>
               <a href="#aboutus">О нас</a>
