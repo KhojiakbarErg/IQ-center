@@ -87,33 +87,23 @@ export const ThemeWayChoose = styled.div`
       width: calc(64.85vw + 13px);
     }
 
-    #imgbox {
-      padding: 0;
-      margin: 0;
-      display: none;
-
-      img {
-        position: relative;
-        left: -5vw;
-        width: calc(25.42vw + 19px);
-        height: 200px;
-      }
-      h4 {
-        position: absolute;
-        width: 100%;
-        bottom: -30px;
-        left: 10px;
-        font-size: calc(3vw + 8.4px);
-      }
-    }
-
     .FirstWay {
       #imgbox {
         padding: 0;
         margin: 0;
-
+        width: 0;
         img {
+          position: relative;
+          left: -5vw;
+          width: calc(25.42vw + 19px);
           height: calc(21.8vw + 32px);
+        }
+        h4 {
+          position: absolute;
+          width: 100%;
+          bottom: -30px;
+          left: 10px;
+          font-size: calc(3vw + 8.4px);
         }
       }
     }
@@ -122,6 +112,20 @@ export const ThemeWayChoose = styled.div`
       #imgbox {
         padding: 0;
         margin: 0;
+        width: 0;
+        img {
+          position: relative;
+          left: -5vw;
+          width: calc(25.42vw + 19px);
+          height: calc(21.8vw + 32px);
+        }
+        h4 {
+          position: absolute;
+          width: 100%;
+          bottom: -30px;
+          left: 10px;
+          font-size: calc(3vw + 8.4px);
+        }
       }
     }
 
@@ -129,9 +133,20 @@ export const ThemeWayChoose = styled.div`
       #imgbox {
         padding: 0;
         margin: 0;
+        width: 0;
 
         img {
+          position: relative;
+          left: -5vw;
+          width: calc(25.42vw + 19px);
           height: calc(21.8vw + 32px);
+        }
+        h4 {
+          position: absolute;
+          width: 100%;
+          bottom: -30px;
+          left: 10px;
+          font-size: calc(3vw + 8.4px);
         }
       }
     }
@@ -146,7 +161,9 @@ export const ThemeWayChoose = styled.div`
       width: 0;
       padding: 0;
       margin: 0;
-      position: absolute;
+      margin-right: 100px;
+      position: initial;
+
       img {
         left: -13vw;
       }

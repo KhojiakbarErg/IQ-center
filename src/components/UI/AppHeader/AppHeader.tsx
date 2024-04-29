@@ -62,7 +62,7 @@ export const AppHeader = () => {
       <img src="infbtn.png" alt="nav" id="navigation" />
       <img src="logo.png" alt="logo" id="logo" className="logotype" />
       <a href="tel:+998908052935" id="callbtn">
-        <img src="CallBtn.png" alt="Call" id="callbtn" />
+        <img src="CallBtn.svg" alt="Call" />
       </a>
       <div className="options">
         <a href="#aboutus" id="option">

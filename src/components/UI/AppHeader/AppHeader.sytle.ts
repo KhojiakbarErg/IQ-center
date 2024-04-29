@@ -99,6 +99,10 @@ export const ThemeAppHeader = styled.div`
       display: flex;
       grid-column-start: 20;
       grid-row-start: 5;
+      width: 55px;
+      svg {
+        width: 100%;
+      }
     }
 
     #logo {
@@ -113,9 +117,9 @@ export const ThemeAppHeader = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 10px 1px;
     #logo {
-      margin: 0 72px;
+      margin: 0 26vw;
     }
   }
 `;

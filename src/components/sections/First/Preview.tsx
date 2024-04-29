@@ -27,7 +27,7 @@ export const Preview = () => {
             студента.
           </p>
           <div className="enter">
-            <AppButton value=""></AppButton>
+            <AppButton value="Записаться"></AppButton>
             <MoreInfBtn value="Подробнее" />
           </div>
         </div>
@@ -37,10 +37,10 @@ export const Preview = () => {
       </div>
       <div className="FirstGradient">
         <img src="Blackback.png" alt="" className="Blackback" />
-        <img src="Gradient1.png" alt="" className="Gradient1" />
+        <img src="Gradient1.svg" alt="" className="Gradient1" />
       </div>
       <div className="SecondGradient">
-        <img src="Gradient2.png" alt="" className="Gradient2" />
+        <img src="Gradient2.png" alt="Gradient" className="Gradient2" />
       </div>
     </ThemePreview>
   );

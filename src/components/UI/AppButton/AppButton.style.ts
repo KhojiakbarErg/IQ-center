@@ -5,7 +5,7 @@ export const ThemeAppButton = styled.button`
   height: calc(2.1vw + 48.3px);
   padding: 0;
   font-weight: 700;
-  font-size: calc(1.1vw + 11px);
+  font-size: calc(1.1vw + 14px);
   color: #000;
   font-family: "Actay";
   display: flex;

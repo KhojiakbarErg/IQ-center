@@ -103,7 +103,7 @@ export const ThemePreview = styled.div`
     justify-content: flex-end;
     flex-wrap: wrap;
 
-    padding-right: calc(23.3vw - 89px);
+    padding-right: calc(23.3vw - 59px);
 
     .rate {
       font-family: "Actay";
@@ -148,7 +148,7 @@ export const ThemePreview = styled.div`
       margin: 0;
       position: absolute;
       width: calc(15.5vw + 208px);
-      height: calc(52.1vh + 51px);
+      height: calc(52.1vw + 51px);
       top: -70px;
       right: 0;
       z-index: 1;
@@ -158,7 +158,7 @@ export const ThemePreview = styled.div`
     .Gradient2 {
       position: absolute;
       width: calc(15.5vw + 208px);
-      height: calc(52.1vh + 51px);
+      height: auto;
       left: -90px;
       top: calc(90.7vh - 53px);
       transform: rotate(-15.43deg);
@@ -167,6 +167,20 @@ export const ThemePreview = styled.div`
   }
 
   @media (max-width: 955px) {
+    margin-bottom: 150px;
+    .FirstGradient {
+      .Blackback,
+      .Gradient1 {
+        display: none;
+      }
+    }
+
+    .SecondGradient {
+      .Gradient2 {
+        display: none;
+      }
+    }
+
     .preview {
       padding: calc(6.3vw + 3px);
 
@@ -179,7 +193,7 @@ export const ThemePreview = styled.div`
     }
 
     .rating {
-      margin-right: 10vw;
+      padding-right: calc(23.3vw - 29px);
     }
 
     h1,
@@ -202,7 +216,7 @@ export const ThemePreview = styled.div`
     }
 
     #interactive {
-      width: calc(87vw - 1.5px);
+      width: calc(87vw - 2px);
     }
 
     #way {
@@ -210,19 +224,15 @@ export const ThemePreview = styled.div`
 
       justify-self: end;
     }
-
-    .text {
-      margin-top: 0;
-      font-size: 0;
-      width: calc(42.83vw + 51px);
-      font-size: calc(1.23vw + 7px);
-    }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 420px) {
+    .preview {
+      padding: 15px;
+    }
     #way {
       position: relative;
-      left: -30px;
+      left: -1.7rem;
     }
   }
 `;
