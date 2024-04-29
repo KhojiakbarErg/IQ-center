@@ -15,10 +15,10 @@ const App: React.FC = () => {
       path: "/main",
       element: <MainPage />,
     },
-    // {
-    //   path: "/login",
-    //   element: <LoginPage />,
-    // },
+    {
+      path: "/login",
+      element: <LoginPage />,
+    },
   ]);
 
   return (
