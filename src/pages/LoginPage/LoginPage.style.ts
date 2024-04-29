@@ -16,6 +16,7 @@ export const ThemeLogin = styled.div`
   .inputsgroup {
     display: flex;
     flex-direction: column;
+    z-index: 1;
   }
 
   .btnsgroup {
@@ -23,6 +24,7 @@ export const ThemeLogin = styled.div`
     gap: 100px;
     margin-top: 140px;
     justify-content: center;
+    z-index: 1;
   }
 
   h1 {
@@ -32,6 +34,35 @@ export const ThemeLogin = styled.div`
     font-family: "Actay";
     color: #fff;
     margin: 0;
+    z-index: 1;
+  }
+
+  @media (max-width: 1440px) {
+    h1 {
+      font-size: calc(4.14vw + 16px);
+      width: calc(36vw + 188px);
+      z-index: 1;
+    }
+
+    .btnsgroup {
+      margin-top: calc(4.53vw + 53px);
+      gap: calc(4.53vw + 13px);
+      z-index: 1;
+    }
+    padding: 50px;
+
+    button {
+      width: calc(12.3vw + 71px);
+      font-size: calc(1vw + 13px);
+      z-index: 1;
+    }
+  }
+  img {
+    width: calc(27.5vw + 147px);
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 0;
   }
 `;
 
@@ -56,6 +87,8 @@ export const ThemeHappy = styled.div`
     text-align: center;
     font-family: "Actay";
     margin: 0;
+    z-index: 1;
+
     b {
       background: linear-gradient(73deg, #dd0eff 0%, #3c64f1 89.97%);
       background-clip: text;
@@ -68,10 +101,39 @@ export const ThemeHappy = styled.div`
     font-size: 32px;
     width: 710px;
     font-family: "Actay";
+    z-index: 1;
   }
 
   button {
     width: 600px;
     margin: 50px 0;
+    display: flex;
+    z-index: 1;
+  }
+
+  @media (max-width: 1440px) {
+    h1 {
+      font-size: calc(4.14vw + 16px);
+      width: calc(36vw + 188px);
+      z-index: 1;
+    }
+
+    p {
+      font-size: calc(1vw + 12px);
+      width: calc(24.6vw + 238px);
+      z-index: 1;
+    }
+
+    button {
+      width: calc(21.5vw + 237px);
+      z-index: 1;
+    }
+  }
+  img {
+    width: calc(27.5vw + 147px);
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 0;
   }
 `;

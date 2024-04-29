@@ -166,6 +166,10 @@ export const ThemePreview = styled.div`
   }
 
   @media (max-width: 955px) {
+    a {
+      display: none;
+    }
+
     .FirstGradient {
       .Blackback,
       .Gradient1 {

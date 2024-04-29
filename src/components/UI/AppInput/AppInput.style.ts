@@ -27,6 +27,12 @@ export const ThemeAppInput = styled.input`
   &:is(:focus, :active) {
     border-color: #00000c;
   }
+
+  @media (max-width: 1440px) {
+    width: calc(29.77vw + 148px);
+    padding: calc(1vw + 3.35px) calc(1.61vw + 6px);
+    font-size: calc(1vw + 12px);
+  }
 `;
 // export const ThemeInputError = styled.span<StyledInput>`
 //   ${(props) => props.isError && `color: red`}

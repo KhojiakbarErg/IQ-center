@@ -20,6 +20,7 @@ export const WelcomePage = () => {
           <AppButton value="Дальше" to="/login2"></AppButton>
         </div>
       </form>
+      <img src="Gradient1.svg" alt="" />
     </ThemeLogin>
   );
 };

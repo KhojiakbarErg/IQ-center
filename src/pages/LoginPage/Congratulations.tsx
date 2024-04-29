@@ -22,6 +22,7 @@ export const Congratulation = () => {
           <MoreInfBtn value="Продолжить в боте"></MoreInfBtn>
         </Link>
       </div>
+      <img src="Gradient1.svg" alt="" />
     </ThemeHappy>
   );
 };
