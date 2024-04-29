@@ -14,10 +14,10 @@ export const WelcomePage = () => {
           <AppInput type="usersurname" inputPlaceholder="Фамилие" />
         </div>
         <div className="btnsgroup">
-          <Link to="/login2">
+          <Link to="/">
             <MoreInfBtn value="Назад" to="/login2"></MoreInfBtn>
           </Link>
-          <Link to="/">
+          <Link to="/login2">
             <AppButton value="Дальше" to="/"></AppButton>
           </Link>
         </div>

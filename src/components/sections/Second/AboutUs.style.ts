@@ -33,10 +33,10 @@ export const ThemeAboutUs = styled.div`
   .register {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: calc(11.2vw + 10px);
+    margin-top: calc(5.2vw + 10px);
     position: relative;
     left: -10px;
-    height: 100%;
+    height: 90%;
   }
 
   .AboutUsInf {

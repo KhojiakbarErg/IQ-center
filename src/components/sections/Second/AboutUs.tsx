@@ -1,6 +1,6 @@
-import React from "react";
 import { AppButton, AppButtonTwo } from "../../UI/AppButton/AppButton";
 import { ThemeAboutUs, ThemeContainer2, ThemeGradient3 } from "./AboutUs.style";
+import { Link } from "react-router-dom";
 
 export const AboutUs = () => {
   return (
@@ -19,7 +19,9 @@ export const AboutUs = () => {
             </p>
           </div>
           <div className="register">
-            <AppButtonTwo value="Записаться" />
+            <Link to="/welcome" className="register">
+              <AppButtonTwo value="Записаться"></AppButtonTwo>
+            </Link>
           </div>
         </div>
       </ThemeAboutUs>

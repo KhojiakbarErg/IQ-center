@@ -180,12 +180,14 @@ export const ThemeAppHeader = styled.div`
   }
 
   @media (max-width: 755px) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 10px 1px;
+    #callbtn {
+      grid-column-start: 19;
+    }
+
     #logo {
-      margin: 0 26vw;
+      grid-column-start: 11;
+
+      padding-left: 10px;
     }
   }
 `;

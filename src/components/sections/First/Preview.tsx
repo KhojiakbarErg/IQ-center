@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ThemePreview } from "./Preview.style";
 import { AppButton, MoreInfBtn } from "../../UI/AppButton/AppButton";
 import { Acceptense } from "../../UI/Acceptense/Acceptense";
+import { Link } from "react-router-dom";
 
 export const Preview = () => {
+  useEffect(() => {
+    const handleScrollIntoView = (id: string) => {
+      const element = document.querySelector(id);
+      if (element) {
+        (element as HTMLElement).scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    document.querySelectorAll(".WantInf a").forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const id = link.getAttribute("href");
+        if (id) {
+          handleScrollIntoView(id);
+        }
+      });
+    });
+  }, []);
   return (
     <ThemePreview>
       <div className="preview">
@@ -27,8 +46,12 @@ export const Preview = () => {
             студента.
           </p>
           <div className="enter">
-            <AppButton value="Записаться"></AppButton>
-            <MoreInfBtn value="Подробнее" />
+            <AppButton value="Записаться" to="welcome"></AppButton>
+            <div className="WantInf">
+              <a href="#aboutus">
+                <MoreInfBtn value="Подробнее" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

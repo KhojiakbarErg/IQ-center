@@ -1,11 +1,12 @@
 import React from "react";
 import { ThemeAppButton, ThemeAppButtonTwo } from "./AppButton.style";
 import { ThemeMoreInfBtn } from "./AppButton.style";
+import { Link } from "react-router-dom";
 
 interface AppButtonProps {
   value: string;
   className?: string;
-  to?: string;
+  to?: any;
   children?: React.ReactNode;
 }
 
@@ -17,9 +18,11 @@ export const AppButton = ({
   ...props
 }: AppButtonProps) => {
   return (
-    <ThemeAppButton className={className} {...props}>
-      {value} {children}
-    </ThemeAppButton>
+    <Link to={to}>
+      <ThemeAppButton className={className} {...props}>
+        {value} {children}
+      </ThemeAppButton>
+    </Link>
   );
 };
 

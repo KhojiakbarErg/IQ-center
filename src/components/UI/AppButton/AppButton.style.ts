@@ -12,6 +12,7 @@ export const ThemeAppButton = styled.button`
   justify-content: center;
   align-items: center;
   border-radius: 39px;
+  z-index: 10;
   background: linear-gradient(
     125.75deg,
     rgb(197, 33, 255) 2.976%,
