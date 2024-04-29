@@ -17,7 +17,11 @@ export const ThemeAppHeader = styled.div`
     display: none;
   }
 
-  #option {
+  #option1,
+  #option2,
+  #option3,
+  #option4,
+  #option5 {
     font-family: "Actay";
     font-size: calc(1.1vw + 8.6px);
     padding: 0 calc(0.8vw + 11.5px);
@@ -68,6 +72,59 @@ export const ThemeAppHeader = styled.div`
   background-color: rgba(0, 0, 12, 0.8);
   z-index: 100;
 
+  #nav {
+    &:hover {
+      #list_menu {
+        left: 0;
+      }
+    }
+    #list_menu {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: -70%;
+      width: 60%;
+      height: 45%;
+      border: 2px solid #ffffff;
+      border-left: 0;
+      border-top: 0;
+      padding: 30px 10px;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      transition: 400ms;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        transition: 400ms;
+
+        li {
+          margin-bottom: 15%;
+          padding-bottom: 10px;
+          border-bottom: 2px solid lightgray;
+          transition: 400ms;
+
+          a {
+            text-decoration: none;
+            font-family: "Actay";
+            font-size: 27px;
+            color: #fcfffc;
+            transition: 400ms;
+
+            &:hover {
+              margin-bottom: 2px;
+              color: #c521ff;
+            }
+          }
+        }
+      }
+    }
+  }
+
   @media (max-width: 955px) {
     display: grid;
     grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
@@ -79,7 +136,11 @@ export const ThemeAppHeader = styled.div`
       width: 0;
     }
 
-    #option {
+    #option1,
+    #option2,
+    #option3,
+    #option4,
+    #option5 {
       display: none;
       width: 0;
     }

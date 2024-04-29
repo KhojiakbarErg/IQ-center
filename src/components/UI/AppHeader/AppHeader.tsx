@@ -1,83 +1,83 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ThemeAppHeader } from "./AppHeader.sytle";
 
 export const AppHeader = () => {
-  window.addEventListener("load", () => {
-    document
-      .querySelector('a[href="#aboutus"]')
-      ?.addEventListener("click", (e: Event) => {
-        e.preventDefault();
-        document
-          .querySelector("#aboutus")
-          ?.scrollIntoView({ behavior: "smooth" });
-      });
-  });
+  useEffect(() => {
+    const handleScrollIntoView = (id: string) => {
+      const element = document.querySelector(id);
+      if (element) {
+        (element as HTMLElement).scrollIntoView({ behavior: "smooth" });
+      }
+    };
 
-  window.addEventListener("load", () => {
-    document
-      .querySelector('a[href="#waychoose"]')
-      ?.addEventListener("click", (e: Event) => {
+    document.querySelectorAll(".options a").forEach((link) => {
+      link.addEventListener("click", (e) => {
         e.preventDefault();
-        document
-          .querySelector("#waychoose")
-          ?.scrollIntoView({ behavior: "smooth" });
+        const id = link.getAttribute("href");
+        if (id) {
+          handleScrollIntoView(id);
+        }
       });
-  });
-
-  window.addEventListener("load", () => {
-    document
-      .querySelector('a[href="#ourteachers"]')
-      ?.addEventListener("click", (e: Event) => {
-        e.preventDefault();
-        document
-          .querySelector("#ourteachers")
-          ?.scrollIntoView({ behavior: "smooth" });
-      });
-  });
-
-  window.addEventListener("load", () => {
-    document
-      .querySelector('a[href="#comments"]')
-      ?.addEventListener("click", (e: Event) => {
-        e.preventDefault();
-        document
-          .querySelector("#comments")
-          ?.scrollIntoView({ behavior: "smooth" });
-      });
-  });
-
-  window.addEventListener("load", () => {
-    document
-      .querySelector('a[href="#contacts"]')
-      ?.addEventListener("click", (e: Event) => {
-        e.preventDefault();
-        document
-          .querySelector("#contacts")
-          ?.scrollIntoView({ behavior: "smooth" });
-      });
-  });
+    });
+  }, []);
 
   return (
     <ThemeAppHeader>
-      <img src="infbtn.png" alt="nav" id="navigation" />
-      <img src="logo.png" alt="logo" id="logo" className="logotype" />
+      <div id="nav">
+        <img
+          src="infbtn.svg"
+          alt="nav"
+          id="navigation"
+          loading="lazy"
+          onClick={() => {}}
+        />
+        <div id="list_menu">
+          <div id="backimg">
+            <img src="backmenu.svg" alt="backmenu" />
+          </div>
+          <ul>
+            <li>
+              <a href="#aboutus">О нас</a>
+            </li>
+            <li>
+              <a href="#waychoose">Курсы</a>
+            </li>
+            <li>
+              <a href="#ourteachers">Учителя</a>
+            </li>
+            <li>
+              <a href="#comments">Отзывы</a>
+            </li>
+            <li>
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img
+        src="logo.png"
+        alt="logo"
+        id="logo"
+        className="logotype"
+        loading="lazy"
+      />
       <a href="tel:+998908052935" id="callbtn">
-        <img src="CallBtn.svg" alt="Call" />
+        <img src="CallBtn.svg" alt="Call" loading="lazy" />
       </a>
       <div className="options">
-        <a href="#aboutus" id="option">
+        <a href="#aboutus" id="option1">
           О нас
         </a>
-        <a href="#waychoose" id="option">
+        <a href="#waychoose" id="option2">
           Курсы
         </a>
-        <a href="#ourteachers" id="option">
+        <a href="#ourteachers" id="option3">
           Учителя
         </a>
-        <a href="#comments" id="option">
+        <a href="#comments" id="option4">
           Отзывы
         </a>
-        <a href="#contacts" id="option">
+        <a href="#contacts" id="option5">
           Контакты
         </a>
       </div>

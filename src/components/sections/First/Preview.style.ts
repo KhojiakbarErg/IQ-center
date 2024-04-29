@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-//TODO:сделать жирный Actay куда надо
 export const ThemePreview = styled.div`
   .labelImg {
     display: none;
@@ -60,6 +59,7 @@ export const ThemePreview = styled.div`
       color: rgba(255, 255, 255, 0.92);
       position: relative;
       top: -10px;
+      font-weight: bold;
     }
     .enter {
       grid-area: enter;
@@ -70,18 +70,16 @@ export const ThemePreview = styled.div`
     }
 
     h2 {
-      //TODO: :жирный шрифт
       font-family: "Actay";
       font-size: calc(7vw + 4.5px);
       color: #ffffff;
       margin: 0;
       padding: 0;
       line-height: 0;
+      font-weight: bold;
     }
 
     h1 {
-      //TODO: :жирный шрифт
-
       font-family: "Actay";
       font-size: calc(11vw - 4px);
       font-weight: 700;
@@ -94,6 +92,7 @@ export const ThemePreview = styled.div`
       padding: 0;
       height: calc(8vw + 48px);
       width: calc(59.9vw + 307px);
+      font-weight: bold;
     }
   }
 
@@ -167,7 +166,7 @@ export const ThemePreview = styled.div`
   }
 
   @media (max-width: 955px) {
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     .FirstGradient {
       .Blackback,
       .Gradient1 {
