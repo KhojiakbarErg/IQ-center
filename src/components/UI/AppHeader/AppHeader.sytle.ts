@@ -156,7 +156,7 @@ export const ThemeAppHeader = styled.div`
 
     #navigation {
       display: flex;
-      position: fixed;
+      position: absolute;
       padding-top: 1.5%;
     }
 

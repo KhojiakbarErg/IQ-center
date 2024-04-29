@@ -17,11 +17,9 @@ export const AppButton = ({
   ...props
 }: AppButtonProps) => {
   return (
-    <a href={to}>
-      <ThemeAppButton className={className} {...props}>
-        {value} {children}
-      </ThemeAppButton>
-    </a>
+    <ThemeAppButton className={className} {...props}>
+      {value} {children}
+    </ThemeAppButton>
   );
 };
 
@@ -40,11 +38,9 @@ export const MoreInfBtn = ({
   ...props
 }: MoreInfBtnProps) => {
   return (
-    <a href={to}>
-      <ThemeMoreInfBtn className={className} {...props}>
-        {value} {children}
-      </ThemeMoreInfBtn>
-    </a>
+    <ThemeMoreInfBtn className={className} {...props}>
+      {value} {children}
+    </ThemeMoreInfBtn>
   );
 };
 
@@ -63,10 +59,8 @@ export const AppButtonTwo = ({
   ...props
 }: AppButtonTwoProps) => {
   return (
-    <a href="to">
-      <ThemeAppButtonTwo className={className} {...props}>
-        {value} {children}
-      </ThemeAppButtonTwo>
-    </a>
+    <ThemeAppButtonTwo className={className} {...props}>
+      {value} {children}
+    </ThemeAppButtonTwo>
   );
 };
