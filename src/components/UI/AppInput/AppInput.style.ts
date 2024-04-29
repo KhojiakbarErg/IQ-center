@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// type StyledInput = {
+//   isError?: boolean;
+// };
+
 export const ThemeAppInput = styled.input`
   width: 710px;
   margin: 25px 0;
@@ -24,3 +28,6 @@ export const ThemeAppInput = styled.input`
     border-color: #00000c;
   }
 `;
+// export const ThemeInputError = styled.span<StyledInput>`
+//   ${(props) => props.isError && `color: red`}
+// `;

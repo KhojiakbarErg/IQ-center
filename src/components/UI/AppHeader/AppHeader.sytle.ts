@@ -7,6 +7,8 @@ export const ThemeAppHeader = styled.div`
     width: calc(3.1vw + 18px);
     height: calc(3.1vw + 16px);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
+    left: -7vw;
   }
 
   #navigation {
@@ -154,8 +156,8 @@ export const ThemeAppHeader = styled.div`
 
     #navigation {
       display: flex;
-      grid-column-start: 1;
-      grid-row-start: 5;
+      position: fixed;
+      padding-top: 1.5%;
     }
 
     #callbtn {
@@ -171,7 +173,8 @@ export const ThemeAppHeader = styled.div`
     #logo {
       width: 55px;
       height: 55px;
-      grid-column-start: 10;
+
+      grid-column-start: 12;
       grid-row-start: 5;
     }
   }
