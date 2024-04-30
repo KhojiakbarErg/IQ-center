@@ -8,6 +8,7 @@ interface AppButtonProps {
   className?: string;
   to?: any;
   children?: React.ReactNode;
+  onClick?: any;
 }
 
 export const AppButton = ({
@@ -15,11 +16,12 @@ export const AppButton = ({
   children,
   value,
   to,
+  onClick,
   ...props
 }: AppButtonProps) => {
   return (
     <Link to={to}>
-      <ThemeAppButton className={className} {...props}>
+      <ThemeAppButton className={className} onClick={onClick} {...props}>
         {value} {children}
       </ThemeAppButton>
     </Link>

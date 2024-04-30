@@ -38,6 +38,9 @@ export const ThemeLogin = styled.div`
   }
 
   @media (max-width: 1440px) {
+    /* width: 100%;
+    height: 100%;
+    position: fixed; */
     h1 {
       font-size: calc(4.14vw + 16px);
       width: calc(36vw + 188px);
@@ -45,7 +48,7 @@ export const ThemeLogin = styled.div`
     }
 
     .btnsgroup {
-      margin-top: calc(4.53vw + 53px);
+      margin-top: 50px;
       gap: calc(4.53vw + 13px);
       z-index: 1;
     }
@@ -112,8 +115,10 @@ export const ThemeHappy = styled.div`
   }
 
   @media (max-width: 1440px) {
+    position: fixed;
+    padding-top: 30px;
     h1 {
-      font-size: calc(4.14vw + 16px);
+      font-size: calc(4.14vw + 13px);
       width: calc(36vw + 188px);
       z-index: 1;
     }
@@ -126,6 +131,8 @@ export const ThemeHappy = styled.div`
 
     button {
       width: calc(21.5vw + 237px);
+      margin: 0;
+      margin-bottom: 30px;
       z-index: 1;
     }
   }
