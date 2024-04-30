@@ -79,11 +79,8 @@ export const ThemeAppHeader = styled.div`
 
   @media (max-width: 955px) {
     #nav {
-      &:hover {
-        #list_menu {
-          left: 0;
-        }
-      }
+      position: fixed;
+      z-index: 1000;
       #list_menu {
         display: flex;
         flex-direction: column;
@@ -92,7 +89,7 @@ export const ThemeAppHeader = styled.div`
         justify-content: center;
         position: fixed;
         top: 0;
-        left: -70%;
+        left: -1000px;
         width: 60%;
         height: 45%;
         border: 2px solid #ffffff;
@@ -102,6 +99,20 @@ export const ThemeAppHeader = styled.div`
         background: rgba(0, 0, 0, 0.6);
         backdrop-filter: blur(12px);
         transition: 400ms;
+        z-index: 1000;
+        #backImg {
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          padding-left: 10px;
+          position: absolute;
+          text-align: left;
+          width: 60px;
+          height: 35px;
+          right: 0;
+          top: 20px;
+          background: linear-gradient(90deg, #000000 1%, #ffffff 100%);
+        }
         ul {
           list-style: none;
           padding: 0;
@@ -111,6 +122,7 @@ export const ThemeAppHeader = styled.div`
           li {
             margin-bottom: 15%;
             padding-bottom: 10px;
+            width: 100%;
             border-bottom: 2px solid lightgray;
             transition: 400ms;
 
@@ -156,8 +168,8 @@ export const ThemeAppHeader = styled.div`
 
     #navigation {
       display: flex;
-      position: absolute;
-      padding-top: 1.5%;
+      grid-row-start: 5;
+      padding-left: 1rem;
     }
 
     #callbtn {
@@ -175,19 +187,20 @@ export const ThemeAppHeader = styled.div`
       height: 55px;
 
       grid-column-start: 12;
-      grid-row-start: 5;
+      grid-row-start: 6;
     }
   }
 
-  @media (max-width: 755px) {
+  @media (max-width: 600px) {
     #callbtn {
-      grid-column-start: 19;
+      position: relative;
+      left: -1rem;
     }
-
-    #logo {
-      grid-column-start: 11;
-
-      padding-left: 10px;
+  }
+  @media (max-width: 420px) {
+    #callbtn {
+      position: relative;
+      left: -1.5rem;
     }
   }
 `;

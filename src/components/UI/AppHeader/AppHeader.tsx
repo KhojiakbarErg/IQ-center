@@ -1,7 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { ThemeAppHeader } from "./AppHeader.sytle";
 
 export const AppHeader = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleNavigationClick = () => {
+    setMenuOpen(!menuOpen);
+    const listMenu = document.getElementById("list_menu");
+    if (listMenu) {
+      listMenu.style.left = menuOpen ? "0" : "0";
+    }
+  };
+
+  const handleBackImgClick = () => {
+    const listMenu = document.getElementById("list_menu");
+    if (listMenu) {
+      listMenu.style.left = "-1000px";
+    }
+  };
+
   useEffect(() => {
     const handleScrollIntoView = (id: string) => {
       const element = document.querySelector(id);
@@ -29,10 +46,11 @@ export const AppHeader = () => {
           alt="nav"
           id="navigation"
           loading="lazy"
-          onClick={() => {}}
+          onClick={handleNavigationClick}
         />
-        <div id="list_menu">
+        <div id="list_menu" onClick={handleBackImgClick}>
           <ul>
+            <div id="backImg">Back</div>
             <li>
               <a href="#aboutus">О нас</a>
             </li>
@@ -52,7 +70,7 @@ export const AppHeader = () => {
         </div>
       </div>
       <img
-        src="logo.png"
+        src="logo.svg"
         alt="logo"
         id="logo"
         className="logotype"
