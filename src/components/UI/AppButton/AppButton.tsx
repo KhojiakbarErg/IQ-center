@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 interface AppButtonProps {
   value: string;
   className?: string;
+  type?: any;
   to?: any;
   children?: React.ReactNode;
   onClick?: any;
@@ -16,12 +17,18 @@ export const AppButton = ({
   children,
   value,
   to,
+  type,
   onClick,
   ...props
 }: AppButtonProps) => {
   return (
     <Link to={to}>
-      <ThemeAppButton className={className} onClick={onClick} {...props}>
+      <ThemeAppButton
+        className={className}
+        onClick={onClick}
+        type={type}
+        {...props}
+      >
         {value} {children}
       </ThemeAppButton>
     </Link>

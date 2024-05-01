@@ -46,7 +46,7 @@ export const Preview = () => {
             студента.
           </p>
           <div className="enter">
-            <AppButton value="Записаться" to="welcome"></AppButton>
+            <AppButton value="Записаться" to="/welcome"></AppButton>
             <div className="WantInf">
               <a href="#aboutus">
                 <MoreInfBtn value="Подробнее" />

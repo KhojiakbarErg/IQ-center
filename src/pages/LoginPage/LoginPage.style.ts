@@ -111,7 +111,7 @@ export const ThemeHappy = styled.div`
     width: 600px;
     margin: 50px 0;
     display: flex;
-    z-index: 1;
+    z-index: 1000;
   }
 
   @media (max-width: 1440px) {
@@ -133,7 +133,7 @@ export const ThemeHappy = styled.div`
       width: calc(21.5vw + 237px);
       margin: 0;
       margin-bottom: 30px;
-      z-index: 1;
+      z-index: 1000;
     }
   }
   img {

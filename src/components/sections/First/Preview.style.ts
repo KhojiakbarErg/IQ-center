@@ -166,7 +166,11 @@ export const ThemePreview = styled.div`
   }
 
   @media (max-width: 955px) {
-    a {
+    .enter {
+      height: auto;
+    }
+
+    .WantInf {
       display: none;
     }
 
