@@ -17,23 +17,7 @@ export const ThemeComments = styled.div`
     display: flex;
     gap: 100px;
 
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
     padding-bottom: 50px;
-  }
-
-  .container::-webkit-scrollbar {
-    height: 6px;
-    width: auto;
-  }
-
-  .container::-webkit-scrollbar-thumb {
-    background: linear-gradient(
-      90deg,
-      rgb(197, 33, 255),
-      rgb(87, 94, 242) 81.348%
-    );
-    border-radius: 10px;
   }
 
   @media (max-width: 955px) {
@@ -55,8 +39,16 @@ export const ThemeComments = styled.div`
     width: 80vw;
     bottom: 0;
     #previouscomm {
+      color: #fff;
+      background: #00000c;
+      border: 0;
+      font-size: 32px;
     }
-    #nexcomm {
+    #nextcomm {
+      color: #fff;
+      border: 0;
+      font-size: 32px;
+      background: #00000c;
     }
   }
 `;
