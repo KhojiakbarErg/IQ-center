@@ -16,7 +16,6 @@ export const CommentCard = ({
     <ThemeCommentCard>
       <div className="containerimg">
         <img src={commentator} alt="" id="FirstImgComm" />
-        <img src="borderComm.png" id="borderComm" />
       </div>
       <div>
         <h4>{name}</h4>

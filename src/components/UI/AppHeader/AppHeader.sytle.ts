@@ -176,6 +176,7 @@ export const ThemeAppHeader = styled.div`
       display: flex;
       grid-column-start: 20;
       grid-row-start: 5;
+      padding-top: 0.4rem;
       width: 55px;
       svg {
         width: 100%;
@@ -186,7 +187,8 @@ export const ThemeAppHeader = styled.div`
       width: 55px;
       height: 55px;
 
-      grid-column-start: 12;
+      grid-column-start: 11;
+      padding-left: 0.5rem;
       grid-row-start: 6;
     }
   }

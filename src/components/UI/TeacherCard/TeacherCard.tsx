@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeBoxTeachers, ThemeTeacherCard } from "./TeacherCard.style";
+import { ThemeTeacherCard } from "./TeacherCard.style";
 
 interface TeachercardProps {
   teacher: string;
@@ -17,9 +17,9 @@ export const TeacherCard = ({
   bold,
 }: TeachercardProps) => {
   return (
-    <ThemeBoxTeachers>
-      <img src="border.png" id="border"></img>
-      <ThemeTeacherCard>
+    <ThemeTeacherCard>
+      <div id="border"></div>
+      <div id="teacherinfbox">
         <img src={teacher} id="Teacher" alt="" />
         <img src="TeacherPlace.png" alt="" id="TeacherPlace" />
         <h3>{name}</h3>
@@ -28,7 +28,7 @@ export const TeacherCard = ({
           <b>{bold}</b>
           {inf}
         </p>
-      </ThemeTeacherCard>
-    </ThemeBoxTeachers>
+      </div>
+    </ThemeTeacherCard>
   );
 };

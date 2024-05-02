@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ThemeComments = styled.div`
+  position: relative;
   h1 {
     font-family: "Actay";
     font-size: calc(3.6vw + 27px);
@@ -10,7 +11,7 @@ export const ThemeComments = styled.div`
 
   margin-bottom: calc(5vw + 22px);
 
-  padding: 0 calc(14.5vw - 79px);
+  padding: 40px calc(14.5vw - 79px);
 
   .container {
     display: flex;
@@ -43,6 +44,19 @@ export const ThemeComments = styled.div`
 
     .container {
       gap: 50px;
+    }
+  }
+
+  #commswap {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    font-size: 32px;
+    width: 80vw;
+    bottom: 0;
+    #previouscomm {
+    }
+    #nexcomm {
     }
   }
 `;

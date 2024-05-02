@@ -4,6 +4,7 @@ export const ThemeOurTeacher = styled.div`
   padding: 0 calc(14.5vw - 89px);
   padding-bottom: calc(5.6vw + 93px);
   position: relative;
+  z-index: 10;
 
   #scrollplace {
     display: flex;
@@ -14,7 +15,7 @@ export const ThemeOurTeacher = styled.div`
   #Gradient5 {
     position: absolute;
     width: calc(43.76vw + 38px);
-    top: 770px;
+    top: 15em;
     left: 0;
     z-index: 0;
   }
@@ -39,6 +40,7 @@ export const ThemeOurTeacher = styled.div`
   }
 
   @media (max-width: 955px) {
+    position: relative;
     padding: 30px;
     margin-bottom: 100px;
     h1 {

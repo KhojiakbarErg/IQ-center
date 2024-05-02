@@ -12,17 +12,19 @@ export const ThemeCommentCard = styled.div`
     border-radius: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .containerimg {
     width: 187px;
     height: 187px;
     position: relative;
-  }
-
-  #borderComm {
-    width: 187px;
-    height: 187px;
+    background: linear-gradient(45deg, #dd0eff 0%, #3c64f1 89.97%);
+    border-radius: 50%;
+    padding: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   h4 {
@@ -64,11 +66,6 @@ export const ThemeCommentCard = styled.div`
     }
 
     .containerimg {
-      width: calc(14.79vw + 37px);
-      height: calc(14.79vw + 35px);
-    }
-
-    #borderComm {
       width: calc(14.79vw + 37px);
       height: calc(14.79vw + 35px);
     }

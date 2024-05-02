@@ -148,9 +148,9 @@ export const ThemePreview = styled.div`
       position: absolute;
       width: calc(15.5vw + 208px);
       height: calc(52.1vw + 51px);
-      top: -70px;
+      top: -10.5rem;
       right: 0;
-      z-index: 1;
+      z-index: 0;
     }
   }
   .SecondGradient {
@@ -158,14 +158,16 @@ export const ThemePreview = styled.div`
       position: absolute;
       width: calc(15.5vw + 208px);
       height: auto;
-      left: -90px;
-      top: calc(90.7vh - 53px);
+      left: -8em;
+      top: 39em;
       transform: rotate(-15.43deg);
+      border-radius: 40%;
       z-index: 0;
     }
   }
 
   @media (max-width: 955px) {
+    position: relative;
     .enter {
       height: auto;
     }
