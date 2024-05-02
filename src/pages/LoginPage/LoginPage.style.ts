@@ -67,6 +67,10 @@ export const ThemeLogin = styled.div`
     right: 0;
     z-index: 0;
   }
+  .tab:not(.active){
+    display:none !important;
+  }
+
 `;
 
 export const ThemeHappy = styled.div`

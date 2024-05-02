@@ -1,7 +1,8 @@
-import React from "react";
+import React, { ButtonHTMLAttributes, ChangeEvent, MouseEventHandler, } from "react";
 import { ThemeAppButton, ThemeAppButtonTwo } from "./AppButton.style";
 import { ThemeMoreInfBtn } from "./AppButton.style";
 import { Link } from "react-router-dom";
+import { clickOptions } from "@testing-library/user-event/dist/click";
 
 interface AppButtonProps {
   value: string;
@@ -37,9 +38,11 @@ export const AppButton = ({
 
 interface MoreInfBtnProps {
   value: string;
+  type?: "submit" | "reset" | "button" | undefined;
   className?: string;
   to?: string;
   children?: React.ReactNode;
+  onClick?: any;
 }
 
 export const MoreInfBtn = ({
@@ -47,10 +50,12 @@ export const MoreInfBtn = ({
   children,
   value,
   to,
+  type,
+  onClick,
   ...props
 }: MoreInfBtnProps) => {
   return (
-    <ThemeMoreInfBtn className={className} {...props}>
+    <ThemeMoreInfBtn className={className} type={type} onClick={onClick} {...props}>
       {value} {children}
     </ThemeMoreInfBtn>
   );

@@ -16,7 +16,7 @@ export const Congratulation = () => {
       </p>
       <div className="btnsgroup">
         <Link to="/">
-          <AppButton value="Готово"></AppButton>
+          <AppButton to={"/"} value="На главную"></AppButton>
         </Link>
         <Link to="/">
           <MoreInfBtn value="Продолжить в боте"></MoreInfBtn>
