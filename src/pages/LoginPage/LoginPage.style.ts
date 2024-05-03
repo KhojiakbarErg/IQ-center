@@ -12,11 +12,12 @@ export const ThemeLogin = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 75px;
   .inputsgroup {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     z-index: 1;
+    margin: 0;
   }
 
   .btnsgroup {
@@ -38,39 +39,39 @@ export const ThemeLogin = styled.div`
   }
 
   @media (max-width: 1440px) {
-    /* width: 100%;
-    height: 100%;
-    position: fixed; */
     h1 {
-      font-size: calc(4.14vw + 16px);
+      font-size: calc(3.14vw + 16px);
       width: calc(36vw + 188px);
+      margin: 0;
       z-index: 1;
     }
 
     .btnsgroup {
-      margin-top: 50px;
-      gap: calc(4.53vw + 13px);
+      gap: calc(4.53vw + 10px);
       z-index: 1;
+      margin: 0;
     }
-    padding: 50px;
 
     button {
-      width: calc(12.3vw + 71px);
-      font-size: calc(1vw + 13px);
+      width: calc(12.3vw + 45px);
+      font-size: calc(1vw + 8px);
+      height: calc(2.1vw + 38.3px);
+
+      margin-top: 30px;
+
       z-index: 1;
     }
   }
   img {
     width: calc(27.5vw + 147px);
     position: absolute;
-    top: -50px;
+    top: -10em;
     right: 0;
     z-index: 0;
   }
-  .tab:not(.active){
-    display:none !important;
+  .tab:not(.active) {
+    display: none !important;
   }
-
 `;
 
 export const ThemeHappy = styled.div`

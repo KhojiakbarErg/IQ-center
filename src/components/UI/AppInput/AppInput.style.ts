@@ -6,12 +6,12 @@ import styled from "styled-components";
 
 export const ThemeAppInput = styled.input`
   width: 710px;
-  margin: 25px 0;
+  margin: 10px 0;
   font-family: "Actay";
-  padding: 20px 40px;
+  padding: 12px 20px;
   border: 2px solid transparent;
   border-radius: 10px;
-  font-size: 32px;
+  font-size: 25px;
   color: #fff;
   background: #00000c;
   border-color: #fff;
@@ -29,9 +29,8 @@ export const ThemeAppInput = styled.input`
   }
 
   @media (max-width: 1440px) {
-    width: calc(29.77vw + 148px);
-    padding: calc(1vw + 3.35px) calc(1.61vw + 6px);
-    font-size: calc(1vw + 12px);
+    width: calc(29.77vw + 108px);
+    font-size: calc(1vw + 7px);
   }
 `;
 // export const ThemeInputError = styled.span<StyledInput>`

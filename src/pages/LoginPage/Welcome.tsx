@@ -1,35 +1,37 @@
 import React from "react";
-import { AppButtonNoLink, MoreInfBtn } from "../../components/UI/AppButton/AppButton";
+import {
+  AppButtonNoLink,
+  MoreInfBtn,
+} from "../../components/UI/AppButton/AppButton";
 import { ThemeLogin } from "./LoginPage.style";
 import { AppInput } from "../../components/UI/AppInput/AppInput";
 import { Link } from "react-router-dom";
 
 export const WelcomePage = () => {
-
   const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     var formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
 
-    data.name = data.firstname + ' ' + data.lastname;
+    data.name = data.firstname + " " + data.lastname;
     delete data.firstname;
     delete data.lastname;
 
     const response = await fetch(`http://localhost:8000/api/apply`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        Accept: "application/json",
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(data)
-    })
+      body: JSON.stringify(data),
+    });
 
     response.json().then((data) => {
       if (response.ok) {
         window.location.href = "/congratulations";
       } else {
-        alert('Что-то пошло не так')
+        alert("Что-то пошло не так");
       }
     });
   };
@@ -39,19 +41,39 @@ export const WelcomePage = () => {
       <h1>Запишитесь на пробный урок</h1>
       <form onSubmit={handleSubmit}>
         <div className="inputsgroup">
-          <AppInput required name="firstname" type="username" inputPlaceholder="Имя" />
-          <AppInput required name="lastname" type="usersurname" inputPlaceholder="Фамилия" />
-          <AppInput required name="phone" type="tel" inputPlaceholder="Телефон" />
-          <AppInput required name="username" type="telegid" inputPlaceholder="Тег телеграмм" />
+          <AppInput
+            required
+            name="firstname"
+            type="username"
+            inputPlaceholder="Имя"
+          />
+          <AppInput
+            required
+            name="lastname"
+            type="usersurname"
+            inputPlaceholder="Фамилия"
+          />
+          <AppInput
+            required
+            name="phone"
+            type="tel"
+            inputPlaceholder="Телефон"
+          />
+          <AppInput
+            required
+            name="username"
+            type="telegid"
+            inputPlaceholder="Тег телеграмм"
+          />
         </div>
         <div className="btnsgroup">
           <Link to="/">
             <MoreInfBtn value="Назад"></MoreInfBtn>
           </Link>
-          <AppButtonNoLink value="Дальше" type='submit'></AppButtonNoLink>
+          <AppButtonNoLink value="Дальше" type="submit"></AppButtonNoLink>
         </div>
       </form>
-      <img id={'applyFormBtn'} src="Gradient1.svg" alt="" />
+      <img id={"applyFormBtn"} src="Gradient1.svg" alt="" />
     </ThemeLogin>
   );
 };
