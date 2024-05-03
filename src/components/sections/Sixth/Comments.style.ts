@@ -40,17 +40,28 @@ export const ThemeComments = styled.div`
     font-size: 32px;
     width: 80vw;
     bottom: 0;
+    transition: 550ms;
+
     #previouscomm {
       color: #fff;
       background: #00000c;
       border: 0;
       font-size: 32px;
+      transition: 550ms;
+      &:hover {
+        color: #c521ff;
+      }
     }
     #nextcomm {
       color: #fff;
       border: 0;
       font-size: 32px;
       background: #00000c;
+      transition: 550ms;
+
+      &:hover {
+        color: #c521ff;
+      }
     }
   }
 `;
