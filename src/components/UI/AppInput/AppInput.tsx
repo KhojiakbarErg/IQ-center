@@ -10,6 +10,7 @@ type AppInputProps = {
   errorText?: string;
   value?: any;
   onChange?: any;
+  required?: boolean | undefined;
 };
 export const AppInput = forwardRef<HTMLInputElement, AppInputProps>(
   function AppInput(
@@ -22,6 +23,7 @@ export const AppInput = forwardRef<HTMLInputElement, AppInputProps>(
       value,
       onChange,
       errorText,
+      required,
       ...props
     }: AppInputProps & HTMLProps<HTMLInputElement>,
     ref
@@ -38,6 +40,7 @@ export const AppInput = forwardRef<HTMLInputElement, AppInputProps>(
           // isError={isError}
           ref={ref}
           {...props}
+          required
         />
         {/* <ThemeInputError isError={isError}>{errorText}</ThemeInputError> */}
       </>

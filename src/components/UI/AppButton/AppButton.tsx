@@ -36,6 +36,27 @@ export const AppButton = ({
   );
 };
 
+export const AppButtonNoLink = ({
+  className,
+  children,
+  value,
+  to,
+  type,
+  onClick,
+  ...props
+}: AppButtonProps) => {
+  return (
+      <ThemeAppButton
+        className={className}
+        onClick={onClick}
+        type={type}
+        {...props}
+      >
+        {value} {children}
+      </ThemeAppButton>
+  );
+};
+
 interface MoreInfBtnProps {
   value: string;
   type?: "submit" | "reset" | "button" | undefined;
