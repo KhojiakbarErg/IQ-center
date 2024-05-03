@@ -21,7 +21,7 @@ export const TeacherCard = ({
       <div id="border"></div>
       <div id="teacherinfbox">
         <img src={teacher} id="Teacher" alt="" />
-        <img src="TeacherPlace.png" alt="" id="TeacherPlace" />
+        <img src="TeacherPlace.svg" alt="" id="TeacherPlace" />
         <h3>{name}</h3>
         <p className="subject">{subject}</p>
         <p className="informationteach">

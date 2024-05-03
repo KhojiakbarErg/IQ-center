@@ -20,10 +20,10 @@ export const AppHeader = () => {
   };
 
   useEffect(() => {
-    const handleScrollIntoView = (id: string) => {
+    const handleScrollIntoView = (id: any) => {
       const element = document.querySelector(id);
       if (element) {
-        (element as HTMLElement).scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     };
 
@@ -70,7 +70,7 @@ export const AppHeader = () => {
         </div>
       </div>
       <img
-        src="logo.svg"
+        src="logo.png"
         alt="logo"
         id="logo"
         className="logotype"
@@ -97,7 +97,7 @@ export const AppHeader = () => {
         </a>
       </div>
       <a href="tel:+998908052935" className="call">
-        Связаться <img className="call" src="right-arrow.png" alt="." />
+        Связаться <img className="call" src="right-arrow.svg" alt="." />
       </a>
     </ThemeAppHeader>
   );

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ThemeComments = styled.div`
   position: relative;
+
   h1 {
     font-family: "Actay";
     font-size: calc(3.6vw + 27px);
@@ -15,6 +16,7 @@ export const ThemeComments = styled.div`
 
   .container {
     display: flex;
+    justify-content: center;
     gap: 100px;
 
     padding-bottom: 50px;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ThemeAboutUs = styled.div`
   padding: calc(16.7vw - 121px) calc(22.9vw - 157px);
-  background-image: url("banner.svg");
+  background-image: url("banner.png");
   background-repeat: no-repeat;
   background-size: 1700px;
   height: calc(21.3vw + 270px);
@@ -51,7 +51,7 @@ export const ThemeAboutUs = styled.div`
     height: 390px;
     flex-direction: column;
     align-items: flex-start;
-    background-image: url("bluraboutus.svg");
+    background-image: url("bluraboutus.png");
     padding: calc(16.7vw - 121px) 25px;
     padding-right: 25px;
     border-radius: 0px;

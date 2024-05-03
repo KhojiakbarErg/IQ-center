@@ -23,10 +23,10 @@ export const Location = () => {
 
           <div id="socialmedias">
             <a href="https://www.instagram.com/iqcenter.uz?igsh=dWR3ejgzeGlsaXRq">
-              <img src="Insta.png" alt="" />
+              <img src="Insta.svg" alt="" />
             </a>
             <a href="https://t.me/iqcenter_uz">
-              <img src="Telega.png" alt="" />
+              <img src="Telega.svg" alt="" />
             </a>
           </div>
         </div>
