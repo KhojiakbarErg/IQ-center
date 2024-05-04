@@ -16,7 +16,7 @@ export const WelcomePage = () => {
     delete data.firstname;
     delete data.lastname;
 
-    const response = await fetch(`http://localhost:8000/api/apply`, {
+    const response = await fetch(`https://admin.iqcenter.uz/api/apply`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

@@ -31,7 +31,6 @@ export const ThemeLogin = styled.div`
     font-size: 96px;
     width: 880px;
     text-align: center;
-    font-family: "Actay";
     color: #fff;
     margin: 0;
     z-index: 1;
@@ -67,10 +66,6 @@ export const ThemeLogin = styled.div`
     right: 0;
     z-index: 0;
   }
-  .tab:not(.active){
-    display:none !important;
-  }
-
 `;
 
 export const ThemeHappy = styled.div`
