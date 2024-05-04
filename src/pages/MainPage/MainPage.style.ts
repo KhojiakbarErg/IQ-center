@@ -14,4 +14,11 @@ export const ThemeMainPage = styled.div`
   @media (max-width: 750px) {
     padding-top: 270px;
   }
+
+  
+  img{
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+  }
 `;
