@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   AppButtonNoLink,
   MoreInfBtn,
 } from "../../components/UI/AppButton/AppButton";
 import { ThemeLogin } from "./LoginPage.style";
 import { AppInput } from "../../components/UI/AppInput/AppInput";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 export const WelcomePage = () => {
+
   const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -29,12 +30,13 @@ export const WelcomePage = () => {
 
     response.json().then((data) => {
       if (response.ok) {
-        window.location.href = "/congratulations";
+        <Navigate to="congratulations"/>
       } else {
         alert("Что-то пошло не так");
       }
     });
   };
+
 
   return (
     <ThemeLogin>
