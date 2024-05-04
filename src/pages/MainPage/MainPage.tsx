@@ -6,7 +6,7 @@ import { AboutUs } from "../../components/sections/Second/AboutUs";
 import { SpecialQualities } from "../../components/sections/Third/SpecialQualities";
 import { WayChoose } from "../../components/sections/Fourth/WayChoose";
 import { OurTeachers } from "../../components/sections/Fifth/OurTeachers";
-import { Comments } from "../../components/sections/Sixth/Comments";
+import { SimpleSlider } from "../../components/sections/Sixth/Comments";
 import { Location } from "../../components/sections/Seventh/Contacts";
 
 export const MainPage = () => {
@@ -18,7 +18,7 @@ export const MainPage = () => {
       <SpecialQualities />
       <WayChoose />
       <OurTeachers />
-      <Comments />
+      <SimpleSlider />
       <Location />
     </ThemeMainPage>
   );
