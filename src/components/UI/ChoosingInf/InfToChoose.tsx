@@ -29,19 +29,19 @@ export const InfToChoose = ({
           <h2>{name}</h2>
           <ul>
             <li>
-              <img src="Ellipse.png" />
+              <img src="Ellipse.svg" alt="" />
               {property1}
             </li>
             <li>
-              <img src="Ellipse.png" />
+              <img src="Ellipse.svg" alt="" />
               {property2}
             </li>
             <li>
-              <img src="Ellipse.png" />
+              <img src="Ellipse.svg" alt="" />
               {property3}
             </li>
             <li>
-              <img src="Ellipse.png" />
+              <img src="Ellipse.svg" alt="" />
               {property4}
             </li>
           </ul>
@@ -81,15 +81,15 @@ export const InfToChooseSec = ({
           <h2>{name}</h2>
           <ul>
             <li>
-              <img src="Ellipse.png" />
+              <img src="Ellipse.svg" alt="" />
               {property1}
             </li>
             <li>
-              <img src="Ellipse.png" />
+              <img src="Ellipse.svg" alt="" />
               {property2}
             </li>
             <li>
-              <img src="Ellipse.png" />
+              <img src="Ellipse.svg" alt="" />
               {property3}
             </li>
           </ul>

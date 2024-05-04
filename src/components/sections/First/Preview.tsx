@@ -29,12 +29,12 @@ export const Preview = () => {
         <div className="label">
           <img src="study.png" alt="" className="labelImg" id="study" />
           <img
-            src="interactive.png"
+            src="interactive.svg"
             alt=""
             className="labelImg"
             id="interactive"
           />
-          <img src="way.png" alt="" className="labelImg" id="way" />
+          <img src="way.svg" alt="" className="labelImg" id="way" />
           <h2 className="study">учись</h2>
           <h1 className="inovation">продвинутым</h1>
           <h2 className="way">путем</h2>
@@ -59,8 +59,8 @@ export const Preview = () => {
         <Acceptense />
       </div>
       <div className="FirstGradient">
-        <img src="Blackback.png" alt="" className="Blackback" />
-        <img src="Gradient1.svg" alt="" className="Gradient1" />
+        <img src="Blackback.svg" alt="" className="Blackback" />
+        <img src="Gradient1.png" alt="" className="Gradient1" />
       </div>
       <div className="SecondGradient">
         <img src="Gradient2.png" alt="Gradient" className="Gradient2" />
