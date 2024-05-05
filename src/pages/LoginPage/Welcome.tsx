@@ -19,7 +19,7 @@ export const WelcomePage = () => {
     delete data.lastname;
 
     const response = await fetch(`https://admin.iqcenter.uz/api/apply`, {
-      method: 'POST',
+      method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -73,7 +73,7 @@ export const WelcomePage = () => {
           <AppButtonNoLink value="Дальше" type="submit"></AppButtonNoLink>
         </div>
       </form>
-      <img id={"applyFormBtn"} src="Gradient1.svg" alt="" />
+      <img id={"applyFormBtn"} src="Gradient1.png" alt="" />
     </ThemeLogin>
   );
 };

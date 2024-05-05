@@ -43,10 +43,13 @@ export const SimpleSlider = () => {
     fade: true,
     infinite: true,
     slidesToShow: 1,
+    width: 0,
     speed: 550,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    adaptiveHeight: true,
+    adaptiveWidth: true,
   };
   return (
     <ThemeComments id="comments">

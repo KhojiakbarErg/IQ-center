@@ -45,19 +45,20 @@ export const ThemeCommentCard = styled.div`
     position: absolute;
   }
 
-  @media (max-width: 955px) {
+  @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    margin-left: -0.5em;
     z-index: 2;
-    padding: 20px;
 
     h4 {
       font-size: 30px;
     }
 
     p {
-      font-size: calc(1.38vw + 9.8px);
-      width: calc(56.24vw + 84px);
+      font-size: calc(1vw + 8.8px);
+      width: calc(54.24vw + 74px);
     }
 
     #FirstImgComm {

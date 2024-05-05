@@ -92,6 +92,7 @@ export const ThemeAboutUs = styled.div`
   }
 
   @media (max-width: 555px) {
+    padding-top: 40px;
     height: 320px;
   }
 

@@ -35,6 +35,7 @@ export const ThemeLogin = styled.div`
     color: #fff;
     margin: 0;
     z-index: 1;
+    font-family: "Actay";
   }
 
   @media (max-width: 1440px) {
@@ -43,6 +44,7 @@ export const ThemeLogin = styled.div`
       width: calc(36vw + 188px);
       margin: 0;
       z-index: 1;
+      font-family: "Actay";
     }
 
     .btnsgroup {

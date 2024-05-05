@@ -36,12 +36,12 @@ export const ThemeComments = styled.div`
     border-radius: 10px;
   }
 
-  @media (max-width: 955px) {
+  @media (max-width: 1200px) {
     h1 {
       font-size: calc(6.47vw - 1px);
     }
 
-    padding: 20px;
+    padding: 30px;
 
     .container {
       justify-content: start;

@@ -1,6 +1,16 @@
 import styled from "styled-components";
 
 export const ThemePreview = styled.div`
+  .rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    padding-right: calc(23.3vw - 59px);
+
+    margin-bottom: 200px;
+  }
   .labelImg {
     display: none;
     z-index: 2;
@@ -96,38 +106,6 @@ export const ThemePreview = styled.div`
     }
   }
 
-  .rating {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-
-    padding-right: calc(23.3vw - 59px);
-
-    .rate {
-      font-family: "Actay";
-      font-weight: bold;
-      font-size: 48px;
-      background: linear-gradient(125deg, #c521ff 0%, #3c64f1 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin: 0;
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-    }
-    .p {
-      font-family: "Actay";
-      font-weight: 700;
-      font-size: 48px;
-      color: #fff;
-      margin: 0;
-      display: block;
-    }
-    margin-bottom: 200px;
-  }
-
   .FirstGradient {
     padding: 0;
     margin: 0;
@@ -200,10 +178,6 @@ export const ThemePreview = styled.div`
       }
     }
 
-    .rating {
-      padding-right: calc(23.3vw - 29px);
-    }
-
     h1,
     h2 {
       display: none;
@@ -231,6 +205,9 @@ export const ThemePreview = styled.div`
       width: calc(16.2vw + 74px);
 
       justify-self: end;
+    }
+    .rating {
+      padding-right: calc(23.3vw - 29px);
     }
   }
 

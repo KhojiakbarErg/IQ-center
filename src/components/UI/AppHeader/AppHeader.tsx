@@ -55,10 +55,10 @@ export const AppHeader = () => {
               <a href="#aboutus">О нас</a>
             </li>
             <li>
-              <a href="#waychoose">Курсы</a>
+              <a href="#qualities">Особености</a>
             </li>
             <li>
-              <a href="#ourteachers">Учителя</a>
+              <a href="#waychoose">Курсы</a>
             </li>
             <li>
               <a href="#comments">Отзывы</a>
@@ -83,11 +83,11 @@ export const AppHeader = () => {
         <a href="#aboutus" id="option1">
           О нас
         </a>
+        <a href="#qualities" id="option1">
+          Особености
+        </a>
         <a href="#waychoose" id="option2">
           Курсы
-        </a>
-        <a href="#ourteachers" id="option3">
-          Учителя
         </a>
         <a href="#comments" id="option4">
           Отзывы

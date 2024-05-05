@@ -4,7 +4,7 @@ import { QualityCard } from "../../UI/QualityCard/QualityCard";
 
 export const SpecialQualities = () => {
   return (
-    <ThemeSpecialQualities>
+    <ThemeSpecialQualities id="qualities">
       <h1>Особенности обучения</h1>
       <div id="box">
         <QualityCard
