@@ -43,11 +43,18 @@
   <body style="margin: 0">
     <style>
       * {
-        font-family: "Actay Wide Bd", monospace, sans-serif;
         text-decoration: none;
-
         ::-webkit-scrollbar {
           width: 7px;
+        }
+
+        @font-face {
+          font-family: "Actay";
+          src: url("./fonts/Actay-Regular.otf") format("truetype");
+        }
+
+        body {
+          font-family: "CustomFont", sans-serif;
         }
 
         ::-webkit-scrollbar-track {
@@ -60,12 +67,12 @@
           border-radius: 5px;
         }
 
-        img {
+        /* img {
           -webkit-user-select: none !important;
           -ms-user-select: none !important;
           user-select: none !important;
           -webkit-user-drag: none !important;
-        }
+        } */
       }
     </style>
     <noscript>You need to enable JavaScript to run this app.</noscript>

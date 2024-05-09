@@ -90,8 +90,8 @@ export const ThemeAppHeader = styled.div`
         position: fixed;
         top: 0;
         left: -1000px;
-        width: 60%;
-        height: 45%;
+        width: 55%;
+        height: 70%;
         border: 2px solid #ffffff;
         border-left: 0;
         border-top: 0;

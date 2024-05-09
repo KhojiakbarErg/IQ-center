@@ -1,4 +1,8 @@
-import React, { ButtonHTMLAttributes, ChangeEvent, MouseEventHandler, } from "react";
+import React, {
+  ButtonHTMLAttributes,
+  ChangeEvent,
+  MouseEventHandler,
+} from "react";
 import { ThemeAppButton, ThemeAppButtonTwo } from "./AppButton.style";
 import { ThemeMoreInfBtn } from "./AppButton.style";
 import { Link } from "react-router-dom";
@@ -9,6 +13,7 @@ interface AppButtonProps {
   className?: string;
   type?: any;
   to?: any;
+  isDisabled?: boolean;
   children?: React.ReactNode;
   onClick?: any;
 }
@@ -20,6 +25,7 @@ export const AppButton = ({
   to,
   type,
   onClick,
+  isDisabled,
   ...props
 }: AppButtonProps) => {
   return (
@@ -28,6 +34,7 @@ export const AppButton = ({
         className={className}
         onClick={onClick}
         type={type}
+        disabled={isDisabled}
         {...props}
       >
         {value} {children}
@@ -46,14 +53,14 @@ export const AppButtonNoLink = ({
   ...props
 }: AppButtonProps) => {
   return (
-      <ThemeAppButton
-        className={className}
-        onClick={onClick}
-        type={type}
-        {...props}
-      >
-        {value} {children}
-      </ThemeAppButton>
+    <ThemeAppButton
+      className={className}
+      onClick={onClick}
+      type={type}
+      {...props}
+    >
+      {value} {children}
+    </ThemeAppButton>
   );
 };
 
@@ -76,7 +83,12 @@ export const MoreInfBtn = ({
   ...props
 }: MoreInfBtnProps) => {
   return (
-    <ThemeMoreInfBtn className={className} type={type} onClick={onClick} {...props}>
+    <ThemeMoreInfBtn
+      className={className}
+      type={type}
+      onClick={onClick}
+      {...props}
+    >
       {value} {children}
     </ThemeMoreInfBtn>
   );

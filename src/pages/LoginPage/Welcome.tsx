@@ -1,25 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 import {
+  AppButton,
   AppButtonNoLink,
   MoreInfBtn,
 } from "../../components/UI/AppButton/AppButton";
 import { ThemeLogin } from "./LoginPage.style";
 import { AppInput } from "../../components/UI/AppInput/AppInput";
-import { Link, Navigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const WelcomePage = () => {
+  const navigate = useNavigate();
 
   const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    var formData = new FormData(event.target);
+    let formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
 
     data.name = data.firstname + " " + data.lastname;
     delete data.firstname;
     delete data.lastname;
 
-    const response = await fetch(`https://admin.iqcenter.uz/api/apply`, {
+    const response = await fetch("https://admin.iqcenter.uz/api/apply", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -30,13 +32,12 @@ export const WelcomePage = () => {
 
     response.json().then((data) => {
       if (response.ok) {
-        <Navigate to="congratulations"/>
+        navigate("/congratulations");
       } else {
         alert("Что-то пошло не так");
       }
     });
   };
-
 
   return (
     <ThemeLogin>
