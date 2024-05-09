@@ -118,7 +118,6 @@ export const ThemeHappy = styled.div`
   }
 
   @media (max-width: 1440px) {
-    position: fixed;
     padding-top: 30px;
     h1 {
       font-size: calc(4.14vw + 13px);
