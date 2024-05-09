@@ -83,6 +83,10 @@ export const ThemeLocation = styled.div`
     gap: 30px;
 
     padding-top: 20px;
+
+    img {
+      width: calc(2.3vw + 26.5px);
+    }
   }
 
   #map {
