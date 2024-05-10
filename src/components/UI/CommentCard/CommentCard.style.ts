@@ -71,4 +71,11 @@ export const ThemeCommentCard = styled.div`
       height: calc(14.79vw + 35px);
     }
   }
+
+  @media (max-width: 370px) {
+    p {
+      font-size: calc(1vw + 6.4px);
+      width: calc(54.24vw + 35px);
+    }
+  }
 `;

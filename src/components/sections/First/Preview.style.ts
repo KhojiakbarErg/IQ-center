@@ -220,4 +220,32 @@ export const ThemePreview = styled.div`
       left: -1.7rem;
     }
   }
+
+  @media (max-width: 370px) {
+    .label {
+      width: 280px;
+    }
+    .informa {
+      width: 280px;
+    }
+    .preview {
+      .enter {
+        width: 280px;
+      }
+    }
+    .preview {
+      .text {
+        width: calc(42.83vw + 25px);
+        font-size: calc(1.23vw + 5px);
+      }
+    }
+    #way {
+      position: relative;
+      left: -0.3rem;
+    }
+
+    .rating {
+      padding-right: calc(23.3vw - 39px);
+    }
+  }
 `;

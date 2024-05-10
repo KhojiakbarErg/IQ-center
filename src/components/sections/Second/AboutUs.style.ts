@@ -101,6 +101,12 @@ export const ThemeAboutUs = styled.div`
       width: 300px;
     }
   }
+  @media (max-width: 369px) {
+    p {
+      width: 250px;
+      font-size: calc(1.23vw + 5px);
+    }
+  }
 `;
 
 export const ThemeGradient3 = styled.img`
