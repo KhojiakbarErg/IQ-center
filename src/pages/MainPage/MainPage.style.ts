@@ -9,14 +9,12 @@ export const ThemeMainPage = styled.div`
   height: 100%;
   width: 100%;
   position: relative;
-  font-family: "Actay Wide";
 
   @media (max-width: 750px) {
     padding-top: 270px;
   }
 
-  
-  img{
+  img {
     -webkit-user-select: none !important;
     -ms-user-select: none !important;
     user-select: none !important;
