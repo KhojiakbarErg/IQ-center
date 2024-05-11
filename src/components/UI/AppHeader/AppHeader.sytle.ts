@@ -84,7 +84,6 @@ export const ThemeAppHeader = styled.div`
       #list_menu {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         position: fixed;
@@ -171,6 +170,7 @@ export const ThemeAppHeader = styled.div`
       grid-row-start: 5;
       grid-column-start: 1;
       padding-left: 1rem;
+      margin-top: 1.5rem;
     }
 
     #callbtn {
