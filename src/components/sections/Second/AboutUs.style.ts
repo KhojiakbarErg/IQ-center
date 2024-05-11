@@ -88,7 +88,7 @@ export const ThemeAboutUs = styled.div`
       font-size: 0;
       font-size: calc(1.23vw + 6px);
     }
-    margin-top: 300px;
+    margin-top: 70px;
   }
 
   @media (max-width: 555px) {

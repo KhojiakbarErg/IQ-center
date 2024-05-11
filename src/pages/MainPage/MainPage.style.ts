@@ -11,7 +11,7 @@ export const ThemeMainPage = styled.div`
   position: relative;
 
   @media (max-width: 750px) {
-    padding-top: 270px;
+    padding-top: 200px;
   }
 
   img {

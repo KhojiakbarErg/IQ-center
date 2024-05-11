@@ -169,6 +169,7 @@ export const ThemeAppHeader = styled.div`
     #navigation {
       display: flex;
       grid-row-start: 5;
+      grid-column-start: 1;
       padding-left: 1rem;
     }
 
@@ -197,6 +198,19 @@ export const ThemeAppHeader = styled.div`
     #callbtn {
       position: relative;
       left: -1rem;
+    }
+    #navigation {
+      grid-row-start: 5;
+      grid-column-start: 1;
+      padding-left: 0.3rem;
+    }
+    #logo {
+      width: 55px;
+      height: 55px;
+
+      grid-column-start: 11;
+      padding-left: 0;
+      grid-row-start: 6;
     }
   }
   @media (max-width: 420px) {
