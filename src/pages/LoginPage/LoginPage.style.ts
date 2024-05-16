@@ -73,12 +73,14 @@ export const ThemeHappy = styled.div`
   text-align: center;
   color: #fff;
   padding: 75px;
+  padding-top: 30px;
   h1 {
-    font-size: 96px;
-    width: 880px;
     text-align: center;
     font-family: "Actay";
     margin: 0;
+
+    font-size: calc(4.14vw + 13px);
+    width: calc(36vw + 188px);
     z-index: 1;
 
     b {
@@ -90,45 +92,36 @@ export const ThemeHappy = styled.div`
   }
 
   p {
-    font-size: 32px;
-    width: 710px;
-    font-family: "Actay";
+    font-size: calc(1vw + 12px);
+    width: calc(24.6vw + 238px);
     z-index: 1;
+    font-family: "Actay";
   }
 
   button {
-    width: 600px;
-    margin: 50px 0;
-    display: flex;
+    width: calc(21.5vw + 237px);
+    margin: 0;
+    margin-bottom: 15px;
     z-index: 1000;
   }
 
-  @media (max-width: 1440px) {
-    padding-top: 30px;
-    h1 {
-      font-size: calc(4.14vw + 13px);
-      width: calc(36vw + 188px);
-      z-index: 1;
-    }
-
-    p {
-      font-size: calc(1vw + 12px);
-      width: calc(24.6vw + 238px);
-      z-index: 1;
-    }
-
-    button {
-      width: calc(21.5vw + 237px);
-      margin: 0;
-      margin-bottom: 30px;
-      z-index: 1000;
-    }
-  }
   img {
     width: calc(27.5vw + 147px);
     position: absolute;
     top: -50px;
     right: 0;
     z-index: 0;
+  }
+
+  @media (max-height: 390px) {
+    button {
+      height: 55px;
+    }
+  }
+  @media (max-height: 360px) {
+    button {
+      height: 40px;
+      font-size: 17px;
+    }
   }
 `;

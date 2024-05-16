@@ -29,7 +29,7 @@ export const ThemeAppInput = styled.input`
   width: calc(29.77vw + 108px);
   font-size: calc(1vw + 7px);
 
-  @media (max-height: 380px) {
+  @media (max-height: 400px) {
     margin: 3px 0;
     padding: 5px 10px;
     border: 1px solid transparent;

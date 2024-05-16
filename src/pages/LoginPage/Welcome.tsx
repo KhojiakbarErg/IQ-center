@@ -11,6 +11,18 @@ import { Link, useNavigate } from "react-router-dom";
 export const WelcomePage = () => {
   const navigate = useNavigate();
 
+  const handleTelChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    const formattedValue = value.replace(/^\+/, "").replace(/[\(\)\-\s]/g, "");
+    event.target.value = formattedValue;
+  };
+
+  const handleTgTagChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    const formattedValue = value.replace(/^@/, "");
+    event.target.value = formattedValue;
+  };
+
   const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -61,12 +73,16 @@ export const WelcomePage = () => {
             name="phone"
             type="tel"
             inputPlaceholder="Телефон"
+            id="telnum"
+            onChange={handleTelChange}
           />
           <AppInput
             required
             name="username"
             type="telegid"
             inputPlaceholder="Тег телеграмм"
+            id="tgteg"
+            onChange={handleTgTagChange}
           />
         </div>
         <div className="btnsgroup">
