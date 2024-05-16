@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ThemeLogin = styled.div`
   display: flex;
   background: #00000c;
-  background-position: 100%;
+  background-position: cover;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -16,53 +16,39 @@ export const ThemeLogin = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     z-index: 1;
     margin: 0;
   }
 
   .btnsgroup {
     display: flex;
-    gap: 100px;
-    margin-top: 140px;
-    justify-content: center;
+    gap: calc(4.53vw + 10px);
     z-index: 1;
+    margin: 0;
+    justify-content: center;
   }
 
   h1 {
-    font-size: 96px;
-    width: 880px;
+    font-size: calc(3.14vw + 16px);
+    width: calc(36vw + 188px);
     text-align: center;
-    color: #fff;
     margin: 0;
     z-index: 1;
     font-family: "Actay";
+    color: #fff;
   }
 
-  @media (max-width: 1440px) {
-    h1 {
-      font-size: calc(3.14vw + 16px);
-      width: calc(36vw + 188px);
-      margin: 0;
-      z-index: 1;
-      font-family: "Actay";
-    }
+  button {
+    width: calc(12.3vw + 45px);
+    font-size: calc(1vw + 8px);
+    height: calc(2.1vw + 38.3px);
 
-    .btnsgroup {
-      gap: calc(4.53vw + 10px);
-      z-index: 1;
-      margin: 0;
-    }
+    margin-top: 1.5rem;
 
-    button {
-      width: calc(12.3vw + 45px);
-      font-size: calc(1vw + 8px);
-      height: calc(2.1vw + 38.3px);
-
-      margin-top: 30px;
-
-      z-index: 1;
-    }
+    z-index: 1;
   }
+
   img {
     width: calc(27.5vw + 147px);
     position: absolute;

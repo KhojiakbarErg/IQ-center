@@ -5,13 +5,11 @@ import styled from "styled-components";
 // };
 
 export const ThemeAppInput = styled.input`
-  width: 710px;
   margin: 10px 0;
   font-family: "Actay";
   padding: 12px 20px;
   border: 2px solid transparent;
-  border-radius: 10px;
-  font-size: 25px;
+  border-radius: 15px;
   color: #fff;
   background: #00000c;
   border-color: #fff;
@@ -28,9 +26,15 @@ export const ThemeAppInput = styled.input`
     border-color: #00000c;
   }
 
-  @media (max-width: 1440px) {
-    width: calc(29.77vw + 108px);
-    font-size: calc(1vw + 7px);
+  width: calc(29.77vw + 108px);
+  font-size: calc(1vw + 7px);
+
+  @media (max-height: 380px) {
+    margin: 3px 0;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-color: #fff;
+    border-radius: 8px;
   }
 `;
 // export const ThemeInputError = styled.span<StyledInput>`
