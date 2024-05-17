@@ -202,13 +202,15 @@ export const ThemeAppHeader = styled.div`
     #navigation {
       grid-row-start: 5;
       grid-column-start: 1;
-      padding-left: 0.3rem;
+      padding-left: 0.15rem;
     }
     #logo {
       width: 55px;
       height: 55px;
 
       grid-column-start: 11;
+      padding-left: 0.35rem;
+
       padding-left: 0;
       grid-row-start: 6;
     }
