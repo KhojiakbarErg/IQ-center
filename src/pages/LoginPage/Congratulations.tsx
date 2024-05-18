@@ -18,11 +18,11 @@ export const Congratulation = () => {
         <Link to="/">
           <AppButton to={"/"} value="На главную"></AppButton>
         </Link>
-        <Link to="/">
+        <Link to="https://t.me/IQ_CenterBot" target="_blank">
           <MoreInfBtn value="Продолжить в боте"></MoreInfBtn>
         </Link>
       </div>
-      <img src="Gradient1.svg" alt="" />
+      <img src="Gradient1.png" alt="" />
     </ThemeHappy>
   );
 };

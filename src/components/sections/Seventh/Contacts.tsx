@@ -22,10 +22,13 @@ export const Location = () => {
           </div>
 
           <div id="socialmedias">
-            <a href="https://www.instagram.com/iqcenter.uz?igsh=dWR3ejgzeGlsaXRq">
+            <a
+              href="https://www.instagram.com/iqcenter.uz?igsh=dWR3ejgzeGlsaXRq"
+              target="_blank"
+            >
               <img src="Insta.svg" alt="insta" />
             </a>
-            <a href="https://t.me/iqcenter_uz">
+            <a href="https://t.me/IQ_CenterBot " target="_blank">
               <img src="Telega.svg" alt="telega" />
             </a>
           </div>
