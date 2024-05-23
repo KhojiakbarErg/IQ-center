@@ -166,11 +166,11 @@ export const ThemeAppHeader = styled.div`
     }
 
     #navigation {
-      display: flex;
+      display: inline-block;
       grid-row-start: 5;
       grid-column-start: 1;
       padding-left: 1rem;
-      margin-top: 1.5rem;
+      margin-top: 1.3rem;
     }
 
     #callbtn {
@@ -202,7 +202,7 @@ export const ThemeAppHeader = styled.div`
     #navigation {
       grid-row-start: 5;
       grid-column-start: 1;
-      padding-left: 0.15rem;
+      padding-left: 0;
     }
     #logo {
       width: 55px;

@@ -160,10 +160,10 @@ export const ThemePreview = styled.div`
         display: none;
       }
     }
-
     .SecondGradient {
       .Gradient2 {
-        display: none;
+        position: absolute;
+        top: 220px;
       }
     }
 
