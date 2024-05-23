@@ -71,7 +71,7 @@ export const AppHeader = () => {
       </div>
       <img
         src="logo.png"
-        alt="logo"
+        alt="IQ Center logotype"
         id="logo"
         className="logotype"
         loading="lazy"

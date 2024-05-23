@@ -1,3 +1,15 @@
 # https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+Allow: /public/
+Allow: /courses/
+Allow: /blog/
+
+Sitemap: https://iqcenter.uz/sitemap.xml
