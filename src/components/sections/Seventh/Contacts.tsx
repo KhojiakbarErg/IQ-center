@@ -10,7 +10,7 @@ export const Location = () => {
         <div className="inf">
           <div className="extrainf">
             <h5 id="number">Номер Телефона:</h5>
-            <a href="tel:+998908052935">+998 (90) 805-29-35</a>
+            <a href="tel:+998900146432">+998 (90) 014-64-32</a>
           </div>
           <div className="extrainf">
             <h5 id="location">Адрес: </h5>

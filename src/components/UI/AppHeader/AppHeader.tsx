@@ -76,7 +76,7 @@ export const AppHeader = () => {
         className="logotype"
         loading="lazy"
       />
-      <a href="tel:+998908052935" id="callbtn">
+      <a href="tel:+998900146432" id="callbtn">
         <img src="CallBtn.svg" alt="Call" loading="lazy" />
       </a>
       <div className="options">
@@ -96,7 +96,7 @@ export const AppHeader = () => {
           Контакты
         </a>
       </div>
-      <a href="tel:+998908052935" className="call">
+      <a href="tel:+998900146432" className="call">
         Связаться <img className="call" src="right-arrow.svg" alt="." />
       </a>
     </ThemeAppHeader>
