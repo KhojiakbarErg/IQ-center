@@ -45,6 +45,7 @@ export const AppButtonNoLink = ({
   to,
   type,
   onClick,
+  isDisabled,
   ...props
 }: AppButtonProps) => {
   return (
@@ -52,6 +53,7 @@ export const AppButtonNoLink = ({
       className={className}
       onClick={onClick}
       type={type}
+      disabled={isDisabled}
       {...props}
     >
       {value} {children}
