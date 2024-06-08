@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  AppButton,
   AppButtonNoLink,
   MoreInfBtn,
 } from "../../components/UI/AppButton/AppButton";
@@ -11,6 +10,7 @@ import { Link, useNavigate } from "react-router-dom";
 export const WelcomePage = () => {
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const handleTelChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
@@ -24,19 +24,17 @@ export const WelcomePage = () => {
     event.target.value = formattedValue;
   };
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    if (isSubmitting) {
-      return;
-    }
-
+    if (isButtonDisabled) return;
     setIsSubmitting(true);
+    setIsButtonDisabled(true);
 
-    const formData = new FormData(event.currentTarget);
-    const data: { [key: string]: any } = Object.fromEntries(formData.entries());
+    let formData = new FormData(event.target);
+    const data = Object.fromEntries(formData);
 
-    data.name = `${data.firstname} ${data.lastname}`;
+    data.name = data.firstname + " " + data.lastname;
     delete data.firstname;
     delete data.lastname;
 
@@ -50,16 +48,16 @@ export const WelcomePage = () => {
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
-      if (response.ok) {
-        navigate("/congratulations");
-      } else {
+      navigate("/congratulations");
+
+      if (!response.ok) {
         alert("Что-то пошло не так");
       }
     } catch (error) {
-      alert("Произошла ошибка при отправке формы");
+      alert("Ошибка при отправке формы");
     } finally {
       setIsSubmitting(false);
+      setTimeout(() => setIsButtonDisabled(false), 20000);
     }
   };
 
@@ -71,13 +69,13 @@ export const WelcomePage = () => {
           <AppInput
             required
             name="firstname"
-            type="text"
+            type="username"
             inputPlaceholder="Имя"
           />
           <AppInput
             required
             name="lastname"
-            type="text"
+            type="usersurname"
             inputPlaceholder="Фамилия"
           />
           <AppInput
@@ -91,7 +89,7 @@ export const WelcomePage = () => {
           <AppInput
             required
             name="username"
-            type="text"
+            type="telegid"
             inputPlaceholder="Тег телеграмм"
             id="tgteg"
             onChange={handleTgTagChange}
@@ -104,7 +102,7 @@ export const WelcomePage = () => {
           <AppButtonNoLink
             value="Дальше"
             type="submit"
-            isDisabled={isSubmitting}
+            isDisabled={isButtonDisabled}
           ></AppButtonNoLink>
         </div>
       </form>
