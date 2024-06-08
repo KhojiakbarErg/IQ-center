@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { ThemePreview } from "./Preview.style";
 import { AppButton, MoreInfBtn } from "../../UI/AppButton/AppButton";
 import { Acceptense } from "../../UI/Acceptense/Acceptense";
-import { Link } from "react-router-dom";
 
 export const Preview = () => {
   useEffect(() => {

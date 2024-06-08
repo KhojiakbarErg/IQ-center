@@ -1,6 +1,5 @@
-import { AppButton, AppButtonTwo } from "../../UI/AppButton/AppButton";
+import { AppButtonTwo } from "../../UI/AppButton/AppButton";
 import { ThemeAboutUs, ThemeContainer2, ThemeGradient3 } from "./AboutUs.style";
-import { Link } from "react-router-dom";
 
 export const AboutUs = () => {
   return (

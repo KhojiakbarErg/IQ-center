@@ -1,12 +1,7 @@
-import React, {
-  ButtonHTMLAttributes,
-  ChangeEvent,
-  MouseEventHandler,
-} from "react";
+import React from "react";
 import { ThemeAppButton, ThemeAppButtonTwo } from "./AppButton.style";
 import { ThemeMoreInfBtn } from "./AppButton.style";
 import { Link } from "react-router-dom";
-import { clickOptions } from "@testing-library/user-event/dist/click";
 
 interface AppButtonProps {
   value: string;

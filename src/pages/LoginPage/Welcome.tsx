@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   AppButton,
   AppButtonNoLink,
@@ -10,6 +10,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const WelcomePage = () => {
   const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleTelChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
@@ -23,32 +24,43 @@ export const WelcomePage = () => {
     event.target.value = formattedValue;
   };
 
-  const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    let formData = new FormData(event.target);
-    const data = Object.fromEntries(formData);
+    if (isSubmitting) {
+      return;
+    }
 
-    data.name = data.firstname + " " + data.lastname;
+    setIsSubmitting(true);
+
+    const formData = new FormData(event.currentTarget);
+    const data: { [key: string]: any } = Object.fromEntries(formData.entries());
+
+    data.name = `${data.firstname} ${data.lastname}`;
     delete data.firstname;
     delete data.lastname;
 
-    const response = await fetch("https://admin.iqcenter.uz/api/apply", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    try {
+      const response = await fetch("https://admin.iqcenter.uz/api/apply", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    response.json().then((data) => {
+      const result = await response.json();
       if (response.ok) {
         navigate("/congratulations");
       } else {
         alert("Что-то пошло не так");
       }
-    });
+    } catch (error) {
+      alert("Произошла ошибка при отправке формы");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -59,13 +71,13 @@ export const WelcomePage = () => {
           <AppInput
             required
             name="firstname"
-            type="username"
+            type="text"
             inputPlaceholder="Имя"
           />
           <AppInput
             required
             name="lastname"
-            type="usersurname"
+            type="text"
             inputPlaceholder="Фамилия"
           />
           <AppInput
@@ -79,7 +91,7 @@ export const WelcomePage = () => {
           <AppInput
             required
             name="username"
-            type="telegid"
+            type="text"
             inputPlaceholder="Тег телеграмм"
             id="tgteg"
             onChange={handleTgTagChange}
@@ -89,7 +101,11 @@ export const WelcomePage = () => {
           <Link to="/">
             <MoreInfBtn value="Назад"></MoreInfBtn>
           </Link>
-          <AppButtonNoLink value="Дальше" type="submit"></AppButtonNoLink>
+          <AppButtonNoLink
+            value="Дальше"
+            type="submit"
+            isDisabled={isSubmitting}
+          ></AppButtonNoLink>
         </div>
       </form>
       <img id={"applyFormBtn"} src="Gradient1.png" alt="" />
