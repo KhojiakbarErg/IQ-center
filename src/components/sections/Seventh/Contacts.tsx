@@ -35,12 +35,12 @@ export const Location = () => {
         </div>
         <div id="mapmain">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.4446255207104!2d69.26892827479108!3d41.299190101463175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bdc89f27f6b%3A0x49989a739be2f0e5!2sDmaar%20plaza!5e0!3m2!1sru!2s!4v1714377828071!5m2!1sru!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d749.3624260070139!2d69.27177499999999!3d41.2990796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bad3d3ade79%3A0xf71ffbe980720fd3!2sIQ%20Center!5e0!3m2!1sru!2s!4v1717863152405!5m2!1sru!2s"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             id="map"
             title="map"
-          ></iframe>
+          />
         </div>
       </div>
     </ThemeLocation>
