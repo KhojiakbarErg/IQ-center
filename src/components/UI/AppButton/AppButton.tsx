@@ -65,9 +65,10 @@ interface MoreInfBtnProps {
   value: string;
   type?: "submit" | "reset" | "button" | undefined;
   className?: string;
-  to?: string;
+  to?: any;
   children?: React.ReactNode;
   onClick?: any;
+  isDisabled?: boolean;
 }
 
 export const MoreInfBtn = ({
@@ -77,17 +78,21 @@ export const MoreInfBtn = ({
   to,
   type,
   onClick,
+  isDisabled,
   ...props
 }: MoreInfBtnProps) => {
   return (
-    <ThemeMoreInfBtn
-      className={className}
-      type={type}
-      onClick={onClick}
-      {...props}
-    >
-      {value} {children}
-    </ThemeMoreInfBtn>
+    <Link to={to} target="_blank">
+      <ThemeMoreInfBtn
+        className={className}
+        type={type}
+        onClick={onClick}
+        disabled={isDisabled}
+        {...props}
+      >
+        {value} {children}
+      </ThemeMoreInfBtn>
+    </Link>
   );
 };
 

@@ -96,9 +96,7 @@ export const WelcomePage = () => {
           />
         </div>
         <div className="btnsgroup">
-          <Link to="/">
-            <MoreInfBtn value="Назад"></MoreInfBtn>
-          </Link>
+          <MoreInfBtn to="/" value="Назад" isDisabled={false} />
           <AppButtonNoLink
             value="Дальше"
             type="submit"
