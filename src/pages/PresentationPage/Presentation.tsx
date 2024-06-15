@@ -1,12 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Gradient1pre,
   Gradient2pre,
   PresentationItSelf,
 } from "./PresentationPage.style";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import {
+  AppButtonNoLink,
+  MoreInfBtn,
+} from "../../components/UI/AppButton/AppButton";
+import {
+  AppInput,
+  AppInputPresentation,
+} from "../../components/UI/AppInput/AppInput";
 
 export const Presentation = () => {
+  const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
+  const handleTelChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    const formattedValue = value.replace(/^\+/, "").replace(/[\(\)\-\s]/g, "");
+    event.target.value = formattedValue;
+  };
+
+  const handleTgTagChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    const formattedValue = value.replace(/^@/, "");
+    event.target.value = formattedValue;
+  };
+
+  const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (isButtonDisabled) return;
+    setIsSubmitting(true);
+    setIsButtonDisabled(true);
+
+    let formData = new FormData(event.target);
+    const data = Object.fromEntries(formData);
+
+    data.name = data.firstname + " " + data.lastname;
+    delete data.firstname;
+    delete data.lastname;
+
+    try {
+      const response = await fetch("https://admin.iqcenter.uz/api/apply", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      navigate("/congratulations");
+
+      if (!response.ok) {
+        alert("Что-то пошло не так");
+      }
+    } catch (error) {
+      alert("Ошибка при отправке формы");
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => setIsButtonDisabled(false), 20000);
+    }
+  };
+
   return (
     <PresentationItSelf>
       <Gradient1pre src="Gradient1.png" alt="Decoration1" />
@@ -133,11 +194,9 @@ export const Presentation = () => {
       </div>
       <div className="register">
         <h2>Нашли что-то интересное?🔎</h2>
+        <h3>Хотите записаться на пробный урок?📝</h3>
         <div>
-          <Link to="/" className="btns">
-            ⬅️На главную
-          </Link>
-          <Link to="/welcome" className="btns">
+          <Link to="#formsubmit" className="btns">
             Записаться📩
           </Link>
         </div>
@@ -171,6 +230,72 @@ export const Presentation = () => {
         <img src="galochka2.png" alt="galochka" className="galochka2" />
         <img src="result5.png" alt="results" />
       </div>
+
+      <footer id="formsubmit">
+        <div id="left_footer">
+          <h1>Запишитесь на пробный урок прямо сейчас!</h1>
+          <ul>
+            <li>
+              <b>🧮</b>Профильная математика
+            </li>
+            <li>
+              <img src="diploma.svg" alt="diploma" />
+              Помощь с поступлением
+            </li>
+            <li>
+              <img src="science.svg" alt="science" />
+              Предметы для сдачи в DTM
+            </li>
+          </ul>
+        </div>
+        <form id="right_footer" onSubmit={handleSubmit}>
+          <h2>Оставьте заявку</h2>
+          <div className="inputsgroup">
+            <AppInputPresentation
+              required
+              name="firstname"
+              type="username"
+              inputPlaceholder="Имя"
+            />
+            <AppInputPresentation
+              required
+              name="lastname"
+              type="usersurname"
+              inputPlaceholder="Фамилия"
+            />
+            <AppInputPresentation
+              required
+              name="phone"
+              type="tel"
+              inputPlaceholder="Телефон"
+              id="telnum"
+              onChange={handleTelChange}
+            />
+            <AppInputPresentation
+              required
+              name="username"
+              type="telegid"
+              inputPlaceholder="Тег телеграмм"
+              id="tgteg"
+              onChange={handleTgTagChange}
+            />
+          </div>
+          <div className="btnsgroup">
+            <MoreInfBtn value="Назад" isDisabled={false} className="btnback">
+              <Link to="/" target="_blank" className="linkback"></Link>
+            </MoreInfBtn>
+            <AppButtonNoLink
+              value="Дальше"
+              type="submit"
+              className="btnnext"
+              isDisabled={isButtonDisabled}
+            ></AppButtonNoLink>
+          </div>
+          <a className="telnum" href="tel:+998900146432">
+            Связаться📞
+          </a>
+        </form>
+      </footer>
     </PresentationItSelf>
   );
 };

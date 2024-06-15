@@ -82,17 +82,15 @@ export const MoreInfBtn = ({
   ...props
 }: MoreInfBtnProps) => {
   return (
-    <Link to={to} target="_blank">
-      <ThemeMoreInfBtn
-        className={className}
-        type={type}
-        onClick={onClick}
-        disabled={isDisabled}
-        {...props}
-      >
-        {value} {children}
-      </ThemeMoreInfBtn>
-    </Link>
+    <ThemeMoreInfBtn
+      className={className}
+      type={type}
+      onClick={onClick}
+      disabled={isDisabled}
+      {...props}
+    >
+      {value} {children}
+    </ThemeMoreInfBtn>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { forwardRef, HTMLProps } from "react";
-import { ThemeAppInput } from "./AppInput.style";
+import { ThemeAppInput, ThemeAppInputPress } from "./AppInput.style";
 
 type AppInputProps = {
   type: "username" | "usersurname" | "tel" | "telegid" | "text";
@@ -31,6 +31,42 @@ export const AppInput = forwardRef<HTMLInputElement, AppInputProps>(
     return (
       <>
         <ThemeAppInput
+          id={id}
+          name={name}
+          type={type}
+          placeholder={inputPlaceholder}
+          value={value}
+          onChange={onChange}
+          // isError={isError}
+          ref={ref}
+          {...props}
+          required
+        />
+        {/* <ThemeInputError isError={isError}>{errorText}</ThemeInputError> */}
+      </>
+    );
+  }
+);
+
+export const AppInputPresentation = forwardRef<HTMLInputElement, AppInputProps>(
+  function AppInput(
+    {
+      id,
+      name,
+      inputPlaceholder,
+      type,
+      isError,
+      value,
+      onChange,
+      errorText,
+      required,
+      ...props
+    }: AppInputProps & HTMLProps<HTMLInputElement>,
+    ref
+  ) {
+    return (
+      <>
+        <ThemeAppInputPress
           id={id}
           name={name}
           type={type}

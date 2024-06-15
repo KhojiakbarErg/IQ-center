@@ -651,7 +651,7 @@ export const PresentationItSelf = styled.div`
     border-right: 0;
     border-left: 0;
     z-index: 1;
-    gap: 100px;
+    gap: 50px;
     padding: 100px 0;
 
     h2 {
@@ -675,6 +675,120 @@ export const PresentationItSelf = styled.div`
         background: #fff;
         color: #00000c;
       }
+    }
+  }
+
+  #formsubmit {
+    background: #222;
+    position: relative;
+    display: flex;
+    padding: 70px 150px;
+    gap: 15%;
+    justify-content: space-between;
+
+    #left_footer {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        margin: 0;
+        font-size: 68px;
+        text-align: left;
+        width: 500px;
+        margin-bottom: 50px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      li {
+        font-size: 25px;
+        img {
+          width: 32px;
+          margin-bottom: -5px;
+        }
+        b {
+          font-size: 28px;
+        }
+      }
+    }
+
+    #right_footer {
+      background: #fdf5e6;
+      padding: 80px 70px;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-size: 50px;
+        margin: 0;
+        color: #222;
+      }
+
+      .inputsgroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btnback {
+        border: 2px solid #111;
+        color: #111;
+        width: calc(8.9vw + 89px);
+        height: calc(2.1vw + 38.3px);
+
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+        font-size: calc(1.1vw + 7px);
+        position: relative;
+        text-align: center;
+
+        &:hover {
+          background: #111;
+          color: #fff;
+        }
+      }
+
+      .btnsgroup {
+        display: flex;
+        position: relative;
+        height: calc(2.1vw + 38.3px);
+        margin-top: 4em;
+        gap: 30px;
+      }
+
+      .btnnext {
+        width: calc(8.9vw + 89px);
+        height: calc(2.1vw + 38.3px);
+        padding: 0;
+        font-weight: 600;
+        margin: 0;
+
+        font-size: calc(1.1vw + 7px);
+      }
+    }
+    .telnum {
+      font-size: 25px;
+      color: #222;
+      position: relative;
+      bottom: -25px;
+    }
+    .linkback {
+      margin: 0;
+      z-index: 11111;
+      width: calc(8.9vw + 89px);
+      height: calc(2.1vw + 38.3px);
+      text-align: center;
+      position: absolute;
     }
   }
 `;

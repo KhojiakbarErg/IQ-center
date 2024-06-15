@@ -51,6 +51,7 @@ export const ThemeMoreInfBtn = styled.button`
   border: 3px solid rgba(255, 255, 255);
   border-radius: 39px;
   transition: 550ms;
+  z-index: 0;
 
   &:hover {
     background-color: rgba(256, 256, 256, 0.85);

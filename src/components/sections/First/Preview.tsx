@@ -1,6 +1,7 @@
 import { ThemePreview } from "./Preview.style";
 import { AppButton, MoreInfBtn } from "../../UI/AppButton/AppButton";
 import { Acceptense } from "../../UI/Acceptense/Acceptense";
+import { Link } from "react-router-dom";
 
 export const Preview = () => {
   return (
@@ -28,7 +29,9 @@ export const Preview = () => {
           <div className="enter">
             <AppButton value="Записаться" to="/welcome"></AppButton>
             <div className="WantInf">
-              <MoreInfBtn to="/presentation" value="Подробнее" />
+              <Link to="/presentation" target="_blank">
+                <MoreInfBtn value="Подробнее" />
+              </Link>
             </div>
           </div>
         </div>
