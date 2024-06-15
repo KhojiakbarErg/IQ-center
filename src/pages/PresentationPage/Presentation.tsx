@@ -4,6 +4,7 @@ import {
   Gradient2pre,
   PresentationItSelf,
 } from "./PresentationPage.style";
+import { Link } from "react-router-dom";
 
 export const Presentation = () => {
   return (
@@ -128,6 +129,17 @@ export const Presentation = () => {
 
         <div>
           <img src="FourthTeacher.png" alt="Teacher" id="FourthTeacher" />
+        </div>
+      </div>
+      <div className="register">
+        <h2>Нашли что-то интересное?🔎</h2>
+        <div>
+          <Link to="/" className="btns">
+            ⬅️На главную
+          </Link>
+          <Link to="/welcome" className="btns">
+            Записаться📩
+          </Link>
         </div>
       </div>
       <div className="presentationslide" id="slide9">

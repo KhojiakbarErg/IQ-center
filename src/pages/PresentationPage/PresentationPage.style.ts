@@ -126,7 +126,9 @@ export const Gradient1pre = styled.img`
   left: -50px;
   z-index: 0;
   rotate: -90deg;
+  border-radius: 60%;
 `;
+
 export const Gradient2pre = styled.img`
   width: 700px;
   height: 900px;
@@ -135,6 +137,7 @@ export const Gradient2pre = styled.img`
   right: -100px;
   z-index: 0;
   rotate: 45deg;
+  border-radius: 60%;
 `;
 
 export const OwnerPlace = styled.img`
@@ -632,6 +635,46 @@ export const PresentationItSelf = styled.div`
       z-index: 0;
       position: absolute;
       left: 0;
+    }
+  }
+
+  .register {
+    background: #00000c;
+    background-position: 100%;
+    margin: 0;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-right: 0;
+    border-left: 0;
+    z-index: 1;
+    gap: 100px;
+    padding: 100px 0;
+
+    h2 {
+      margin: 0;
+      font-size: 50px;
+      z-index: 1;
+    }
+
+    .btns {
+      color: white;
+      background: 0;
+      border: 2px solid white;
+      border-radius: 15px;
+      padding: 25px 35px;
+      margin: 25px;
+      z-index: 2;
+      font-size: 25px;
+      transition: 550ms;
+
+      &:hover {
+        background: #fff;
+        color: #00000c;
+      }
     }
   }
 `;
