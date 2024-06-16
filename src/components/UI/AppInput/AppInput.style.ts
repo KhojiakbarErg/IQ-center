@@ -41,8 +41,8 @@ export const ThemeAppInput = styled.input`
 export const ThemeAppInputPress = styled.input`
   margin: 10px 0;
   font-family: "Actay";
-  padding: 22px 30px;
-  padding-bottom: 0px;
+  padding: 25px 30px;
+  padding-bottom: 15px;
   border: 0;
   border-bottom: 2px solid transparent;
   border-radius: 0;
