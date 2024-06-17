@@ -2,7 +2,6 @@ import {
   Gradient1,
   Gradient2,
   Owner,
-  OwnerPlace,
   ThemePresentationPage,
 } from "./PresentationPage.style";
 import {
@@ -28,7 +27,6 @@ export const PresentationPage = () => {
         </ButtonsContainer>
       </div>
       <div>
-        <OwnerPlace src="OwnerPlace.png" alt="IQOwnerPlace" />
         <Owner src="Owner.png" alt="IQOwner" />
       </div>
       <Gradient1 src="Gradient1.png" alt="Decoration1" />

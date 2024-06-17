@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const ThemePresentationPage = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: left;
   text-align: left;
   background: #00000c;
@@ -13,7 +14,19 @@ export const ThemePresentationPage = styled.div`
   left: 0;
   top: 0;
   color: #fff;
-  padding: 120px 122px;
+  padding: calc(35.4vh - 112px) calc(5.85vw + 7px);
+  padding-bottom: calc(14.6vh - 38px);
+  gap: calc(4.94vw + 5px);
+
+  @media (max-width: 1050px) {
+    gap: 0;
+  }
+
+  @media (max-width: 685px) {
+    padding: calc(35.4vh - 162px) calc(5.85vw + 7px);
+    gap: 70px;
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.h1`
@@ -24,8 +37,8 @@ export const Title = styled.h1`
   //TODO:Поставить шрифт
   font-family: sans-serif;
   text-transform: lowercase;
-  font-size: 115px;
-  width: 903px;
+  font-size: calc(5.86vw + 18px);
+  width: calc(41.1vw + 113.5px);
   z-index: 1;
   margin: 0;
   padding: 0;
@@ -35,8 +48,8 @@ export const Subtitle = styled.p`
   //TODO:Поставить шрифт
 
   color: #fff;
-  font-size: 28px;
-  margin-top: 0;
+  font-size: calc(1.6vw + 5px);
+  margin: 0;
   z-index: 1;
 `;
 
@@ -44,8 +57,9 @@ export const Quote = styled.p`
   //TODO:Поставить шрифт
 
   color: #fff;
-  font-size: 28px;
+  font-size: calc(1.17vw + 5.5px);
   margin: 45px 0;
+  display: flex;
   z-index: 1;
 `;
 
@@ -53,25 +67,34 @@ export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 730px;
-  height: 78px;
+  width: calc(31vw + 151px);
+  height: calc(12.7vh - 29px);
+  @media (max-width: 1050px) {
+    height: calc(12.7vh - 49px);
+  }
   #backBtn {
     border-radius: 28px;
-    width: 730px;
-    height: 78px;
+    width: calc(31vw + 151px);
+    height: calc(12.7vh - 29px);
     background: #00000c;
     position: absolute;
     z-index: 1;
+    @media (max-width: 1050px) {
+      height: calc(12.7vh - 49px);
+    }
   }
 
   #borderBtn {
     background: linear-gradient(90deg, #ff00e0, #7500ff) #1c1c1c;
-    width: 734px;
-    height: 82px;
+    width: calc(31vw + 156px);
+    height: calc(12.7vh - 25px);
     border-radius: 28px;
 
     position: absolute;
     z-index: 0;
+    @media (max-width: 1050px) {
+      height: calc(12.7vh - 45px);
+    }
   }
 `;
 
@@ -81,11 +104,11 @@ export const Button = styled.button<{ primary?: boolean }>`
   color: white;
   border: none;
   padding: 15px 25px;
-  height: 78px;
+  height: calc(12.7vh - 29px);
   transition: 550ms;
   font-family: sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: calc(1.1vw + 4px);
   cursor: pointer;
   z-index: 2;
   transition: background-color 0.3s ease, opacity 0.3s ease;
@@ -93,11 +116,16 @@ export const Button = styled.button<{ primary?: boolean }>`
   border-bottom-right-radius: 28px;
   ${({ primary }) =>
     primary &&
-    "border-top-left-radius: 26px; border-bottom-left-radius: 26px; width: 497px;"}
-  ${({ primary }) => !primary && "background:  0; width: 233px; "}
+    "border-top-left-radius: 26px; border-bottom-left-radius: 26px; width: calc(20.2vw + 109px);"}
+  ${({ primary }) => !primary && "background:  0; width: calc(10.8vw + 37px); "}
 
   &:hover {
     opacity: 0.85;
+  }
+
+  @media (max-width: 1050px) {
+    height: calc(12.7vh - 49px);
+    padding: 0;
   }
 `;
 
@@ -108,6 +136,10 @@ export const Gradient1 = styled.img`
   top: -150px;
   right: -50px;
   z-index: 0;
+
+  @media (max-width: 1050px) {
+    display: none;
+  }
 `;
 export const Gradient2 = styled.img`
   width: 600px;
@@ -140,22 +172,22 @@ export const Gradient2pre = styled.img`
   border-radius: 60%;
 `;
 
-export const OwnerPlace = styled.img`
-  width: 570px;
-  height: 520px;
-  position: absolute;
-  right: 120px;
-  bottom: 57px;
-  z-index: 1;
-`;
-
 export const Owner = styled.img`
-  width: 566px;
-  height: 750px;
+  width: calc(28.14vw + 100px);
+  margin-top: -15vh;
   position: absolute;
-  right: 120px;
-  bottom: 55px;
   z-index: 1;
+  @media (max-width: 1150px) {
+    margin-top: -10vh;
+  }
+  @media (max-width: 915px) {
+    width: calc(28.14vw + 50px);
+    margin-top: -5vh;
+  }
+  @media (max-width: 685px) {
+    width: calc(35.14vw + 130px);
+    margin-left: 2rem;
+  }
 `;
 
 export const PresentationItSelf = styled.div`
