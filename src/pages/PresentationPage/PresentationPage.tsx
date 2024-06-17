@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   Gradient1,
   Gradient2,
@@ -19,12 +20,14 @@ export const PresentationPage = () => {
         <Subtitle>Вместе мы сделаем сложное</Subtitle>
         <Title>ПРОСТЫМ И ДОСТУПНЫМ!</Title>
         <Quote>- Сергей Дмитриевич, основатель IQ Центра</Quote>
-        <ButtonsContainer>
-          <div id="borderBtn"></div>
-          <div id="backBtn"></div>
-          <Button primary>Скачать презентацию бесплатно📑</Button>
-          <Button>Подробнее🔍</Button>
-        </ButtonsContainer>
+        <Link to="/presentationitself" className="link">
+          <ButtonsContainer>
+            <div id="borderBtn"></div>
+            <div id="backBtn"></div>
+            <Button primary>Скачать презентацию бесплатно📑</Button>
+            <Button>Подробнее🔍</Button>
+          </ButtonsContainer>
+        </Link>
       </div>
       <div>
         <Owner src="Owner.png" alt="IQOwner" />

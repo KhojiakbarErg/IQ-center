@@ -72,6 +72,12 @@ export const ButtonsContainer = styled.div`
   @media (max-width: 1050px) {
     height: calc(12.7vh - 49px);
   }
+
+  .link {
+    background: 0;
+    width: calc(31vw + 151px);
+  }
+
   #backBtn {
     border-radius: 28px;
     width: calc(31vw + 151px);
@@ -151,7 +157,7 @@ export const Gradient2 = styled.img`
 `;
 
 export const Gradient1pre = styled.img`
-  width: 700px;
+  width: calc(30.85vw + 207px);
   height: 1008px;
   position: fixed;
   top: -350px;
@@ -159,17 +165,29 @@ export const Gradient1pre = styled.img`
   z-index: 0;
   rotate: -90deg;
   border-radius: 60%;
+
+  @media (max-width: 1400px) {
+    height: 608px;
+    top: -250px;
+  }
 `;
 
 export const Gradient2pre = styled.img`
-  width: 700px;
-  height: 900px;
+  width: calc(39.2vw + 82px);
+  height: calc(220vh - 890px);
   position: fixed;
-  bottom: -350px;
-  right: -100px;
+  bottom: -450px;
+  right: -90px;
   z-index: 0;
-  rotate: 45deg;
+  rotate: 85deg;
   border-radius: 60%;
+  @media (max-width: 1400px) {
+    height: calc(240vh - 790px);
+    bottom: -290px;
+  }
+  @media (max-width: 1200px) {
+    bottom: -450px;
+  }
 `;
 
 export const Owner = styled.img`
@@ -205,10 +223,10 @@ export const PresentationItSelf = styled.div`
   color: #fff;
 
   #slide1 {
-    font-size: 81px;
+    font-size: calc(4.35vw + 18px);
     letter-spacing: 2%;
-    width: 1000px;
-    height: 730px;
+    width: calc(83.7vw - 11px);
+    height: 100vh;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -234,98 +252,145 @@ export const PresentationItSelf = styled.div`
   }
 
   #slide2 {
-    height: 730px;
     background: #00000c;
     background-position: 100%;
-    margin: 0;
+    height: 100vh;
     display: flex;
-    max-height: 730px;
+    margin: 0;
 
     h1 {
       margin: 0;
-      font-size: 90px;
-      width: 650px;
-      margin-top: 100px;
-      margin-left: 270px;
+      font-size: calc(4.69vw + 15px);
+      width: calc(29.87vw + 98px);
+      margin-top: calc(37.5vh - 165px);
+      margin-left: calc(16.66vw - 20px);
       z-index: 1;
     }
 
     img {
-      width: 504px;
-      height: 730px;
+      width: 500px;
+      height: 350px;
+      margin-top: calc(71vh - 267px);
+
+      @media (max-width: 1500px) {
+        width: 350px;
+        height: 230px;
+      }
       z-index: 1;
-      max-height: 730px;
     }
 
     .logo {
-      width: 120px;
-      height: 120px;
+      width: calc(8.56vw + 10px);
+      height: calc(8.56vw + 10px);
       position: absolute;
       margin-top: 0px;
-      right: 50px;
+      right: 2rem;
       z-index: 1;
+    }
+
+    @media (max-width: 850px) {
+      img {
+        margin: 0;
+        margin-top: 5vh;
+        margin-left: 40vw;
+      }
+      flex-direction: column;
     }
   }
 
   #slide3 {
-    padding: 0 120px;
+    padding: 0 calc(14.81vw - 22px);
     background: #00000c;
     background-position: 100%;
     margin: 0;
-    height: 730px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
 
     .ThirdSpec {
-      max-width: 550px;
-      margin-right: 200px;
+      width: 500px;
+      height: 350px;
+      margin-top: 25vh;
+
+      @media (max-width: 1500px) {
+        width: 350px;
+        height: 260px;
+      }
+      @media (max-width: 1000px) {
+        margin-top: 35vh;
+        width: 270px;
+        height: 210px;
+      }
+
       z-index: 1;
     }
 
-    .SecondSpec {
-      margin-top: -100px;
-      max-height: 720px;
-      z-index: 1;
-    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .SecondSpec {
+        width: calc(22.22vw + 117px);
 
-    h3 {
-      font-size: 44px;
-      max-width: 850px;
-      position: absolute;
-      right: 120px;
-      text-align: right;
-      margin-top: -150px;
-      z-index: 1;
+        max-height: 100vh;
+        z-index: 1;
+        margin-top: -10vh;
+      }
+      h3 {
+        font-size: calc(2.22vw + 7px);
+        max-width: calc(49vw + 58px);
+        margin-top: -25vh;
+        text-align: right;
+        z-index: 1;
+      }
     }
 
     .logo {
-      width: 120px;
-      height: 120px;
-      margin-top: 40px;
+      width: calc(8.56vw + 10px);
+      height: calc(8.56vw + 10px);
+      margin-top: 10px;
       position: absolute;
-      right: 50px;
+      right: 2rem;
       z-index: 2;
+    }
+
+    @media (max-width: 1000px) {
+      .container {
+        padding: 10vh 0;
+        max-width: 100vh;
+        position: relative;
+        left: -15vw;
+      }
+    }
+
+    @media (max-width: 750px) {
+      .container {
+        left: -25vw;
+      }
     }
   }
 
   #slide4 {
     background: #00000c;
     background-position: 100%;
-    height: 730px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 130px;
+    gap: 15vh;
 
     .logo {
-      width: 120px;
-      height: 120px;
+      width: calc(8.56vw + 10px);
+      height: calc(8.56vw + 10px);
       margin: 0 auto;
-      margin-top: 70px;
+      margin-top: 15vh;
       z-index: 1;
     }
 
     h1 {
       margin: 0;
-      font-size: 90px;
+      font-size: calc(5vw + 15px);
       z-index: 1;
     }
   }
@@ -333,12 +398,11 @@ export const PresentationItSelf = styled.div`
   #slide5 {
     background: #00000c;
     background-position: 100%;
-    height: 730px;
     display: flex;
-    padding-left: 150px;
-    max-height: 730px;
+    padding-left: calc(10.49vw - 1.48px);
+    max-height: 100vh;
     display: flex;
-    gap: 150px;
+    gap: calc(7.49vw - 1.48px);
     z-index: 1;
 
     div {
@@ -346,40 +410,39 @@ export const PresentationItSelf = styled.div`
     }
 
     .logo {
-      width: 120px;
-      height: 120px;
+      width: calc(7.56vw + 10px);
+      height: calc(7.56vw + 10px);
       position: absolute;
-      left: 50px;
-      margin-top: 30px;
+      left: 2rem;
+      margin-top: -5vh;
       z-index: 1;
     }
 
     #FirstTeacher {
-      width: 525px;
+      width: calc(28.53vw + 60px);
       z-index: 1;
       display: flex;
-      margin-top: -30px;
+      margin-top: -5vh;
     }
 
     .TeacherInf {
       display: flex;
       flex-direction: column;
-      padding-top: 30px;
     }
 
     h1 {
-      font-size: 65px;
+      font-size: calc(3.33vw + 10px);
       margin: 0;
     }
 
     h4 {
-      font-size: 25px;
+      font-size: calc(1.17vw + 4px);
       background: #fff;
       color: #000000;
       border-radius: 32px;
       width: 550px;
       text-align: center;
-      padding: 15px;
+      padding: calc(0.74vw + 5.5px);
     }
 
     ul {
@@ -389,64 +452,82 @@ export const PresentationItSelf = styled.div`
     }
 
     li {
-      width: 700px;
-      font-size: 23px;
-      margin: 30px 0;
+      img {
+        width: calc(2.16vw + 9px);
+      }
+      width: calc(37.97vw + 74px);
+      font-size: calc(1.17vw + 4px);
+      margin: 3.3vh 0;
       display: flex;
       flex-direction: row;
       align-items: end;
+    }
+
+    @media (max-width: 1200px) {
+      #FirstTeacher {
+        margin: 0;
+      }
+      .logo {
+        margin-top: -90vh;
+      }
+      padding-bottom: 15vh;
+      flex-direction: column;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
     }
   }
 
   #slide6 {
     background: #00000c;
     background-position: 100%;
-    height: 730px;
+    height: 100vh;
     display: flex;
-    padding-left: 150px;
-    max-height: 730px;
+    padding-left: calc(10.49vw - 1.48px);
+    max-height: 100vh;
     display: flex;
-    gap: 150px;
+    gap: calc(7.49vw - 1.48px);
     z-index: 1;
+
     div {
       z-index: 1;
     }
 
     .logo {
-      width: 120px;
-      height: 120px;
+      width: calc(7.56vw + 10px);
+      height: calc(7.56vw + 10px);
       position: absolute;
-      right: 50px;
-      margin-top: 30px;
+      right: 2rem;
+      margin-top: 3vh;
       z-index: 1;
     }
 
     #SecondTeacher {
-      width: 525px;
+      width: calc(26.53vw + 60px);
       z-index: 1;
       display: flex;
-      margin-top: -60px;
+      margin-top: -5vh;
     }
 
     .TeacherInf {
       display: flex;
       flex-direction: column;
-      padding-top: 140px;
+      padding-top: 20vh;
     }
 
     h1 {
-      font-size: 65px;
+      font-size: calc(3.33vw + 10px);
       margin: 0;
     }
 
     h4 {
-      font-size: 25px;
+      font-size: calc(1.17vw + 4px);
       background: #fff;
       color: #000000;
       border-radius: 32px;
       width: 550px;
       text-align: center;
-      padding: 15px;
+      padding: calc(0.74vw + 5.5px);
     }
 
     ul {
@@ -456,68 +537,80 @@ export const PresentationItSelf = styled.div`
     }
 
     li {
-      width: 700px;
-      font-size: 23px;
-      margin: 30px 0;
+      img {
+        width: calc(2.16vw + 9px);
+        padding-bottom: 3%;
+      }
+      width: calc(35.97vw + 94px);
+      font-size: calc(1.17vw + 4px);
+      margin: 3.3vh 0;
       display: flex;
       flex-direction: row;
       align-items: end;
-      img {
-        padding-bottom: 3%;
+    }
+    @media (max-width: 1200px) {
+      #SecondTeacher {
+        margin: 0;
+        margin-bottom: -15vh;
       }
+      .logo {
+        margin-top: -90vh;
+      }
+      padding-bottom: 15vh;
+      flex-direction: column-reverse;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
     }
   }
 
   #slide7 {
     background: #00000c;
     background-position: 100%;
-    height: 730px;
+    height: 100vh;
     display: flex;
-    padding-left: 200px;
-    max-height: 730px;
+    padding-left: calc(10.49vw - 1.48px);
+    max-height: 100vh;
     display: flex;
-    gap: 150px;
+    gap: calc(7.49vw - 1.48px);
     z-index: 1;
-
     div {
       z-index: 1;
     }
-
     .logo {
-      width: 120px;
-      height: 120px;
+      width: calc(7.56vw + 10px);
+      height: calc(7.56vw + 10px);
       position: absolute;
-      left: 50px;
-      margin-top: 30px;
+      left: 2rem;
+      margin-top: 3vh;
       z-index: 1;
     }
-
     #ThirdTeacher {
-      width: 525px;
+      width: calc(26.53vw + 60px);
       z-index: 1;
       display: flex;
-      margin-top: -50px;
+      margin-top: -5vh;
     }
 
     .TeacherInf {
       display: flex;
       flex-direction: column;
-      padding-top: 13%;
+      padding-top: 20vh;
     }
 
     h1 {
-      font-size: 65px;
+      font-size: calc(3.33vw + 10px);
       margin: 0;
     }
 
     h4 {
-      font-size: 25px;
+      font-size: calc(1.17vw + 4px);
       background: #fff;
       color: #000000;
       border-radius: 32px;
       width: 550px;
       text-align: center;
-      padding: 15px;
+      padding: calc(0.74vw + 5.5px);
     }
 
     ul {
@@ -527,67 +620,83 @@ export const PresentationItSelf = styled.div`
     }
 
     li {
-      width: 700px;
-      font-size: 23px;
-      margin: 30px 0;
+      img {
+        width: calc(2.16vw + 9px);
+        padding-bottom: 3%;
+      }
+      width: calc(35.97vw + 94px);
+      font-size: calc(1.17vw + 4px);
+      margin: 3.3vh 0;
       display: flex;
       flex-direction: row;
       align-items: end;
-      img {
-        padding-bottom: 3%;
+    }
+    @media (max-width: 1200px) {
+      #ThirdTeacher {
+        margin: 0;
+        margin-bottom: -15vh;
       }
+      .logo {
+        margin-top: -80vh;
+      }
+      padding-bottom: 15vh;
+      flex-direction: column;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
     }
   }
 
   #slide8 {
     background: #00000c;
     background-position: 100%;
-    height: 730px;
+    height: 100vh;
     display: flex;
-    padding-left: 150px;
-    max-height: 730px;
+    padding-left: calc(10.49vw - 1.48px);
+    max-height: 100vh;
     display: flex;
-    gap: 150px;
+    gap: calc(7.49vw - 1.48px);
     z-index: 1;
+
     div {
       z-index: 1;
     }
 
     .logo {
-      width: 120px;
-      height: 120px;
+      width: calc(7.56vw + 10px);
+      height: calc(7.56vw + 10px);
       position: absolute;
-      right: 50px;
-      margin-top: 30px;
+      right: 2rem;
+      margin-top: 3vh;
       z-index: 1;
     }
 
     #FourthTeacher {
-      width: 525px;
+      width: calc(26.53vw + 60px);
       z-index: 1;
       display: flex;
-      margin-top: -30px;
+      margin-top: -3vh;
     }
 
     .TeacherInf {
       display: flex;
       flex-direction: column;
-      padding-top: 140px;
+      padding-top: 20vh;
     }
 
     h1 {
-      font-size: 65px;
+      font-size: calc(3.33vw + 10px);
       margin: 0;
     }
 
     h4 {
-      font-size: 25px;
+      font-size: calc(1.17vw + 4px);
       background: #fff;
       color: #000000;
       border-radius: 32px;
       width: 550px;
       text-align: center;
-      padding: 15px;
+      padding: calc(0.74vw + 5.5px);
     }
 
     ul {
@@ -597,44 +706,59 @@ export const PresentationItSelf = styled.div`
     }
 
     li {
-      width: 700px;
-      font-size: 23px;
-      margin: 30px 0;
-      display: flex;
-      flex-direction: row;
-      align-items: end;
       img {
+        width: calc(2.16vw + 9px);
         padding-bottom: 9%;
       }
       .sec {
         padding-bottom: 1%;
       }
+      width: calc(35.97vw + 94px);
+      font-size: calc(1.17vw + 4px);
+      margin: 3.3vh 0;
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+    }
+    @media (max-width: 1200px) {
+      #FourthTeacher {
+        margin: 0;
+        margin-bottom: -15vh;
+      }
+      .logo {
+        margin-top: -80vh;
+      }
+      padding-bottom: 15vh;
+      flex-direction: column-reverse;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
     }
   }
 
   #slide9 {
     background: #00000c;
     background-position: 100%;
-    height: 730px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 130px;
 
     .logo {
-      width: 120px;
-      height: 120px;
+      width: calc(8.56vw + 10px);
+      height: calc(8.56vw + 10px);
       margin: 0 auto;
-      margin-top: 70px;
+      margin-top: 15vh;
       z-index: 1;
     }
 
     h1 {
       margin: 0;
-      width: 1000px;
-      font-size: 90px;
-      z-index: 1;
+      width: calc(54.56vw + 86px);
+      font-size: calc(5vw + 15px);
       text-align: center;
+      z-index: 1;
     }
   }
 
@@ -646,24 +770,27 @@ export const PresentationItSelf = styled.div`
     background: #00000c;
     background-position: 100%;
     margin: 0;
-    height: 730px;
+    height: 100vh;
     display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
     img {
-      width: 75%;
+      width: calc(16.42vw + 50px);
       z-index: 1;
     }
 
     .galochka1 {
       position: absolute;
-      width: 550px;
+      width: calc(28.33vw + 142px);
       z-index: 0;
       right: 0;
     }
 
     .galochka2 {
-      width: 550px;
+      width: calc(28.33vw + 142px);
       z-index: 0;
       position: absolute;
       left: 0;
@@ -674,7 +801,7 @@ export const PresentationItSelf = styled.div`
     background: #00000c;
     background-position: 100%;
     margin: 0;
-    height: 330px;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -683,11 +810,11 @@ export const PresentationItSelf = styled.div`
     border-right: 0;
     border-left: 0;
     z-index: 1;
-    gap: 50px;
+    gap: 5vh;
     padding: 100px 0;
 
     h2 {
-      font-size: 50px;
+      font-size: calc(2.22vw + 9px);
       z-index: 1;
     }
 
@@ -713,8 +840,8 @@ export const PresentationItSelf = styled.div`
     background: #222;
     position: relative;
     display: flex;
-    padding: 70px 150px;
-    gap: 15%;
+    padding: calc(4.1vw + 7.5px) calc(9.23vw + 2px);
+    gap: 10%;
     justify-content: space-between;
 
     #left_footer {
@@ -723,10 +850,10 @@ export const PresentationItSelf = styled.div`
 
       h1 {
         margin: 0;
-        font-size: 68px;
+        font-size: calc(2.96vw + 21px);
         text-align: left;
-        width: 500px;
-        margin-bottom: 50px;
+        width: calc(22.22vw + 173px);
+        margin-bottom: 5vh;
       }
 
       ul {
@@ -735,31 +862,31 @@ export const PresentationItSelf = styled.div`
         margin: 0;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 3vh;
       }
 
       li {
-        font-size: 25px;
+        font-size: calc(1.18vw + 12px);
         img {
-          width: 32px;
+          width: calc(1.18vw + 14px);
           margin-bottom: -5px;
         }
         b {
-          font-size: 28px;
+          font-size: calc(1.18vw + 10px);
         }
       }
     }
 
     #right_footer {
       background: #fdf5e6;
-      padding: 80px 70px;
+      padding: calc(48vh - 290px) calc(4.1vw + 7.5px);
       border-radius: 30px;
       display: flex;
       flex-direction: column;
       align-items: center;
 
       h2 {
-        font-size: 50px;
+        font-size: calc(2vw + 19px);
         margin: 0;
         color: #222;
       }
@@ -808,7 +935,7 @@ export const PresentationItSelf = styled.div`
       }
     }
     .telnum {
-      font-size: 25px;
+      font-size: 20px;
       color: #222;
       position: relative;
       bottom: -25px;
@@ -820,6 +947,11 @@ export const PresentationItSelf = styled.div`
       height: calc(2.1vw + 38.3px);
       text-align: center;
       position: absolute;
+    }
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
     }
   }
 `;

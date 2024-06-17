@@ -73,17 +73,20 @@ export const Presentation = () => {
       </div>
       <div className="presentationslide" id="slide2">
         <img src="logo2.svg" alt="logo" className="logo" />
+
         <h1>Методы обучения учеников:</h1>
         <img src="FirstSpec.png" alt="1" />
       </div>
       <div className="presentationslide" id="slide3">
         <img src="logo2.svg" alt="logo" className="logo" />
         <img src="ThirdSpec.png" alt="3" className="ThirdSpec" />
-        <img src="SecondSpec.png" alt="2" className="SecondSpec" />
-        <h3>
-          Такая методика позволяет эффективно освоить математику и научиться
-          рационально мыслить
-        </h3>
+        <div className="container">
+          <img src="SecondSpec.png" alt="2" className="SecondSpec" />
+          <h3>
+            Такая методика позволяет эффективно освоить математику и научиться
+            рационально мыслить
+          </h3>
+        </div>
       </div>
       <div className="presentationslide" id="slide4">
         <img src="logo2.svg" alt="logo" className="logo" />
@@ -201,27 +204,42 @@ export const Presentation = () => {
       <div className="presentationslide" id="slide10">
         <img src="galochka1.png" alt="galochka" className="galochka1" />
         <img src="galochka2.png" alt="galochka" className="galochka2" />
-        <img src="result1.png" alt="results" />
+        <img src="Comment1.png" alt="results" />
+        <img src="Comment2.png" alt="results" />
+        <img src="Comment3.png" alt="results" />
+        <img src="Comment4.png" alt="results" />
       </div>
       <div className="presentationslide" id="slide11">
         <img src="galochka1.png" alt="galochka" className="galochka1" />
         <img src="galochka2.png" alt="galochka" className="galochka2" />
-        <img src="result2.png" alt="results" />
+        <img src="Comment5.png" alt="results" />
+        <img src="Comment6.png" alt="results" />
+        <img src="Comment7.png" alt="results" />
+        <img src="Comment8.png" alt="results" />
       </div>
       <div className="presentationslide" id="slide12">
         <img src="galochka1.png" alt="galochka" className="galochka1" />
         <img src="galochka2.png" alt="galochka" className="galochka2" />
-        <img src="result3.png" alt="results" />
+        <img src="Comment9.png" alt="results" />
+        <img src="Comment10.png" alt="results" />
+        <img src="Comment11.png" alt="results" />
+        <img src="Comment12.png" alt="results" />{" "}
       </div>
       <div className="presentationslide" id="slide13">
         <img src="galochka1.png" alt="galochka" className="galochka1" />
         <img src="galochka2.png" alt="galochka" className="galochka2" />
-        <img src="result4.png" alt="results" />
+        <img src="Comment13.png" alt="results" />
+        <img src="Comment14.png" alt="results" />
+        <img src="Comment15.png" alt="results" />
+        <img src="Comment20.png" alt="results" />{" "}
       </div>
       <div className="presentationslide" id="slide14">
         <img src="galochka1.png" alt="galochka" className="galochka1" />
         <img src="galochka2.png" alt="galochka" className="galochka2" />
-        <img src="result5.png" alt="results" />
+        <img src="Comment16.png" alt="results" />
+        <img src="Comment17.png" alt="results" />
+        <img src="Comment18.png" alt="results" />
+        <img src="Comment19.png" alt="results" />{" "}
       </div>
 
       <footer id="formsubmit">
