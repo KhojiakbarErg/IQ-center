@@ -25,12 +25,6 @@ export const Presentation = () => {
     event.target.value = formattedValue;
   };
 
-  const handleTgTagChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value;
-    const formattedValue = value.replace(/^@/, "");
-    event.target.value = formattedValue;
-  };
-
   const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -193,8 +187,7 @@ export const Presentation = () => {
         </div>
       </div>
       <div className="register">
-        <h2>Нашли что-то интересное?🔎</h2>
-        <h3>Хотите записаться на пробный урок?📝</h3>
+        <h2>Запишитесь на пробный урок📝</h2>
         <div>
           <Link to="#formsubmit" className="btns">
             Записаться📩
@@ -270,14 +263,6 @@ export const Presentation = () => {
               inputPlaceholder="Телефон"
               id="telnum"
               onChange={handleTelChange}
-            />
-            <AppInputPresentation
-              required
-              name="username"
-              type="telegid"
-              inputPlaceholder="Тег телеграмм"
-              id="tgteg"
-              onChange={handleTgTagChange}
             />
           </div>
           <div className="btnsgroup">

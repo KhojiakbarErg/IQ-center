@@ -52,6 +52,7 @@ export const ThemeAppInputPress = styled.input`
   box-shadow: 0;
   margin: 0 auto;
   transition: 550ms;
+  margin-bottom: 10px;
 
   &:hover {
     border-bottom: 2px solid transparent;

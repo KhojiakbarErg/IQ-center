@@ -655,7 +655,6 @@ export const PresentationItSelf = styled.div`
     padding: 100px 0;
 
     h2 {
-      margin: 0;
       font-size: 50px;
       z-index: 1;
     }
