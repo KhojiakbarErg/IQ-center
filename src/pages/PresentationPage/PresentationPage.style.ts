@@ -234,6 +234,8 @@ export const PresentationItSelf = styled.div`
     font-size: calc(4.35vw + 8px);
     letter-spacing: 2%;
     width: calc(73.7vw - 11px);
+    background: #00000c;
+    background-position: 100%;
     height: 100vh;
     text-align: center;
     margin: 0 auto;
