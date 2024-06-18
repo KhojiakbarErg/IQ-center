@@ -290,8 +290,8 @@ export const PresentationItSelf = styled.div`
     }
 
     .logo {
-      width: calc(8.56vw + 10px);
-      height: calc(8.56vw + 10px);
+      width: calc(9.56vw + 12px);
+      height: calc(9.56vw + 12px);
       position: absolute;
       margin-top: 0px;
       right: 2rem;
@@ -389,8 +389,8 @@ export const PresentationItSelf = styled.div`
     }
 
     .logo {
-      width: calc(8.56vw + 10px);
-      height: calc(8.56vw + 10px);
+      width: calc(9.56vw + 12px);
+      height: calc(9.56vw + 12px);
       margin-top: 10px;
       position: absolute;
       right: 2rem;
@@ -448,8 +448,8 @@ export const PresentationItSelf = styled.div`
     margin-top: -10vh;
 
     .logo {
-      width: calc(8.56vw + 10px);
-      height: calc(8.56vw + 10px);
+      width: calc(9.56vw + 12px);
+      height: calc(9.56vw + 12px);
       margin: 0 auto;
       margin-top: 10vh;
       z-index: 1;
@@ -478,8 +478,8 @@ export const PresentationItSelf = styled.div`
     }
 
     .logo {
-      width: calc(7.56vw + 10px);
-      height: calc(7.56vw + 10px);
+      width: calc(9.56vw + 12px);
+      height: calc(9.56vw + 12px);
       position: absolute;
       left: 2rem;
       margin-top: -5vh;
@@ -648,8 +648,8 @@ export const PresentationItSelf = styled.div`
       z-index: 1;
     }
     .logo {
-      width: calc(7.56vw + 10px);
-      height: calc(7.56vw + 10px);
+      width: calc(9.56vw + 12px);
+      height: calc(9.56vw + 12px);
       position: absolute;
       left: 2rem;
       margin-top: 3vh;
@@ -735,8 +735,8 @@ export const PresentationItSelf = styled.div`
     }
 
     .logo {
-      width: calc(7.56vw + 10px);
-      height: calc(7.56vw + 10px);
+      width: calc(9.56vw + 12px);
+      height: calc(9.56vw + 12px);
       position: absolute;
       right: 2rem;
       margin-top: 3vh;
@@ -818,8 +818,8 @@ export const PresentationItSelf = styled.div`
     gap: 100px;
 
     .logo {
-      width: calc(8.56vw + 10px);
-      height: calc(8.56vw + 10px);
+      width: calc(9.56vw + 12px);
+      height: calc(9.56vw + 12px);
       margin: 0 auto;
       margin-top: 15vh;
       z-index: 1;
