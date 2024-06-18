@@ -122,7 +122,7 @@ export const Button = styled.button<{ primary?: boolean }>`
   border-bottom-right-radius: 28px;
   ${({ primary }) =>
     primary &&
-    "border-top-left-radius: 26px; border-bottom-left-radius: 26px; width: calc(20.2vw + 109px);"}
+    "border-top-left-radius: 26px; border-bottom-left-radius: 26px; width: calc(20.2vw + 113px);"}
   ${({ primary }) => !primary && "background:  0; width: calc(10.8vw + 37px); "}
 
   &:hover {
@@ -130,7 +130,7 @@ export const Button = styled.button<{ primary?: boolean }>`
   }
 
   @media (max-width: 1050px) {
-    height: calc(12.7vh - 49px);
+    height: calc(12.7vh - 47px);
     padding: 0;
   }
 `;
@@ -186,7 +186,10 @@ export const Gradient2pre = styled.img`
     bottom: -290px;
   }
   @media (max-width: 1200px) {
-    bottom: -450px;
+    bottom: -390px;
+  }
+  @media (max-width: 700px) {
+    bottom: -230px;
   }
 `;
 
@@ -223,9 +226,9 @@ export const PresentationItSelf = styled.div`
   color: #fff;
 
   #slide1 {
-    font-size: calc(4.35vw + 18px);
+    font-size: calc(4.35vw + 8px);
     letter-spacing: 2%;
-    width: calc(83.7vw - 11px);
+    width: calc(73.7vw - 11px);
     height: 100vh;
     text-align: center;
     margin: 0 auto;
@@ -296,6 +299,30 @@ export const PresentationItSelf = styled.div`
       }
       flex-direction: column;
     }
+    @media (max-width: 650px) {
+      img {
+        margin-top: 8vh;
+        margin-left: 25vw;
+        width: 290px;
+        height: 200px;
+      }
+    }
+    @media (max-width: 450px) {
+      img {
+        margin-top: 8vh;
+        margin-left: 25vw;
+        width: 230px;
+        height: 155px;
+      }
+    }
+    @media (max-width: 350px) {
+      img {
+        margin-top: 8vh;
+        margin-left: 25vw;
+        width: 200px;
+        height: 135px;
+      }
+    }
   }
 
   #slide3 {
@@ -310,7 +337,7 @@ export const PresentationItSelf = styled.div`
     .ThirdSpec {
       width: 500px;
       height: 350px;
-      margin-top: 25vh;
+      margin-top: 30vh;
 
       @media (max-width: 1500px) {
         width: 350px;
@@ -321,6 +348,14 @@ export const PresentationItSelf = styled.div`
         width: 270px;
         height: 210px;
       }
+      @media (max-width: 650px) {
+        width: 240px;
+        height: 180px;
+      }
+      @media (max-width: 450px) {
+        width: 210px;
+        height: 140px;
+      }
 
       z-index: 1;
     }
@@ -328,7 +363,7 @@ export const PresentationItSelf = styled.div`
     .container {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       .SecondSpec {
         width: calc(22.22vw + 117px);
@@ -340,7 +375,7 @@ export const PresentationItSelf = styled.div`
       h3 {
         font-size: calc(2.22vw + 7px);
         max-width: calc(49vw + 58px);
-        margin-top: -25vh;
+        margin-top: -10vh;
         text-align: right;
         z-index: 1;
       }
@@ -360,13 +395,37 @@ export const PresentationItSelf = styled.div`
         padding: 10vh 0;
         max-width: 100vh;
         position: relative;
-        left: -15vw;
+        left: -10vw;
+        .SecondSpec {
+          margin-top: -15vh;
+        }
+        h3 {
+          margin-top: 0;
+          margin-bottom: -8vh;
+        }
       }
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 650px) {
       .container {
-        left: -25vw;
+        left: -15vw;
+      }
+    }
+    @media (max-width: 450px) {
+      .container {
+        left: -28vw;
+        .SecondSpec {
+          margin-top: -14vh;
+        }
+        h3 {
+          margin-top: 0;
+          margin-bottom: -1vh;
+        }
+      }
+    }
+    @media (max-width: 335px) {
+      .container {
+        left: -42vw;
       }
     }
   }
@@ -390,6 +449,7 @@ export const PresentationItSelf = styled.div`
 
     h1 {
       margin: 0;
+      text-align: center;
       font-size: calc(5vw + 15px);
       z-index: 1;
     }
@@ -440,7 +500,7 @@ export const PresentationItSelf = styled.div`
       background: #fff;
       color: #000000;
       border-radius: 32px;
-      width: 550px;
+      width: calc(21vw + 114px);
       text-align: center;
       padding: calc(0.74vw + 5.5px);
     }
@@ -468,7 +528,7 @@ export const PresentationItSelf = styled.div`
         margin: 0;
       }
       .logo {
-        margin-top: -90vh;
+        margin-top: -85vh;
       }
       padding-bottom: 15vh;
       flex-direction: column;
@@ -525,7 +585,7 @@ export const PresentationItSelf = styled.div`
       background: #fff;
       color: #000000;
       border-radius: 32px;
-      width: 550px;
+      width: calc(21vw + 114px);
       text-align: center;
       padding: calc(0.74vw + 5.5px);
     }
@@ -608,7 +668,7 @@ export const PresentationItSelf = styled.div`
       background: #fff;
       color: #000000;
       border-radius: 32px;
-      width: 550px;
+      width: calc(21vw + 114px);
       text-align: center;
       padding: calc(0.74vw + 5.5px);
     }
@@ -694,7 +754,7 @@ export const PresentationItSelf = styled.div`
       background: #fff;
       color: #000000;
       border-radius: 32px;
-      width: 550px;
+      width: calc(21vw + 114px);
       text-align: center;
       padding: calc(0.74vw + 5.5px);
     }
@@ -823,10 +883,10 @@ export const PresentationItSelf = styled.div`
       background: 0;
       border: 2px solid white;
       border-radius: 15px;
-      padding: 25px 35px;
+      padding: calc(6.58vh - 25px) calc(1.54vw + 17px);
       margin: 25px;
       z-index: 2;
-      font-size: 25px;
+      font-size: calc(1.1vw + 11px);
       transition: 550ms;
 
       &:hover {
@@ -879,7 +939,7 @@ export const PresentationItSelf = styled.div`
 
     #right_footer {
       background: #fdf5e6;
-      padding: calc(48vh - 290px) calc(4.1vw + 7.5px);
+      padding: calc(48vh - 230px) calc(4.1vw + 7.5px);
       border-radius: 30px;
       display: flex;
       flex-direction: column;
@@ -949,9 +1009,64 @@ export const PresentationItSelf = styled.div`
       position: absolute;
     }
     @media (max-width: 1200px) {
+      gap: 50px;
+    }
+    @media (max-width: 970px) {
       flex-direction: column;
       justify-content: center;
-      gap: 50px;
+    }
+    @media (max-width: 400px) {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      #left_footer {
+        padding: calc(48vh - 230px) calc(4.1vw + 7.5px);
+      }
+      #right_footer {
+        border-radius: 0;
+        h2 {
+          font-size: calc(2vw + 16px);
+        }
+        .btnback {
+          width: calc(8.9vw + 69px);
+          height: calc(2.1vw + 23.3px);
+
+          font-size: calc(1.1vw + 5px);
+
+          &:hover {
+            background: #111;
+            color: #fff;
+          }
+        }
+
+        .btnsgroup {
+          height: calc(2.1vw + 23.3px);
+          margin-top: 2em;
+          gap: 15px;
+        }
+
+        .btnnext {
+          width: calc(8.9vw + 69px);
+          height: calc(2.1vw + 23.3px);
+
+          font-size: calc(1.1vw + 5px);
+        }
+
+        .telnum {
+          font-size: 10px;
+          color: #222;
+          position: relative;
+          bottom: -15px;
+        }
+        .linkback {
+          margin: 0;
+          z-index: 11111;
+          width: calc(8.9vw + 69px);
+          height: calc(2.1vw + 23.3px);
+          text-align: center;
+          position: absolute;
+        }
+      }
     }
   }
 `;

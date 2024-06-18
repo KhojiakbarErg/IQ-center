@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Gradient1pre,
   Gradient2pre,
@@ -61,6 +61,25 @@ export const Presentation = () => {
       setTimeout(() => setIsButtonDisabled(false), 20000);
     }
   };
+
+  useEffect(() => {
+    const handleScrollIntoView = (id: any) => {
+      const element = document.querySelector(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    document.querySelectorAll(".register a").forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const id = link.getAttribute("href");
+        if (id) {
+          handleScrollIntoView(id);
+        }
+      });
+    });
+  }, []);
 
   return (
     <PresentationItSelf>
@@ -192,9 +211,9 @@ export const Presentation = () => {
       <div className="register">
         <h2>Запишитесь на пробный урок📝</h2>
         <div>
-          <Link to="#formsubmit" className="btns">
+          <a href="#formsubmit" className="btns">
             Записаться📩
-          </Link>
+          </a>
         </div>
       </div>
       <div className="presentationslide" id="slide9">
