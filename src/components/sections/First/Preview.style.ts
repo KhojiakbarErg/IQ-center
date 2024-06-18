@@ -146,12 +146,21 @@ export const ThemePreview = styled.div`
 
   @media (max-width: 955px) {
     position: relative;
-    .enter {
-      height: auto;
-    }
-
-    .WantInf {
-      display: none;
+    .preview {
+      .enter {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        .towel {
+          width: calc(8.9vw + 129px);
+          height: calc(2.1vw + 48.3px);
+        }
+        .topress {
+          width: calc(8.9vw + 129px);
+          height: calc(2.1vw + 48.3px);
+        }
+      }
     }
 
     .FirstGradient {

@@ -68,7 +68,7 @@ export const ButtonsContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: calc(31vw + 151px);
-  height: calc(12.7vh - 29px);
+  height: calc(12.7vh - 19px);
   @media (max-width: 1050px) {
     height: calc(12.7vh - 49px);
   }
@@ -81,7 +81,7 @@ export const ButtonsContainer = styled.div`
   #backBtn {
     border-radius: 28px;
     width: calc(31vw + 151px);
-    height: calc(12.7vh - 29px);
+    height: calc(12.7vh - 19px);
     background: #00000c;
     position: absolute;
     z-index: 1;
@@ -93,7 +93,7 @@ export const ButtonsContainer = styled.div`
   #borderBtn {
     background: linear-gradient(90deg, #ff00e0, #7500ff) #1c1c1c;
     width: calc(31vw + 156px);
-    height: calc(12.7vh - 25px);
+    height: calc(12.7vh - 15px);
     border-radius: 28px;
 
     position: absolute;
@@ -110,7 +110,7 @@ export const Button = styled.button<{ primary?: boolean }>`
   color: white;
   border: none;
   padding: 15px 25px;
-  height: calc(12.7vh - 29px);
+  height: calc(12.7vh - 19px);
   transition: 550ms;
   font-family: sans-serif;
   font-weight: 500;
@@ -189,7 +189,7 @@ export const Gradient2pre = styled.img`
     bottom: -390px;
   }
   @media (max-width: 700px) {
-    bottom: -230px;
+    bottom: -45vh;
   }
 `;
 
