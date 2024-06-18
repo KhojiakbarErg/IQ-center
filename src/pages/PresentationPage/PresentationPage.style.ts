@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ThemePresentationPage = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
   align-items: left;
   text-align: left;
   background: #00000c;
@@ -16,14 +16,13 @@ export const ThemePresentationPage = styled.div`
   color: #fff;
   padding: calc(35.4vh - 112px) calc(5.85vw + 7px);
   padding-bottom: calc(14.6vh - 38px);
-  gap: calc(4.94vw + 5px);
-  max-width: 100vw;
+  gap: calc(2.94vw + 5px);
 
   @media (max-width: 1050px) {
     gap: 0;
   }
 
-  @media (max-width: 685px) {
+  @media (max-width: 800px) {
     padding: 40px calc(5.85vw + 7px);
     gap: 30px;
     flex-direction: column;
@@ -196,8 +195,8 @@ export const Gradient2pre = styled.img`
 `;
 
 export const Owner = styled.img`
-  width: calc(28.14vw + 100px);
-  margin-top: -15vh;
+  width: calc(25.14vw + 100px);
+  margin-top: -10vh;
   position: relative;
   right: -5vw;
   z-index: 1;
@@ -206,6 +205,7 @@ export const Owner = styled.img`
   }
   @media (max-width: 915px) {
     width: calc(28.14vw + 50px);
+    margin: 0;
     margin-top: -2vh;
   }
   @media (max-width: 685px) {
@@ -219,9 +219,12 @@ export const PresentationItSelf = styled.div`
   bottom: 0;
   left: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   right: 0;
 
   background: #00000c;
+
   background-position: 100%;
   width: 100%;
   height: 100%;
@@ -231,7 +234,8 @@ export const PresentationItSelf = styled.div`
     font-size: calc(4.35vw + 8px);
     letter-spacing: 2%;
     width: calc(73.7vw - 11px);
-    height: 99vh;
+    height: 90vh;
+    margin-top: -10vh;
     text-align: center;
     margin: 0 auto;
     display: flex;
