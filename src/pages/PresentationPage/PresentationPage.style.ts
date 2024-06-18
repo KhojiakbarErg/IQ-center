@@ -235,7 +235,6 @@ export const PresentationItSelf = styled.div`
     letter-spacing: 2%;
     width: calc(73.7vw - 11px);
     height: 90vh;
-    margin-top: -10vh;
     text-align: center;
     margin: 0 auto;
     display: flex;
