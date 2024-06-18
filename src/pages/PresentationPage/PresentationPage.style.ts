@@ -17,15 +17,17 @@ export const ThemePresentationPage = styled.div`
   padding: calc(35.4vh - 112px) calc(5.85vw + 7px);
   padding-bottom: calc(14.6vh - 38px);
   gap: calc(4.94vw + 5px);
+  max-width: 100vw;
 
   @media (max-width: 1050px) {
     gap: 0;
   }
 
   @media (max-width: 685px) {
-    padding: calc(35.4vh - 162px) calc(5.85vw + 7px);
-    gap: 70px;
+    padding: 40px calc(5.85vw + 7px);
+    gap: 30px;
     flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -189,25 +191,25 @@ export const Gradient2pre = styled.img`
     bottom: -390px;
   }
   @media (max-width: 700px) {
-    bottom: -45vh;
+    display: none;
   }
 `;
 
 export const Owner = styled.img`
   width: calc(28.14vw + 100px);
   margin-top: -15vh;
-  position: absolute;
+  position: relative;
+  right: -5vw;
   z-index: 1;
   @media (max-width: 1150px) {
     margin-top: -10vh;
   }
   @media (max-width: 915px) {
     width: calc(28.14vw + 50px);
-    margin-top: -5vh;
+    margin-top: -2vh;
   }
   @media (max-width: 685px) {
     width: calc(35.14vw + 130px);
-    margin-left: 2rem;
   }
 `;
 
@@ -229,7 +231,7 @@ export const PresentationItSelf = styled.div`
     font-size: calc(4.35vw + 8px);
     letter-spacing: 2%;
     width: calc(73.7vw - 11px);
-    height: 100vh;
+    height: 99vh;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -257,7 +259,8 @@ export const PresentationItSelf = styled.div`
   #slide2 {
     background: #00000c;
     background-position: 100%;
-    height: 100vh;
+    margin-bottom: 100px;
+    height: 80vh;
     display: flex;
     margin: 0;
 
@@ -330,7 +333,7 @@ export const PresentationItSelf = styled.div`
     background: #00000c;
     background-position: 100%;
     margin: 0;
-    height: 100vh;
+    height: 99vh;
     display: flex;
     justify-content: space-between;
 
@@ -433,17 +436,18 @@ export const PresentationItSelf = styled.div`
   #slide4 {
     background: #00000c;
     background-position: 100%;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15vh;
+    margin-top: -10vh;
 
     .logo {
       width: calc(8.56vw + 10px);
       height: calc(8.56vw + 10px);
       margin: 0 auto;
-      margin-top: 15vh;
+      margin-top: 10vh;
       z-index: 1;
     }
 
@@ -460,7 +464,7 @@ export const PresentationItSelf = styled.div`
     background-position: 100%;
     display: flex;
     padding-left: calc(10.49vw - 1.48px);
-    max-height: 100vh;
+    max-height: 99vh;
     display: flex;
     gap: calc(7.49vw - 1.48px);
     z-index: 1;
@@ -528,9 +532,9 @@ export const PresentationItSelf = styled.div`
         margin: 0;
       }
       .logo {
-        margin-top: -85vh;
+        margin-top: -70vh;
       }
-      padding-bottom: 15vh;
+      padding-bottom: 11vh;
       flex-direction: column;
       gap: 0;
       justify-content: center;
@@ -541,10 +545,11 @@ export const PresentationItSelf = styled.div`
   #slide6 {
     background: #00000c;
     background-position: 100%;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     padding-left: calc(10.49vw - 1.48px);
-    max-height: 100vh;
+    max-height: 75vh;
+    margin-top: -5vh;
     display: flex;
     gap: calc(7.49vw - 1.48px);
     z-index: 1;
@@ -614,9 +619,9 @@ export const PresentationItSelf = styled.div`
         margin-bottom: -15vh;
       }
       .logo {
-        margin-top: -90vh;
+        margin-top: -60vh;
       }
-      padding-bottom: 15vh;
+      padding-bottom: 7vh;
       flex-direction: column-reverse;
       gap: 0;
       justify-content: center;
@@ -627,11 +632,12 @@ export const PresentationItSelf = styled.div`
   #slide7 {
     background: #00000c;
     background-position: 100%;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     padding-left: calc(10.49vw - 1.48px);
-    max-height: 100vh;
+    max-height: 70vh;
     display: flex;
+    margin-top: -5vh;
     gap: calc(7.49vw - 1.48px);
     z-index: 1;
     div {
@@ -697,9 +703,9 @@ export const PresentationItSelf = styled.div`
         margin-bottom: -15vh;
       }
       .logo {
-        margin-top: -80vh;
+        margin-top: -55vh;
       }
-      padding-bottom: 15vh;
+      padding-bottom: 7vh;
       flex-direction: column;
       gap: 0;
       justify-content: center;
@@ -710,11 +716,13 @@ export const PresentationItSelf = styled.div`
   #slide8 {
     background: #00000c;
     background-position: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     padding-left: calc(10.49vw - 1.48px);
-    max-height: 100vh;
+    max-height: 80vh;
     display: flex;
+    margin-top: -5vh;
+
     gap: calc(7.49vw - 1.48px);
     z-index: 1;
 
@@ -786,9 +794,9 @@ export const PresentationItSelf = styled.div`
         margin-bottom: -15vh;
       }
       .logo {
-        margin-top: -80vh;
+        margin-top: -62vh;
       }
-      padding-bottom: 15vh;
+      padding-bottom: 5vh;
       flex-direction: column-reverse;
       gap: 0;
       justify-content: center;
@@ -799,11 +807,11 @@ export const PresentationItSelf = styled.div`
   #slide9 {
     background: #00000c;
     background-position: 100%;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 130px;
+    gap: 100px;
 
     .logo {
       width: calc(8.56vw + 10px);
@@ -830,7 +838,7 @@ export const PresentationItSelf = styled.div`
     background: #00000c;
     background-position: 100%;
     margin: 0;
-    height: 100vh;
+    height: 65vh;
     display: flex;
     gap: 2vw;
     flex-wrap: wrap;
@@ -861,7 +869,7 @@ export const PresentationItSelf = styled.div`
     background: #00000c;
     background-position: 100%;
     margin: 0;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -871,7 +879,7 @@ export const PresentationItSelf = styled.div`
     border-left: 0;
     z-index: 1;
     gap: 5vh;
-    padding: 100px 0;
+    padding: 50px 0;
 
     h2 {
       font-size: calc(2.22vw + 9px);
