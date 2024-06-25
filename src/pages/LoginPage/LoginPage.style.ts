@@ -12,6 +12,15 @@ export const ThemeLogin = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
+
+  .linkback {
+    margin: 0;
+    z-index: 11111;
+    width: calc(8.9vw + 69px);
+    height: calc(2.1vw + 23.3px);
+    text-align: center;
+    position: absolute;
+  }
   .inputsgroup {
     display: flex;
     flex-direction: column;

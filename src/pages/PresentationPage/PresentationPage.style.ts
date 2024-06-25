@@ -235,7 +235,7 @@ export const PresentationItSelf = styled.div`
     letter-spacing: 2%;
     width: calc(73.7vw - 11px);
     background: #00000c;
-    background-position: 100%;
+    background-position: 200%;
     height: 100vh;
     text-align: center;
     margin: 0 auto;
@@ -263,7 +263,7 @@ export const PresentationItSelf = styled.div`
 
   #slide2 {
     background: #00000c;
-    background-position: 100%;
+    background-position: 200%;
     margin-bottom: 100px;
     height: 80vh;
     display: flex;
@@ -1070,14 +1070,6 @@ export const PresentationItSelf = styled.div`
           color: #222;
           position: relative;
           bottom: -15px;
-        }
-        .linkback {
-          margin: 0;
-          z-index: 11111;
-          width: calc(8.9vw + 69px);
-          height: calc(2.1vw + 23.3px);
-          text-align: center;
-          position: absolute;
         }
       }
     }
